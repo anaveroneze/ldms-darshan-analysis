@@ -32,3 +32,23 @@ We will collect LDMS-Darshan and system logs (meminfo, procstat, lustre, dstat).
 Applications:
 - HACC-IO
 - MPI-IO
+- 
+
+## First test:
+
+1. HACCIO with 50.000.000 particles and specific classes running in background during all execution:
+```sh
+stress-ng --class cpu --tz -v --all 4 & 
+stress-ng --class cpu-cache --tz -v --all 4 &
+stress-ng --class io --tz -v --all 4 &
+stress-ng --class filesystem --tz -v --all 4 &
+stress-ng --class memory --tz -v --all 4 &
+```
+1. HACCIO with 100.000.000 particles and specific classes running in background for 10 seconds:
+```sh
+stress-ng --class cpu --tz -v --all 4 -t 10s & 
+stress-ng --class cpu-cache --tz -v --all 4 -t 10s &
+stress-ng --class io --tz -v --all 4 -t 10s &
+stress-ng --class filesystem --tz -v --all 4 -t 10s &
+stress-ng --class memory --tz -v --all 4 -t 10s &
+```
