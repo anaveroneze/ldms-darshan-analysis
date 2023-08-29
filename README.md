@@ -44,7 +44,14 @@ stress-ng --class io --tz -v --all 4 &
 stress-ng --class filesystem --tz -v --all 4 &
 stress-ng --class memory --tz -v --all 4 &
 ```
-1. HACCIO with 100.000.000 particles and specific classes running in background for 10 seconds:
+
+To finish the stressors running in background:
+
+```sh
+killall -2 stress-ng
+```
+
+2. HACCIO with 100.000.000 particles and specific classes running in background for 10 seconds:
 ```sh
 stress-ng --class cpu --tz -v --all 4 -t 10s & 
 stress-ng --class cpu-cache --tz -v --all 4 -t 10s &
@@ -52,3 +59,6 @@ stress-ng --class io --tz -v --all 4 -t 10s &
 stress-ng --class filesystem --tz -v --all 4 -t 10s &
 stress-ng --class memory --tz -v --all 4 -t 10s &
 ```
+
+Run one stressor for each run, so a total of 10 experiments + 2 normal executions (no stressors).
+
