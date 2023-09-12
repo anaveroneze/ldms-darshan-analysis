@@ -85,8 +85,9 @@ cd haccio/
 make clean
 make CXX=mpicxx
 
-# Testing:
-mpirun -np 2 ./hacc_io 100000 outputfile
+# Run for
+mpirun -np 2 ./hacc_io 10000000 outputfile
+mpirun -np 2 ./hacc_io 5000000 outputfile
 ```
 
 - **IOR**: Available in: https://github.com/hpc/ior
@@ -102,6 +103,8 @@ cd ior/
 ./configure
 make
 make check
+
+# Run for
 ./src/ior -a POSIX
 ```
 
@@ -117,7 +120,7 @@ mv iozone3_493/ iozone
 cd iozone/src/current/
 make linux-AMD64
 
-# Testing
+# Run for
 ./iozone -a
 ```
 
@@ -135,8 +138,7 @@ cd build
 ../arch/reference-Release
 make
 
-# Testing
-# Build the input deck
+# Run for the input deck
 ./bin/vpic ../sample/harris 
 mpirun -n 2 ./harris.Linux --tpp 8
 ```
@@ -154,37 +156,93 @@ tar -xzvf v0.4.tar.gz
 mv Benchmarks-0.4/ candle/
 rm v0.4.tar.gz
 
-# Testing
+# Run for
 python3 ./candle/Pilot3/P3B3/p3b3_baseline_keras2.py
+```
+
+Using the configuring file (./Pilot3/P3B3/p3b3_default_model.txt):
+```txt
+[Global_Params]
+data_url = 'ftp://ftp.mcs.anl.gov/pub/candle/public/benchmarks/Pilot3/'
+train_data = 'P3B3_data.tar.gz'
+model_name = 'p3b3'
+learning_rate = 0.0001
+batch_size = 10
+epochs = 10
+dropout = 0.5
+optimizer = 'adam'
+wv_len = 300
+filter_sizes = 3
+filter_sets = 3
+num_filters = 100
+emb_l2 = 0.001
+w_l2 = 0.01
+task_list = [0, 2, 3]
+task_names = ['site', 'laterality', 'histology', 'grade']
 ```
 
 ## Stressors
 
 Using stress-ng for stressing the system: https://wiki.ubuntu.com/Kernel/Reference/stress-ng
 
+Configuring for different parameters:
+
 ```sh
-sudo apt install stress-ng
-stress-ng --matrix 1 -t 1m -v
+!#/bash/sh
+
+declare -a arr=("cpu" "cpu-cache" "device" "io" "interrupt" "filesystem" "memory" "network" "os")
+
+## now loop through the above array
+for class_type in "${arr[@]}"
+do
+   echo "stress-ng --class $class_type --tz -v --seq 0 &"
+   echo "stress-ng --class $class_type --tz -v --all 1 &"
+   echo "stress-ng --class $class_type --tz -v --all 2 &"
+   echo "stress-ng --class $class_type --tz -v --all 4 &"
+done
+
 ```
 
-Using mixed stressor classes: 
+Different setups for stressors:
 ```sh
-stress-ng --cpu 0 --cpu-method fft &
-stress-ng --cpu 0 --matrix-method frobenius &
-stress-ng --tz --lsearch 0  --all 1 &
-```
-
-For a specific class:
-```sh
-stress-ng --class cpu --tz -v --all 4 & 
+stress-ng --class cpu --tz -v --seq 0 &
+stress-ng --class cpu --tz -v --all 1 &
+stress-ng --class cpu --tz -v --all 2 &
+stress-ng --class cpu --tz -v --all 4 &
+stress-ng --class cpu-cache --tz -v --seq 0 &
+stress-ng --class cpu-cache --tz -v --all 1 &
+stress-ng --class cpu-cache --tz -v --all 2 &
 stress-ng --class cpu-cache --tz -v --all 4 &
+stress-ng --class device --tz -v --seq 0 &
+stress-ng --class device --tz -v --all 1 &
+stress-ng --class device --tz -v --all 2 &
+stress-ng --class device --tz -v --all 4 &
+stress-ng --class io --tz -v --seq 0 &
+stress-ng --class io --tz -v --all 1 &
+stress-ng --class io --tz -v --all 2 &
 stress-ng --class io --tz -v --all 4 &
+stress-ng --class interrupt --tz -v --seq 0 &
+stress-ng --class interrupt --tz -v --all 1 &
+stress-ng --class interrupt --tz -v --all 2 &
+stress-ng --class interrupt --tz -v --all 4 &
+stress-ng --class filesystem --tz -v --seq 0 &
+stress-ng --class filesystem --tz -v --all 1 &
+stress-ng --class filesystem --tz -v --all 2 &
 stress-ng --class filesystem --tz -v --all 4 &
+stress-ng --class memory --tz -v --seq 0 &
+stress-ng --class memory --tz -v --all 1 &
+stress-ng --class memory --tz -v --all 2 &
 stress-ng --class memory --tz -v --all 4 &
+stress-ng --class network --tz -v --seq 0 &
+stress-ng --class network --tz -v --all 1 &
+stress-ng --class network --tz -v --all 2 &
+stress-ng --class network --tz -v --all 4 &
+stress-ng --class os --tz -v --seq 0 &
+stress-ng --class os --tz -v --all 1 &
+stress-ng --class os --tz -v --all 2 &
+stress-ng --class os --tz -v --all 4 &
 ```
 
-## Data collected
+## Data collected 
 
-- Darshan-LDMS 
-- LDMS system utilization data
-
+Each experiment will collect **Darshan-LDMS** and **LDMS system utilization data**.
