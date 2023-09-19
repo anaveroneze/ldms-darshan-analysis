@@ -1,0 +1,30 @@
+stress-ng: debug: [106846] 72 processors online, 72 processors configured
+stress-ng: info:  [106846] defaulting to a 86400 second run per stressor
+stress-ng: info:  [106846] dispatching hogs: 4 aio, 4 aiol, 4 hdd, 4 readahead, 4 seek, 4 sync-file
+stress-ng: debug: [106846] cache allocate: default cache size: 46080K
+stress-ng: debug: [106846] starting stressors
+stress-ng: debug: [106848] stress-ng-aio: started [106848] (instance 0)
+stress-ng: debug: [106849] stress-ng-aiol: started [106849] (instance 0)
+stress-ng: debug: [106850] stress-ng-hdd: started [106850] (instance 0)
+stress-ng: debug: [106852] stress-ng-readahead: started [106852] (instance 0)
+stress-ng: debug: [106853] stress-ng-seek: started [106853] (instance 0)
+stress-ng: debug: [106854] stress-ng-sync-file: started [106854] (instance 0)
+stress-ng: debug: [106855] stress-ng-aio: started [106855] (instance 1)
+stress-ng: debug: [106856] stress-ng-aiol: started [106856] (instance 1)
+stress-ng: debug: [106857] stress-ng-hdd: started [106857] (instance 1)
+stress-ng: debug: [106859] stress-ng-readahead: started [106859] (instance 1)
+stress-ng: debug: [106860] stress-ng-seek: started [106860] (instance 1)
+stress-ng: debug: [106861] stress-ng-sync-file: started [106861] (instance 1)
+stress-ng: debug: [106862] stress-ng-aio: started [106862] (instance 2)
+stress-ng: debug: [106863] stress-ng-aiol: started [106863] (instance 2)
+stress-ng: debug: [106864] stress-ng-hdd: started [106864] (instance 2)
+stress-ng: debug: [106865] stress-ng-readahead: started [106865] (instance 2)
+stress-ng: debug: [106867] stress-ng-seek: started [106867] (instance 2)
+stress-ng: debug: [106868] stress-ng-sync-file: started [106868] (instance 2)
+stress-ng: debug: [106869] stress-ng-aio: started [106869] (instance 3)
+stress-ng: debug: [106870] stress-ng-aiol: started [106870] (instance 3)
+stress-ng: debug: [106871] stress-ng-hdd: started [106871] (instance 3)
+stress-ng: debug: [106872] stress-ng-readahead: started [106872] (instance 3)
+stress-ng: debug: [106873] stress-ng-seek: started [106873] (instance 3)
+stress-ng: debug: [106846] 24 stressors spawned
+stress-ng: debug: [106874] stress-ng-sync-file: started [106874] (instance 3)

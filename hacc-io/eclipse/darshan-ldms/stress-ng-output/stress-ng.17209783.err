@@ -1,0 +1,87 @@
+stress-ng: debug: [212612] 72 processors online, 72 processors configured
+stress-ng: info:  [212612] dispatching hogs: 4 aio, 4 aiol, 4 hdd, 4 readahead, 4 seek, 4 sync-file
+stress-ng: debug: [212612] cache allocate: default cache size: 46080K
+stress-ng: debug: [212612] starting stressors
+stress-ng: debug: [212614] stress-ng-aio: started [212614] (instance 0)
+stress-ng: debug: [212615] stress-ng-aiol: started [212615] (instance 0)
+stress-ng: debug: [212616] stress-ng-hdd: started [212616] (instance 0)
+stress-ng: debug: [212617] stress-ng-readahead: started [212617] (instance 0)
+stress-ng: debug: [212618] stress-ng-seek: started [212618] (instance 0)
+stress-ng: debug: [212619] stress-ng-sync-file: started [212619] (instance 0)
+stress-ng: debug: [212620] stress-ng-aio: started [212620] (instance 1)
+stress-ng: debug: [212621] stress-ng-aiol: started [212621] (instance 1)
+stress-ng: debug: [212622] stress-ng-hdd: started [212622] (instance 1)
+stress-ng: debug: [212623] stress-ng-readahead: started [212623] (instance 1)
+stress-ng: debug: [212624] stress-ng-seek: started [212624] (instance 1)
+stress-ng: debug: [212626] stress-ng-sync-file: started [212626] (instance 1)
+stress-ng: debug: [212627] stress-ng-aio: started [212627] (instance 2)
+stress-ng: debug: [212628] stress-ng-aiol: started [212628] (instance 2)
+stress-ng: debug: [212629] stress-ng-hdd: started [212629] (instance 2)
+stress-ng: debug: [212631] stress-ng-readahead: started [212631] (instance 2)
+stress-ng: debug: [212632] stress-ng-seek: started [212632] (instance 2)
+stress-ng: debug: [212633] stress-ng-sync-file: started [212633] (instance 2)
+stress-ng: debug: [212634] stress-ng-aio: started [212634] (instance 3)
+stress-ng: debug: [212635] stress-ng-aiol: started [212635] (instance 3)
+stress-ng: debug: [212636] stress-ng-hdd: started [212636] (instance 3)
+stress-ng: debug: [212637] stress-ng-readahead: started [212637] (instance 3)
+stress-ng: debug: [212638] stress-ng-seek: started [212638] (instance 3)
+stress-ng: debug: [212612] 24 stressors spawned
+stress-ng: debug: [212639] stress-ng-sync-file: started [212639] (instance 3)
+stress-ng: debug: [212614] stress-ng-aio: total of 615 async I/O signals caught (instance 0)
+stress-ng: debug: [212620] stress-ng-aio: total of 613 async I/O signals caught (instance 1)
+stress-ng: debug: [212627] stress-ng-aio: total of 545 async I/O signals caught (instance 2)
+stress-ng: debug: [212634] stress-ng-aio: total of 630 async I/O signals caught (instance 3)
+stress-ng: info:  [212631] stress-ng-readahead: test expired during test setup (writing of data file)
+stress-ng: info:  [212617] stress-ng-readahead: test expired during test setup (writing of data file)
+stress-ng: info:  [212623] stress-ng-readahead: test expired during test setup (writing of data file)
+stress-ng: debug: [212614] stress-ng-aio: exited [212614] (instance 0)
+stress-ng: debug: [212620] stress-ng-aio: exited [212620] (instance 1)
+stress-ng: debug: [212627] stress-ng-aio: exited [212627] (instance 2)
+stress-ng: debug: [212634] stress-ng-aio: exited [212634] (instance 3)
+stress-ng: debug: [212636] stress-ng-hdd: exited [212636] (instance 3)
+stress-ng: debug: [212631] stress-ng-readahead: exited [212631] (instance 2)
+stress-ng: debug: [212622] stress-ng-hdd: exited [212622] (instance 1)
+stress-ng: debug: [212616] stress-ng-hdd: exited [212616] (instance 0)
+stress-ng: debug: [212612] process [212614] terminated
+stress-ng: debug: [212612] process [212620] terminated
+stress-ng: debug: [212612] process [212627] terminated
+stress-ng: debug: [212617] stress-ng-readahead: exited [212617] (instance 0)
+stress-ng: debug: [212612] process [212634] terminated
+stress-ng: debug: [212618] stress-ng-seek: exited [212618] (instance 0)
+stress-ng: debug: [212629] stress-ng-hdd: exited [212629] (instance 2)
+stress-ng: debug: [212638] stress-ng-seek: exited [212638] (instance 3)
+stress-ng: debug: [212628] stress-ng-aiol: exited [212628] (instance 2)
+stress-ng: debug: [212635] stress-ng-aiol: exited [212635] (instance 3)
+stress-ng: debug: [212621] stress-ng-aiol: exited [212621] (instance 1)
+stress-ng: debug: [212633] stress-ng-sync-file: exited [212633] (instance 2)
+stress-ng: debug: [212623] stress-ng-readahead: exited [212623] (instance 1)
+stress-ng: debug: [212615] stress-ng-aiol: exited [212615] (instance 0)
+stress-ng: debug: [212624] stress-ng-seek: exited [212624] (instance 1)
+stress-ng: debug: [212619] stress-ng-sync-file: exited [212619] (instance 0)
+stress-ng: debug: [212612] process [212615] terminated
+stress-ng: debug: [212612] process [212621] terminated
+stress-ng: debug: [212612] process [212628] terminated
+stress-ng: debug: [212612] process [212635] terminated
+stress-ng: debug: [212612] process [212616] terminated
+stress-ng: debug: [212612] process [212622] terminated
+stress-ng: debug: [212612] process [212629] terminated
+stress-ng: debug: [212612] process [212636] terminated
+stress-ng: debug: [212612] process [212617] terminated
+stress-ng: debug: [212612] process [212623] terminated
+stress-ng: debug: [212612] process [212631] terminated
+stress-ng: info:  [212637] stress-ng-readahead: test expired during test setup (writing of data file)
+stress-ng: debug: [212637] stress-ng-readahead: exited [212637] (instance 3)
+stress-ng: debug: [212612] process [212637] terminated
+stress-ng: debug: [212612] process [212618] terminated
+stress-ng: debug: [212612] process [212624] terminated
+stress-ng: debug: [212639] stress-ng-sync-file: exited [212639] (instance 3)
+stress-ng: debug: [212626] stress-ng-sync-file: exited [212626] (instance 1)
+stress-ng: debug: [212632] stress-ng-seek: exited [212632] (instance 2)
+stress-ng: debug: [212612] process [212632] terminated
+stress-ng: debug: [212612] process [212638] terminated
+stress-ng: debug: [212612] process [212619] terminated
+stress-ng: debug: [212612] process [212626] terminated
+stress-ng: debug: [212612] process [212633] terminated
+stress-ng: debug: [212612] process [212639] terminated
+stress-ng: info:  [212612] successful run completed in 15.82s
+stress-ng: info:  [212612] thermal zone temperatures not available

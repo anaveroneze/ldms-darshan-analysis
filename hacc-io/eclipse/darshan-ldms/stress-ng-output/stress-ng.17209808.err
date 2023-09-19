@@ -1,0 +1,509 @@
+stress-ng: debug: [215606] 72 processors online, 72 processors configured
+stress-ng: info:  [215606] dispatching hogs: 4 chdir, 4 chmod, 4 chown, 4 copy-file, 4 dentry, 4 dir, 4 dirdeep, 4 dnotify, 4 dup, 4 eventfd, 4 fallocate, 4 fanotify, 4 fcntl, 4 fiemap, 4 filename, 4 flock, 4 fstat, 4 getdent, 4 handle, 4 inotify, 4 io, 4 iomix, 4 ioprio, 4 lease, 4 link, 4 locka, 4 lockf, 4 lockofd, 4 mknod, 4 open, 4 procfs, 4 rename, 4 symlink, 4 sync-file, 4 utime, 4 xattr
+stress-ng: debug: [215606] cache allocate: default cache size: 46080K
+stress-ng: debug: [215606] starting stressors
+stress-ng: debug: [215608] stress-ng-chdir: started [215608] (instance 0)
+stress-ng: debug: [215609] stress-ng-chmod: started [215609] (instance 0)
+stress-ng: debug: [215610] stress-ng-chown: started [215610] (instance 0)
+stress-ng: debug: [215611] stress-ng-copy-file: started [215611] (instance 0)
+stress-ng: debug: [215612] stress-ng-dentry: started [215612] (instance 0)
+stress-ng: debug: [215613] stress-ng-dir: started [215613] (instance 0)
+stress-ng: debug: [215614] stress-ng-dirdeep: started [215614] (instance 0)
+stress-ng: debug: [215615] stress-ng-dnotify: started [215615] (instance 0)
+stress-ng: debug: [215616] stress-ng-dup: started [215616] (instance 0)
+stress-ng: debug: [215617] stress-ng-eventfd: started [215617] (instance 0)
+stress-ng: debug: [215618] stress-ng-fallocate: started [215618] (instance 0)
+stress-ng: debug: [215620] stress-ng-fanotify: started [215620] (instance 0)
+stress-ng: debug: [215621] stress-ng-fcntl: started [215621] (instance 0)
+stress-ng: debug: [215622] stress-ng-fiemap: started [215622] (instance 0)
+stress-ng: debug: [215623] stress-ng-filename: started [215623] (instance 0)
+stress-ng: error: [215620] stress-ng-fanotify: cannot initialize fanotify, errno=1 (Operation not permitted)
+stress-ng: debug: [215624] stress-ng-flock: started [215624] (instance 0)
+stress-ng: debug: [215626] stress-ng-fstat: started [215626] (instance 0)
+stress-ng: debug: [215627] stress-ng-getdent: started [215627] (instance 0)
+stress-ng: debug: [215628] stress-ng-handle: started [215628] (instance 0)
+stress-ng: debug: [215642] stress-ng-io: started [215642] (instance 0)
+stress-ng: debug: [215633] stress-ng-inotify: started [215633] (instance 0)
+stress-ng: debug: [215623] stress-ng-filename: maximum file size: 255 bytes
+stress-ng: debug: [215651] stress-ng-iomix: started [215651] (instance 0)
+stress-ng: debug: [216164] stress-ng-locka: started [216164] (instance 2)
+stress-ng: fail:  [215611] stress-ng-copy-file: copy_file_range failed, errno=38 (Function not implemented)
+stress-ng: debug: [215652] stress-ng-ioprio: started [215652] (instance 0)
+stress-ng: debug: [215657] stress-ng-lease: started [215657] (instance 0)
+stress-ng: fail:  [215662] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: debug: [215620] stress-ng-fanotify: exited [215620] (instance 0)
+stress-ng: debug: [215667] stress-ng-link: started [215667] (instance 0)
+stress-ng: fail:  [215672] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: debug: [215677] stress-ng-locka: started [215677] (instance 0)
+stress-ng: fail:  [215690] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: debug: [215695] stress-ng-lockf: started [215695] (instance 0)
+stress-ng: fail:  [215708] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: debug: [215713] stress-ng-lockofd: started [215713] (instance 0)
+stress-ng: debug: [215726] stress-ng-mknod: started [215726] (instance 0)
+stress-ng: debug: [215735] stress-ng-open: started [215735] (instance 0)
+stress-ng: debug: [215744] stress-ng-procfs: started [215744] (instance 0)
+stress-ng: info:  [215713] stress-ng-lockofd: this stressor is not implemented on this system: x86_64 Linux 3.10.0-1160.90.1.1chaos.ch6.x86_64
+stress-ng: debug: [215713] stress-ng-lockofd: exited [215713] (instance 0)
+stress-ng: debug: [215757] stress-ng-rename: started [215757] (instance 0)
+stress-ng: debug: [215768] stress-ng-symlink: started [215768] (instance 0)
+stress-ng: debug: [215779] stress-ng-sync-file: started [215779] (instance 0)
+stress-ng: debug: [215788] stress-ng-utime: started [215788] (instance 0)
+stress-ng: debug: [215798] stress-ng-xattr: started [215798] (instance 0)
+stress-ng: debug: [215807] stress-ng-chdir: started [215807] (instance 1)
+stress-ng: debug: [215819] stress-ng-chmod: started [215819] (instance 1)
+stress-ng: debug: [215828] stress-ng-chown: started [215828] (instance 1)
+stress-ng: debug: [216182] stress-ng-rename: started [216182] (instance 2)
+stress-ng: debug: [215840] stress-ng-copy-file: started [215840] (instance 1)
+stress-ng: debug: [215850] stress-ng-dentry: started [215850] (instance 1)
+stress-ng: debug: [215859] stress-ng-dir: started [215859] (instance 1)
+stress-ng: debug: [215871] stress-ng-dirdeep: started [215871] (instance 1)
+stress-ng: debug: [215881] stress-ng-dnotify: started [215881] (instance 1)
+stress-ng: debug: [215890] stress-ng-dup: started [215890] (instance 1)
+stress-ng: debug: [215900] stress-ng-eventfd: started [215900] (instance 1)
+stress-ng: debug: [216188] stress-ng-sync-file: started [216188] (instance 2)
+stress-ng: debug: [215913] stress-ng-fallocate: started [215913] (instance 1)
+stress-ng: debug: [215922] stress-ng-fanotify: started [215922] (instance 1)
+stress-ng: debug: [215935] stress-ng-fcntl: started [215935] (instance 1)
+stress-ng: debug: [215944] stress-ng-fiemap: started [215944] (instance 1)
+stress-ng: debug: [215953] stress-ng-filename: started [215953] (instance 1)
+stress-ng: debug: [215966] stress-ng-flock: started [215966] (instance 1)
+stress-ng: debug: [215975] stress-ng-fstat: started [215975] (instance 1)
+stress-ng: debug: [215988] stress-ng-getdent: started [215988] (instance 1)
+stress-ng: debug: [215993] stress-ng-handle: started [215993] (instance 1)
+stress-ng: debug: [216002] stress-ng-inotify: started [216002] (instance 1)
+stress-ng: debug: [216007] stress-ng-io: started [216007] (instance 1)
+stress-ng: debug: [216008] stress-ng-iomix: started [216008] (instance 1)
+stress-ng: debug: [216009] stress-ng-ioprio: started [216009] (instance 1)
+stress-ng: debug: [216010] stress-ng-lease: started [216010] (instance 1)
+stress-ng: debug: [216011] stress-ng-link: started [216011] (instance 1)
+stress-ng: debug: [216014] stress-ng-locka: started [216014] (instance 1)
+stress-ng: debug: [216025] stress-ng-lockf: started [216025] (instance 1)
+stress-ng: debug: [216034] stress-ng-lockofd: started [216034] (instance 1)
+stress-ng: debug: [216037] stress-ng-mknod: started [216037] (instance 1)
+stress-ng: debug: [216048] stress-ng-open: started [216048] (instance 1)
+stress-ng: debug: [216057] stress-ng-procfs: started [216057] (instance 1)
+stress-ng: debug: [216066] stress-ng-rename: started [216066] (instance 1)
+stress-ng: debug: [216075] stress-ng-symlink: started [216075] (instance 1)
+stress-ng: debug: [216080] stress-ng-sync-file: started [216080] (instance 1)
+stress-ng: debug: [216093] stress-ng-utime: started [216093] (instance 1)
+stress-ng: info:  [216034] stress-ng-lockofd: this stressor is not implemented on this system: x86_64 Linux 3.10.0-1160.90.1.1chaos.ch6.x86_64
+stress-ng: debug: [216034] stress-ng-lockofd: exited [216034] (instance 1)
+stress-ng: debug: [216103] stress-ng-xattr: started [216103] (instance 1)
+stress-ng: debug: [216115] stress-ng-chdir: started [216115] (instance 2)
+stress-ng: debug: [216120] stress-ng-chmod: started [216120] (instance 2)
+stress-ng: debug: [216125] stress-ng-chown: started [216125] (instance 2)
+stress-ng: debug: [216130] stress-ng-copy-file: started [216130] (instance 2)
+stress-ng: debug: [216135] stress-ng-dentry: started [216135] (instance 2)
+stress-ng: debug: [216238] stress-ng-chown: started [216238] (instance 3)
+stress-ng: debug: [216140] stress-ng-dir: started [216140] (instance 2)
+stress-ng: debug: [216141] stress-ng-dirdeep: started [216141] (instance 2)
+stress-ng: debug: [216249] stress-ng-copy-file: started [216249] (instance 3)
+stress-ng: debug: [216146] stress-ng-dnotify: started [216146] (instance 2)
+stress-ng: debug: [216147] stress-ng-dup: started [216147] (instance 2)
+stress-ng: debug: [216272] stress-ng-dirdeep: started [216272] (instance 3)
+stress-ng: debug: [216148] stress-ng-eventfd: started [216148] (instance 2)
+stress-ng: debug: [216149] stress-ng-fallocate: started [216149] (instance 2)
+stress-ng: debug: [216150] stress-ng-fanotify: started [216150] (instance 2)
+stress-ng: debug: [216151] stress-ng-fcntl: started [216151] (instance 2)
+stress-ng: debug: [216152] stress-ng-fiemap: started [216152] (instance 2)
+stress-ng: debug: [216153] stress-ng-filename: started [216153] (instance 2)
+stress-ng: debug: [216154] stress-ng-flock: started [216154] (instance 2)
+stress-ng: debug: [216155] stress-ng-fstat: started [216155] (instance 2)
+stress-ng: debug: [216156] stress-ng-getdent: started [216156] (instance 2)
+stress-ng: debug: [216299] stress-ng-dup: started [216299] (instance 3)
+stress-ng: debug: [216157] stress-ng-handle: started [216157] (instance 2)
+stress-ng: debug: [216158] stress-ng-inotify: started [216158] (instance 2)
+stress-ng: debug: [216159] stress-ng-io: started [216159] (instance 2)
+stress-ng: debug: [216160] stress-ng-iomix: started [216160] (instance 2)
+stress-ng: debug: [216161] stress-ng-ioprio: started [216161] (instance 2)
+stress-ng: debug: [216162] stress-ng-lease: started [216162] (instance 2)
+stress-ng: debug: [216163] stress-ng-link: started [216163] (instance 2)
+stress-ng: debug: [216165] stress-ng-lockf: started [216165] (instance 2)
+stress-ng: debug: [216166] stress-ng-lockofd: started [216166] (instance 2)
+stress-ng: debug: [216169] stress-ng-mknod: started [216169] (instance 2)
+stress-ng: debug: [216172] stress-ng-open: started [216172] (instance 2)
+stress-ng: debug: [216177] stress-ng-procfs: started [216177] (instance 2)
+stress-ng: debug: [216183] stress-ng-symlink: started [216183] (instance 2)
+stress-ng: debug: [216193] stress-ng-utime: started [216193] (instance 2)
+stress-ng: debug: [216204] stress-ng-xattr: started [216204] (instance 2)
+stress-ng: debug: [216214] stress-ng-chdir: started [216214] (instance 3)
+stress-ng: debug: [216224] stress-ng-chmod: started [216224] (instance 3)
+stress-ng: debug: [216258] stress-ng-dentry: started [216258] (instance 3)
+stress-ng: debug: [216267] stress-ng-dir: started [216267] (instance 3)
+stress-ng: debug: [216280] stress-ng-dnotify: started [216280] (instance 3)
+stress-ng: info:  [216166] stress-ng-lockofd: this stressor is not implemented on this system: x86_64 Linux 3.10.0-1160.90.1.1chaos.ch6.x86_64
+stress-ng: debug: [216316] stress-ng-eventfd: started [216316] (instance 3)
+stress-ng: debug: [216166] stress-ng-lockofd: exited [216166] (instance 2)
+stress-ng: debug: [216333] stress-ng-fallocate: started [216333] (instance 3)
+stress-ng: debug: [216346] stress-ng-fanotify: started [216346] (instance 3)
+stress-ng: debug: [216367] stress-ng-fcntl: started [216367] (instance 3)
+stress-ng: debug: [216382] stress-ng-fiemap: started [216382] (instance 3)
+stress-ng: debug: [216397] stress-ng-filename: started [216397] (instance 3)
+stress-ng: debug: [216414] stress-ng-flock: started [216414] (instance 3)
+stress-ng: debug: [216428] stress-ng-fstat: started [216428] (instance 3)
+stress-ng: debug: [216441] stress-ng-getdent: started [216441] (instance 3)
+stress-ng: debug: [216454] stress-ng-handle: started [216454] (instance 3)
+stress-ng: debug: [216488] stress-ng-io: started [216488] (instance 3)
+stress-ng: debug: [216471] stress-ng-inotify: started [216471] (instance 3)
+stress-ng: debug: [216509] stress-ng-iomix: started [216509] (instance 3)
+stress-ng: debug: [216547] stress-ng-lease: started [216547] (instance 3)
+stress-ng: debug: [216526] stress-ng-ioprio: started [216526] (instance 3)
+stress-ng: debug: [216571] stress-ng-link: started [216571] (instance 3)
+stress-ng: debug: [216592] stress-ng-locka: started [216592] (instance 3)
+stress-ng: debug: [216611] stress-ng-lockf: started [216611] (instance 3)
+stress-ng: debug: [216635] stress-ng-lockofd: started [216635] (instance 3)
+stress-ng: info:  [216635] stress-ng-lockofd: this stressor is not implemented on this system: x86_64 Linux 3.10.0-1160.90.1.1chaos.ch6.x86_64
+stress-ng: debug: [216651] stress-ng-mknod: started [216651] (instance 3)
+stress-ng: debug: [216635] stress-ng-lockofd: exited [216635] (instance 3)
+stress-ng: debug: [216673] stress-ng-open: started [216673] (instance 3)
+stress-ng: debug: [216701] stress-ng-procfs: started [216701] (instance 3)
+stress-ng: debug: [216724] stress-ng-rename: started [216724] (instance 3)
+stress-ng: debug: [216743] stress-ng-symlink: started [216743] (instance 3)
+stress-ng: debug: [216766] stress-ng-sync-file: started [216766] (instance 3)
+stress-ng: debug: [216810] stress-ng-xattr: started [216810] (instance 3)
+stress-ng: debug: [216790] stress-ng-utime: started [216790] (instance 3)
+stress-ng: debug: [215606] 144 stressors spawned
+stress-ng: debug: [215611] stress-ng-copy-file: exited [215611] (instance 0)
+stress-ng: fail:  [215840] stress-ng-copy-file: copy_file_range failed, errno=38 (Function not implemented)
+stress-ng: error: [215922] stress-ng-fanotify: cannot initialize fanotify, errno=1 (Operation not permitted)
+stress-ng: fail:  [222816] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [222817] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [222818] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [222819] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [216130] stress-ng-copy-file: copy_file_range failed, errno=38 (Function not implemented)
+stress-ng: error: [216150] stress-ng-fanotify: cannot initialize fanotify, errno=1 (Operation not permitted)
+stress-ng: fail:  [226587] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [226596] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [226609] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [226622] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [216249] stress-ng-copy-file: copy_file_range failed, errno=38 (Function not implemented)
+stress-ng: error: [216346] stress-ng-fanotify: cannot initialize fanotify, errno=1 (Operation not permitted)
+stress-ng: debug: [216346] stress-ng-fanotify: exited [216346] (instance 3)
+stress-ng: fail:  [242896] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [242907] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [242911] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: fail:  [242919] stress-ng-fiemap: FS_IOC_FIEMAP ioctl() failed, errno=95 (Operation not supported)
+stress-ng: debug: [215840] stress-ng-copy-file: exited [215840] (instance 1)
+stress-ng: debug: [215922] stress-ng-fanotify: exited [215922] (instance 1)
+stress-ng: debug: [216130] stress-ng-copy-file: exited [216130] (instance 2)
+stress-ng: debug: [216150] stress-ng-fanotify: exited [216150] (instance 2)
+stress-ng: debug: [216249] stress-ng-copy-file: exited [216249] (instance 3)
+stress-ng: debug: [215616] stress-ng-dup: exited [215616] (instance 0)
+stress-ng: debug: [215617] stress-ng-eventfd: exited [215617] (instance 0)
+stress-ng: debug: [215626] stress-ng-fstat: exited [215626] (instance 0)
+stress-ng: debug: [215628] stress-ng-handle: exited [215628] (instance 0)
+stress-ng: debug: [215627] stress-ng-getdent: exited [215627] (instance 0)
+stress-ng: debug: [215828] stress-ng-chown: exited [215828] (instance 1)
+stress-ng: debug: [216238] stress-ng-chown: exited [216238] (instance 3)
+stress-ng: debug: [215610] stress-ng-chown: exited [215610] (instance 0)
+stress-ng: debug: [215657] stress-ng-lease: 249 lease sigio interrupts caught
+stress-ng: debug: [215657] stress-ng-lease: exited [215657] (instance 0)
+stress-ng: debug: [215744] stress-ng-procfs: exited [215744] (instance 0)
+stress-ng: debug: [216125] stress-ng-chown: exited [216125] (instance 2)
+stress-ng: debug: [215735] stress-ng-open: exited [215735] (instance 0)
+stress-ng: debug: [215624] stress-ng-flock: exited [215624] (instance 0)
+stress-ng: debug: [215890] stress-ng-dup: exited [215890] (instance 1)
+stress-ng: debug: [215975] stress-ng-fstat: exited [215975] (instance 1)
+stress-ng: debug: [215988] stress-ng-getdent: exited [215988] (instance 1)
+stress-ng: debug: [215993] stress-ng-handle: exited [215993] (instance 1)
+stress-ng: debug: [215900] stress-ng-eventfd: exited [215900] (instance 1)
+stress-ng: debug: [216011] stress-ng-link: removing 8192 entries
+stress-ng: debug: [215726] stress-ng-mknod: removing 8192 nodes
+stress-ng: debug: [216048] stress-ng-open: exited [216048] (instance 1)
+stress-ng: debug: [216057] stress-ng-procfs: exited [216057] (instance 1)
+stress-ng: debug: [216007] stress-ng-io: exited [216007] (instance 1)
+stress-ng: debug: [215642] stress-ng-io: exited [215642] (instance 0)
+stress-ng: debug: [216147] stress-ng-dup: exited [216147] (instance 2)
+stress-ng: debug: [215757] stress-ng-rename: exited [215757] (instance 0)
+stress-ng: debug: [215621] stress-ng-fcntl: exited [215621] (instance 0)
+stress-ng: debug: [216010] stress-ng-lease: 3 lease sigio interrupts caught
+stress-ng: debug: [216010] stress-ng-lease: exited [216010] (instance 1)
+stress-ng: debug: [215695] stress-ng-lockf: exited [215695] (instance 0)
+stress-ng: debug: [216148] stress-ng-eventfd: exited [216148] (instance 2)
+stress-ng: debug: [216156] stress-ng-getdent: exited [216156] (instance 2)
+stress-ng: debug: [216155] stress-ng-fstat: exited [216155] (instance 2)
+stress-ng: debug: [216157] stress-ng-handle: exited [216157] (instance 2)
+stress-ng: debug: [215944] stress-ng-fiemap: exited [215944] (instance 1)
+stress-ng: debug: [215935] stress-ng-fcntl: exited [215935] (instance 1)
+stress-ng: debug: [216093] stress-ng-utime: exited [216093] (instance 1)
+stress-ng: debug: [216120] stress-ng-chmod: exited [216120] (instance 2)
+stress-ng: debug: [215819] stress-ng-chmod: exited [215819] (instance 1)
+stress-ng: debug: [216224] stress-ng-chmod: exited [216224] (instance 3)
+stress-ng: debug: [215609] stress-ng-chmod: exited [215609] (instance 0)
+stress-ng: debug: [216014] stress-ng-locka: exited [216014] (instance 1)
+stress-ng: debug: [215788] stress-ng-utime: exited [215788] (instance 0)
+stress-ng: debug: [216025] stress-ng-lockf: exited [216025] (instance 1)
+stress-ng: debug: [216172] stress-ng-open: exited [216172] (instance 2)
+stress-ng: debug: [216177] stress-ng-procfs: exited [216177] (instance 2)
+stress-ng: debug: [216154] stress-ng-flock: exited [216154] (instance 2)
+stress-ng: debug: [215677] stress-ng-locka: exited [215677] (instance 0)
+stress-ng: debug: [215966] stress-ng-flock: exited [215966] (instance 1)
+stress-ng: debug: [216066] stress-ng-rename: exited [216066] (instance 1)
+stress-ng: debug: [216162] stress-ng-lease: 370 lease sigio interrupts caught
+stress-ng: debug: [216162] stress-ng-lease: exited [216162] (instance 2)
+stress-ng: debug: [215615] stress-ng-dnotify: exited [215615] (instance 0)
+stress-ng: debug: [216182] stress-ng-rename: exited [216182] (instance 2)
+stress-ng: debug: [216151] stress-ng-fcntl: exited [216151] (instance 2)
+stress-ng: debug: [216299] stress-ng-dup: exited [216299] (instance 3)
+stress-ng: debug: [216367] stress-ng-fcntl: exited [216367] (instance 3)
+stress-ng: debug: [216316] stress-ng-eventfd: exited [216316] (instance 3)
+stress-ng: debug: [216258] stress-ng-dentry: removing 2048 entries
+stress-ng: debug: [216414] stress-ng-flock: exited [216414] (instance 3)
+stress-ng: debug: [216428] stress-ng-fstat: exited [216428] (instance 3)
+stress-ng: debug: [216441] stress-ng-getdent: exited [216441] (instance 3)
+stress-ng: debug: [216454] stress-ng-handle: exited [216454] (instance 3)
+stress-ng: debug: [216267] stress-ng-dir: removing 8192 directories
+stress-ng: debug: [216280] stress-ng-dnotify: exited [216280] (instance 3)
+stress-ng: debug: [216193] stress-ng-utime: exited [216193] (instance 2)
+stress-ng: debug: [216333] stress-ng-fallocate: exited [216333] (instance 3)
+stress-ng: debug: [216673] stress-ng-open: exited [216673] (instance 3)
+stress-ng: debug: [216547] stress-ng-lease: 8 lease sigio interrupts caught
+stress-ng: debug: [216701] stress-ng-procfs: exited [216701] (instance 3)
+stress-ng: debug: [216547] stress-ng-lease: exited [216547] (instance 3)
+stress-ng: debug: [215768] stress-ng-symlink: removing 8192 entries
+stress-ng: debug: [216592] stress-ng-locka: exited [216592] (instance 3)
+stress-ng: debug: [216724] stress-ng-rename: exited [216724] (instance 3)
+stress-ng: debug: [216149] stress-ng-fallocate: exited [216149] (instance 2)
+stress-ng: debug: [216790] stress-ng-utime: exited [216790] (instance 3)
+stress-ng: debug: [215622] stress-ng-fiemap: exited [215622] (instance 0)
+stress-ng: debug: [215913] stress-ng-fallocate: exited [215913] (instance 1)
+stress-ng: debug: [216272] stress-ng-dirdeep: removing directories
+stress-ng: debug: [216169] stress-ng-mknod: removing 8192 nodes
+stress-ng: debug: [216164] stress-ng-locka: exited [216164] (instance 2)
+stress-ng: debug: [215633] stress-ng-inotify: exited [215633] (instance 0)
+stress-ng: debug: [216165] stress-ng-lockf: exited [216165] (instance 2)
+stress-ng: debug: [216152] stress-ng-fiemap: exited [216152] (instance 2)
+stress-ng: debug: [216488] stress-ng-io: exited [216488] (instance 3)
+stress-ng: debug: [216159] stress-ng-io: exited [216159] (instance 2)
+stress-ng: debug: [216140] stress-ng-dir: removing 8192 directories
+stress-ng: debug: [216611] stress-ng-lockf: exited [216611] (instance 3)
+stress-ng: debug: [216135] stress-ng-dentry: removing 2048 entries
+stress-ng: debug: [215618] stress-ng-fallocate: exited [215618] (instance 0)
+stress-ng: debug: [216214] stress-ng-chdir: removing 8192 directories
+stress-ng: debug: [216382] stress-ng-fiemap: exited [216382] (instance 3)
+stress-ng: debug: [216571] stress-ng-link: removing 8192 entries
+stress-ng: debug: [215651] stress-ng-iomix: exited [215651] (instance 0)
+stress-ng: debug: [216810] stress-ng-xattr: exited [216810] (instance 3)
+stress-ng: debug: [215779] stress-ng-sync-file: exited [215779] (instance 0)
+stress-ng: debug: [216188] stress-ng-sync-file: exited [216188] (instance 2)
+stress-ng: debug: [216080] stress-ng-sync-file: exited [216080] (instance 1)
+stress-ng: debug: [216526] stress-ng-ioprio: exited [216526] (instance 3)
+stress-ng: debug: [216766] stress-ng-sync-file: exited [216766] (instance 3)
+stress-ng: debug: [216272] stress-ng-dirdeep: exited [216272] (instance 3)
+stress-ng: debug: [216397] stress-ng-filename: exited [216397] (instance 3)
+stress-ng: debug: [215623] stress-ng-filename: filesystem allows 254 unique characters in a filename
+stress-ng: debug: [215623] stress-ng-filename: exited [215623] (instance 0)
+stress-ng: debug: [216509] stress-ng-iomix: exited [216509] (instance 3)
+stress-ng: debug: [216115] stress-ng-chdir: removing 8192 directories
+stress-ng: debug: [215807] stress-ng-chdir: removing 8192 directories
+stress-ng: debug: [216214] stress-ng-chdir: exited [216214] (instance 3)
+stress-ng: debug: [216141] stress-ng-dirdeep: removing directories
+stress-ng: debug: [216009] stress-ng-ioprio: exited [216009] (instance 1)
+stress-ng: debug: [216141] stress-ng-dirdeep: exited [216141] (instance 2)
+stress-ng: debug: [216267] stress-ng-dir: exited [216267] (instance 3)
+stress-ng: debug: [215652] stress-ng-ioprio: exited [215652] (instance 0)
+stress-ng: debug: [216160] stress-ng-iomix: exited [216160] (instance 2)
+stress-ng: debug: [216161] stress-ng-ioprio: exited [216161] (instance 2)
+stress-ng: debug: [216258] stress-ng-dentry: exited [216258] (instance 3)
+stress-ng: debug: [216008] stress-ng-iomix: exited [216008] (instance 1)
+stress-ng: debug: [215871] stress-ng-dirdeep: removing directories
+stress-ng: debug: [215807] stress-ng-chdir: exited [215807] (instance 1)
+stress-ng: debug: [216140] stress-ng-dir: exited [216140] (instance 2)
+stress-ng: debug: [216183] stress-ng-symlink: removing 8192 entries
+stress-ng: debug: [216169] stress-ng-mknod: exited [216169] (instance 2)
+stress-ng: debug: [216651] stress-ng-mknod: removing 8192 nodes
+stress-ng: debug: [215608] stress-ng-chdir: removing 8192 directories
+stress-ng: debug: [215881] stress-ng-dnotify: exited [215881] (instance 1)
+stress-ng: debug: [216135] stress-ng-dentry: exited [216135] (instance 2)
+stress-ng: debug: [216115] stress-ng-chdir: exited [216115] (instance 2)
+stress-ng: debug: [215871] stress-ng-dirdeep: exited [215871] (instance 1)
+stress-ng: debug: [215726] stress-ng-mknod: exited [215726] (instance 0)
+stress-ng: debug: [216743] stress-ng-symlink: removing 8192 entries
+stress-ng: debug: [216146] stress-ng-dnotify: exited [216146] (instance 2)
+stress-ng: debug: [215614] stress-ng-dirdeep: removing directories
+stress-ng: debug: [216002] stress-ng-inotify: exited [216002] (instance 1)
+stress-ng: debug: [215850] stress-ng-dentry: removing 2048 entries
+stress-ng: debug: [216651] stress-ng-mknod: exited [216651] (instance 3)
+stress-ng: debug: [216011] stress-ng-link: exited [216011] (instance 1)
+stress-ng: debug: [215613] stress-ng-dir: removing 8192 directories
+stress-ng: debug: [215768] stress-ng-symlink: exited [215768] (instance 0)
+stress-ng: debug: [216571] stress-ng-link: exited [216571] (instance 3)
+stress-ng: debug: [215614] stress-ng-dirdeep: exited [215614] (instance 0)
+stress-ng: debug: [216183] stress-ng-symlink: exited [216183] (instance 2)
+stress-ng: debug: [216743] stress-ng-symlink: exited [216743] (instance 3)
+stress-ng: debug: [216075] stress-ng-symlink: removing 8192 entries
+stress-ng: debug: [215859] stress-ng-dir: removing 8192 directories
+stress-ng: debug: [216037] stress-ng-mknod: removing 8192 nodes
+stress-ng: debug: [215612] stress-ng-dentry: removing 2048 entries
+stress-ng: debug: [216158] stress-ng-inotify: exited [216158] (instance 2)
+stress-ng: debug: [216471] stress-ng-inotify: exited [216471] (instance 3)
+stress-ng: debug: [215850] stress-ng-dentry: exited [215850] (instance 1)
+stress-ng: debug: [215608] stress-ng-chdir: exited [215608] (instance 0)
+stress-ng: debug: [215606] process [215608] terminated
+stress-ng: debug: [215606] process [215807] terminated
+stress-ng: debug: [215606] process [216115] terminated
+stress-ng: debug: [215606] process [216214] terminated
+stress-ng: debug: [215606] process [215609] terminated
+stress-ng: debug: [215606] process [215819] terminated
+stress-ng: debug: [215606] process [216120] terminated
+stress-ng: debug: [215606] process [216224] terminated
+stress-ng: debug: [215606] process [215610] terminated
+stress-ng: debug: [215606] process [215828] terminated
+stress-ng: debug: [215606] process [216125] terminated
+stress-ng: debug: [215606] process [216238] terminated
+stress-ng: error: [215606] process 215611 (stress-ng-copy_file) terminated with an error, exit status=1
+stress-ng: debug: [215606] process [215611] terminated
+stress-ng: error: [215606] process 215840 (stress-ng-copy_file) terminated with an error, exit status=1
+stress-ng: debug: [215606] process [215840] terminated
+stress-ng: error: [215606] process 216130 (stress-ng-copy_file) terminated with an error, exit status=1
+stress-ng: debug: [215606] process [216130] terminated
+stress-ng: error: [215606] process 216249 (stress-ng-copy_file) terminated with an error, exit status=1
+stress-ng: debug: [215606] process [216249] terminated
+stress-ng: debug: [215612] stress-ng-dentry: exited [215612] (instance 0)
+stress-ng: debug: [215606] process [215612] terminated
+stress-ng: debug: [215606] process [215850] terminated
+stress-ng: debug: [215606] process [216135] terminated
+stress-ng: debug: [215606] process [216258] terminated
+stress-ng: debug: [215613] stress-ng-dir: exited [215613] (instance 0)
+stress-ng: debug: [215606] process [215613] terminated
+stress-ng: debug: [215859] stress-ng-dir: exited [215859] (instance 1)
+stress-ng: debug: [215606] process [215859] terminated
+stress-ng: debug: [215606] process [216140] terminated
+stress-ng: debug: [215606] process [216267] terminated
+stress-ng: debug: [215606] process [215614] terminated
+stress-ng: debug: [215606] process [215871] terminated
+stress-ng: debug: [215606] process [216141] terminated
+stress-ng: debug: [215606] process [216272] terminated
+stress-ng: debug: [215606] process [215615] terminated
+stress-ng: debug: [215606] process [215881] terminated
+stress-ng: debug: [215606] process [216146] terminated
+stress-ng: debug: [215606] process [216280] terminated
+stress-ng: debug: [215606] process [215616] terminated
+stress-ng: debug: [215606] process [215890] terminated
+stress-ng: debug: [215606] process [216147] terminated
+stress-ng: debug: [215606] process [216299] terminated
+stress-ng: debug: [215606] process [215617] terminated
+stress-ng: debug: [215606] process [215900] terminated
+stress-ng: debug: [215606] process [216148] terminated
+stress-ng: debug: [215606] process [216316] terminated
+stress-ng: debug: [215606] process [215618] terminated
+stress-ng: debug: [215606] process [215913] terminated
+stress-ng: debug: [215606] process [216149] terminated
+stress-ng: debug: [215606] process [216333] terminated
+stress-ng: error: [215606] process 215620 (stress-ng-fanotify) terminated with an error, exit status=1
+stress-ng: debug: [215606] process [215620] terminated
+stress-ng: error: [215606] process 215922 (stress-ng-fanotify) terminated with an error, exit status=1
+stress-ng: debug: [215606] process [215922] terminated
+stress-ng: error: [215606] process 216150 (stress-ng-fanotify) terminated with an error, exit status=1
+stress-ng: debug: [215606] process [216150] terminated
+stress-ng: error: [215606] process 216346 (stress-ng-fanotify) terminated with an error, exit status=1
+stress-ng: debug: [215606] process [216346] terminated
+stress-ng: debug: [215606] process [215621] terminated
+stress-ng: debug: [215606] process [215935] terminated
+stress-ng: debug: [215606] process [216151] terminated
+stress-ng: debug: [215606] process [216367] terminated
+stress-ng: debug: [215606] process [215622] terminated
+stress-ng: debug: [215606] process [215944] terminated
+stress-ng: debug: [215606] process [216152] terminated
+stress-ng: debug: [215606] process [216382] terminated
+stress-ng: debug: [215606] process [215623] terminated
+stress-ng: debug: [216037] stress-ng-mknod: exited [216037] (instance 1)
+stress-ng: debug: [216075] stress-ng-symlink: exited [216075] (instance 1)
+stress-ng: debug: [216103] stress-ng-xattr: exited [216103] (instance 1)
+stress-ng: debug: [215667] stress-ng-link: removing 8192 entries
+stress-ng: debug: [215667] stress-ng-link: exited [215667] (instance 0)
+stress-ng: debug: [215953] stress-ng-filename: exited [215953] (instance 1)
+stress-ng: debug: [215606] process [215953] terminated
+stress-ng: debug: [216153] stress-ng-filename: exited [216153] (instance 2)
+stress-ng: debug: [215606] process [216153] terminated
+stress-ng: debug: [215606] process [216397] terminated
+stress-ng: debug: [215606] process [215624] terminated
+stress-ng: debug: [215606] process [215966] terminated
+stress-ng: debug: [215606] process [216154] terminated
+stress-ng: debug: [215606] process [216414] terminated
+stress-ng: debug: [215606] process [215626] terminated
+stress-ng: debug: [215606] process [215975] terminated
+stress-ng: debug: [215606] process [216155] terminated
+stress-ng: debug: [215606] process [216428] terminated
+stress-ng: debug: [215606] process [215627] terminated
+stress-ng: debug: [215606] process [215988] terminated
+stress-ng: debug: [215606] process [216156] terminated
+stress-ng: debug: [215606] process [216441] terminated
+stress-ng: debug: [215606] process [215628] terminated
+stress-ng: debug: [215606] process [215993] terminated
+stress-ng: debug: [215606] process [216157] terminated
+stress-ng: debug: [215606] process [216454] terminated
+stress-ng: debug: [215606] process [215633] terminated
+stress-ng: debug: [215606] process [216002] terminated
+stress-ng: debug: [215606] process [216158] terminated
+stress-ng: debug: [215606] process [216471] terminated
+stress-ng: debug: [215606] process [215642] terminated
+stress-ng: debug: [215606] process [216007] terminated
+stress-ng: debug: [215606] process [216159] terminated
+stress-ng: debug: [215606] process [216488] terminated
+stress-ng: debug: [215606] process [215651] terminated
+stress-ng: debug: [215606] process [216008] terminated
+stress-ng: debug: [215606] process [216160] terminated
+stress-ng: debug: [215606] process [216509] terminated
+stress-ng: debug: [215606] process [215652] terminated
+stress-ng: debug: [215606] process [216009] terminated
+stress-ng: debug: [215606] process [216161] terminated
+stress-ng: debug: [215606] process [216526] terminated
+stress-ng: debug: [215606] process [215657] terminated
+stress-ng: debug: [215606] process [216010] terminated
+stress-ng: debug: [215606] process [216162] terminated
+stress-ng: debug: [215606] process [216547] terminated
+stress-ng: debug: [215606] process [215667] terminated
+stress-ng: debug: [215606] process [216011] terminated
+stress-ng: debug: [215798] stress-ng-xattr: exited [215798] (instance 0)
+stress-ng: debug: [216204] stress-ng-xattr: exited [216204] (instance 2)
+stress-ng: debug: [216163] stress-ng-link: removing 8192 entries
+stress-ng: debug: [216163] stress-ng-link: exited [216163] (instance 2)
+stress-ng: debug: [215606] process [216163] terminated
+stress-ng: debug: [215606] process [216571] terminated
+stress-ng: debug: [215606] process [215677] terminated
+stress-ng: debug: [215606] process [216014] terminated
+stress-ng: debug: [215606] process [216164] terminated
+stress-ng: debug: [215606] process [216592] terminated
+stress-ng: debug: [215606] process [215695] terminated
+stress-ng: debug: [215606] process [216025] terminated
+stress-ng: debug: [215606] process [216165] terminated
+stress-ng: debug: [215606] process [216611] terminated
+stress-ng: debug: [215606] process [215713] terminated
+stress-ng: debug: [215606] process [216034] terminated
+stress-ng: debug: [215606] process [216166] terminated
+stress-ng: debug: [215606] process [216635] terminated
+stress-ng: debug: [215606] process [215726] terminated
+stress-ng: debug: [215606] process [216037] terminated
+stress-ng: debug: [215606] process [216169] terminated
+stress-ng: debug: [215606] process [216651] terminated
+stress-ng: debug: [215606] process [215735] terminated
+stress-ng: debug: [215606] process [216048] terminated
+stress-ng: debug: [215606] process [216172] terminated
+stress-ng: debug: [215606] process [216673] terminated
+stress-ng: debug: [215606] process [215744] terminated
+stress-ng: debug: [215606] process [216057] terminated
+stress-ng: debug: [215606] process [216177] terminated
+stress-ng: debug: [215606] process [216701] terminated
+stress-ng: debug: [215606] process [215757] terminated
+stress-ng: debug: [215606] process [216066] terminated
+stress-ng: debug: [215606] process [216182] terminated
+stress-ng: debug: [215606] process [216724] terminated
+stress-ng: debug: [215606] process [215768] terminated
+stress-ng: debug: [215606] process [216075] terminated
+stress-ng: debug: [215606] process [216183] terminated
+stress-ng: debug: [215606] process [216743] terminated
+stress-ng: debug: [215606] process [215779] terminated
+stress-ng: debug: [215606] process [216080] terminated
+stress-ng: debug: [215606] process [216188] terminated
+stress-ng: debug: [215606] process [216766] terminated
+stress-ng: debug: [215606] process [215788] terminated
+stress-ng: debug: [215606] process [216093] terminated
+stress-ng: debug: [215606] process [216193] terminated
+stress-ng: debug: [215606] process [216790] terminated
+stress-ng: debug: [215606] process [215798] terminated
+stress-ng: debug: [215606] process [216103] terminated
+stress-ng: debug: [215606] process [216204] terminated
+stress-ng: debug: [215606] process [216810] terminated
+stress-ng: info:  [215606] unsuccessful run completed in 12.13s
+stress-ng: info:  [215606] thermal zone temperatures not available

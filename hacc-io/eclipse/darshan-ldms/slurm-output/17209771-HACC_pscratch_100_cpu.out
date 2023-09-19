@@ -1,0 +1,40 @@
+Run stressor
+-------- Aggregate Performance --------
+ WRITE Checkpoint Perf: 10749.1 BW[MB/s] 122405306368 Bytes 10.86 MaxTime[sec] 
+-------- Aggregate Performance --------
+ READ Restart Perf: 45791 BW[MB/s] 122405306368 Bytes 2.54929 MaxTime[sec] 
+ CONTENTS VERIFIED... Success 
+The DiffOfTime = 33.347782732
+Kill stressors and processes
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000000-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000001-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000002-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000003-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000004-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000005-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000006-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000007-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000008-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000009-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000010-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000011-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000012-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000013-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000014-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000015-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000016-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000017-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000018-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000019-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000020-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000021-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000022-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000023-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000024-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000025-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000026-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000027-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000028-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000029-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000030-of-00000032.data
+1.5G	/pscratch/spwalto/haccTest/darshan-Part00000031-of-00000032.data
