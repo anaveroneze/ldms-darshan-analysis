@@ -1,0 +1,863 @@
+# darshan log version: 3.41
+# compression method: ZLIB
+# exe: 
+# uid: 99066
+# jobid: 17209771
+# start_time: 1694922879
+# start_time_asci: Sat Sep 16 21:54:39 2023
+# end_time: 1694922897
+# end_time_asci: Sat Sep 16 21:54:57 2023
+# nprocs: 32
+# run time: 18.3107
+# metadata: lib_ver = 3.4.4
+# metadata: h = romio_no_indep_rw=true;cb_nodes=4
+
+# log file regions
+# -------------------------------------------------------
+# header: 1328 bytes (uncompressed)
+# job data: 143 bytes (compressed)
+# record table: 2416 bytes (compressed)
+# POSIX module: 5675 bytes (compressed), ver=4
+# LUSTRE module: 1203 bytes (compressed), ver=1
+# STDIO module: 57 bytes (compressed), ver=2
+# DXT_POSIX module: 10439 bytes (compressed), ver=1
+# HEATMAP module: 8145 bytes (compressed), ver=1
+
+# mounted file systems (mount point and fs type)
+# -------------------------------------------------------
+
+# ***************************************************
+# DXT_POSIX module data
+# ***************************************************
+
+# DXT, file_id: 11565115021251038815, file_name: /pscratch/spwalto/haccTest/darshan-Part00000000-of-00000032.data
+# DXT, rank: 0, hostname: ec3
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       0  write        0        25165824       400000000      2.4228      2.8453
+ X_POSIX       0  write        1       425165824       400000000      2.8455      3.2724
+ X_POSIX       0  write        2       825165824       400000000      3.2725      3.7244
+ X_POSIX       0  write        3      1225165824       400000000      3.7245      4.1959
+ X_POSIX       0  write        4      1625165824       400000000      4.1960      4.6527
+ X_POSIX       0  write        5      2025165824       400000000      4.6528      5.1062
+ X_POSIX       0  write        6      2425165824       400000000      5.1063      5.5663
+ X_POSIX       0  write        7      2825165824       800000000      5.5663      6.4999
+ X_POSIX       0  write        8      3625165824       200000000      6.5001      6.7229
+ X_POSIX       0  write        9               0        25165824      6.7230      6.7491
+ X_POSIX       0   read        0               0        25165824     13.2474     13.2623
+ X_POSIX       0   read        1        25165824       400000000     13.2639     13.5073
+ X_POSIX       0   read        2       425165824       400000000     13.5075     13.7360
+ X_POSIX       0   read        3       825165824       400000000     13.7361     13.9601
+ X_POSIX       0   read        4      1225165824       400000000     13.9601     14.1862
+ X_POSIX       0   read        5      1625165824       400000000     14.1863     14.4240
+ X_POSIX       0   read        6      2025165824       400000000     14.4241     14.6630
+ X_POSIX       0   read        7      2425165824       400000000     14.6631     14.8872
+ X_POSIX       0   read        8      2825165824       800000000     14.8873     15.3377
+ X_POSIX       0   read        9      3625165824       200000000     15.3378     15.4529
+
+# DXT, file_id: 10331366759179474848, file_name: /pscratch/spwalto/haccTest/darshan-Part00000001-of-00000032.data
+# DXT, rank: 1, hostname: ec3
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       1  write        0        25165824       400000000      2.4338      2.8495
+ X_POSIX       1  write        1       425165824       400000000      2.8496      3.2630
+ X_POSIX       1  write        2       825165824       400000000      3.2630      3.7028
+ X_POSIX       1  write        3      1225165824       400000000      3.7029      4.1655
+ X_POSIX       1  write        4      1625165824       400000000      4.1656      4.6168
+ X_POSIX       1  write        5      2025165824       400000000      4.6169      5.0638
+ X_POSIX       1  write        6      2425165824       400000000      5.0639      5.5214
+ X_POSIX       1  write        7      2825165824       800000000      5.5215      6.4472
+ X_POSIX       1  write        8      3625165824       200000000      6.4473      6.6712
+ X_POSIX       1  write        9               0        25165824      6.6713      6.6985
+ X_POSIX       1   read        0               0        25165824      6.7020      6.7160
+ X_POSIX       1   read        1        25165824       400000000      6.7175      6.9461
+ X_POSIX       1   read        2       425165824       400000000      6.9462      7.1618
+ X_POSIX       1   read        3       825165824       400000000      7.1618      7.3722
+ X_POSIX       1   read        4      1225165824       400000000      7.3723      7.5860
+ X_POSIX       1   read        5      1625165824       400000000      7.5860      7.8087
+ X_POSIX       1   read        6      2025165824       400000000      7.8087      8.0241
+ X_POSIX       1   read        7      2425165824       400000000      8.0242      8.2365
+ X_POSIX       1   read        8      2825165824       800000000      8.2365      8.6586
+ X_POSIX       1   read        9      3625165824       200000000      8.6587      8.7682
+
+# DXT, file_id: 688261604096148575, file_name: /pscratch/spwalto/haccTest/darshan-Part00000002-of-00000032.data
+# DXT, rank: 2, hostname: ec4
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       2  write        0        25165824       400000000      3.1038      3.5180
+ X_POSIX       2  write        1       425165824       400000000      3.5181      3.9435
+ X_POSIX       2  write        2       825165824       400000000      3.9436      4.4159
+ X_POSIX       2  write        3      1225165824       400000000      4.4160      4.8819
+ X_POSIX       2  write        4      1625165824       400000000      4.8820      5.2535
+ X_POSIX       2  write        5      2025165824       400000000      5.2535      5.6289
+ X_POSIX       2  write        6      2425165824       400000000      5.6289      6.0092
+ X_POSIX       2  write        7      2825165824       800000000      6.0093      6.8052
+ X_POSIX       2  write        8      3625165824       200000000      6.8052      7.0030
+ X_POSIX       2  write        9               0        25165824      7.0031      7.0272
+ X_POSIX       2   read        0               0        25165824     13.2451     13.2628
+ X_POSIX       2   read        1        25165824       400000000     13.2644     13.5518
+ X_POSIX       2   read        2       425165824       400000000     13.5518     13.8328
+ X_POSIX       2   read        3       825165824       400000000     13.8329     14.1071
+ X_POSIX       2   read        4      1225165824       400000000     14.1072     14.3773
+ X_POSIX       2   read        5      1625165824       400000000     14.3774     14.6630
+ X_POSIX       2   read        6      2025165824       400000000     14.6631     14.9284
+ X_POSIX       2   read        7      2425165824       400000000     14.9285     15.1754
+ X_POSIX       2   read        8      2825165824       800000000     15.1754     15.6652
+ X_POSIX       2   read        9      3625165824       200000000     15.6653     15.7874
+
+# DXT, file_id: 8041626340763145071, file_name: /pscratch/spwalto/haccTest/darshan-Part00000003-of-00000032.data
+# DXT, rank: 3, hostname: ec4
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       3  write        0        25165824       400000000      3.5057      3.9216
+ X_POSIX       3  write        1       425165824       400000000      3.9218      4.3436
+ X_POSIX       3  write        2       825165824       400000000      4.3438      6.6768
+ X_POSIX       3  write        3      1225165824       400000000      6.6769      7.1499
+ X_POSIX       3  write        4      1625165824       400000000      7.1500      7.5438
+ X_POSIX       3  write        5      2025165824       400000000      7.5439      8.3429
+ X_POSIX       3  write        6      2425165824       400000000      8.3431     10.1140
+ X_POSIX       3  write        7      2825165824       800000000     10.1141     12.6870
+ X_POSIX       3  write        8      3625165824       200000000     12.6871     13.1925
+ X_POSIX       3  write        9               0        25165824     13.1927     13.2411
+ X_POSIX       3   read        0               0        25165824     13.2449     13.2602
+ X_POSIX       3   read        1        25165824       400000000     13.2619     13.5328
+ X_POSIX       3   read        2       425165824       400000000     13.5328     13.8025
+ X_POSIX       3   read        3       825165824       400000000     13.8026     14.0653
+ X_POSIX       3   read        4      1225165824       400000000     14.0654     14.3268
+ X_POSIX       3   read        5      1625165824       400000000     14.3269     14.6046
+ X_POSIX       3   read        6      2025165824       400000000     14.6046     14.8763
+ X_POSIX       3   read        7      2425165824       400000000     14.8763     15.1118
+ X_POSIX       3   read        8      2825165824       800000000     15.1119     15.5818
+ X_POSIX       3   read        9      3625165824       200000000     15.5818     15.6999
+
+# DXT, file_id: 15107931838529066586, file_name: /pscratch/spwalto/haccTest/darshan-Part00000004-of-00000032.data
+# DXT, rank: 4, hostname: ec5
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       4  write        0        25165824       400000000      3.0776      3.4849
+ X_POSIX       4  write        1       425165824       400000000      3.4850      3.8944
+ X_POSIX       4  write        2       825165824       400000000      3.8944      4.3429
+ X_POSIX       4  write        3      1225165824       400000000      4.3430      4.8217
+ X_POSIX       4  write        4      1625165824       400000000      4.8218      5.2786
+ X_POSIX       4  write        5      2025165824       400000000      5.2786      5.7343
+ X_POSIX       4  write        6      2425165824       400000000      5.7344      6.1766
+ X_POSIX       4  write        7      2825165824       800000000      6.1767      7.7597
+ X_POSIX       4  write        8      3625165824       200000000      7.7597     11.4003
+ X_POSIX       4  write        9               0        25165824     11.4004     11.4225
+ X_POSIX       4   read        0               0        25165824     11.4258     11.4414
+ X_POSIX       4   read        1        25165824       400000000     11.4432     11.7089
+ X_POSIX       4   read        2       425165824       400000000     11.7090     11.9424
+ X_POSIX       4   read        3       825165824       400000000     11.9424     12.1650
+ X_POSIX       4   read        4      1225165824       400000000     12.1651     12.3892
+ X_POSIX       4   read        5      1625165824       400000000     12.3893     12.6305
+ X_POSIX       4   read        6      2025165824       400000000     12.6306     12.8687
+ X_POSIX       4   read        7      2425165824       400000000     12.8687     13.1099
+ X_POSIX       4   read        8      2825165824       800000000     13.1099     13.5970
+ X_POSIX       4   read        9      3625165824       200000000     13.5971     13.7144
+
+# DXT, file_id: 16469326234947104427, file_name: /pscratch/spwalto/haccTest/darshan-Part00000005-of-00000032.data
+# DXT, rank: 5, hostname: ec5
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       5  write        0        25165824       400000000      3.6405      4.0637
+ X_POSIX       5  write        1       425165824       400000000      4.0638      4.4757
+ X_POSIX       5  write        2       825165824       400000000      4.4758      4.9309
+ X_POSIX       5  write        3      1225165824       400000000      4.9309      5.4219
+ X_POSIX       5  write        4      1625165824       400000000      5.4220      5.8902
+ X_POSIX       5  write        5      2025165824       400000000      5.8903      6.3512
+ X_POSIX       5  write        6      2425165824       400000000      6.3513      6.8197
+ X_POSIX       5  write        7      2825165824       800000000      6.8198      7.9461
+ X_POSIX       5  write        8      3625165824       200000000      7.9462      8.5968
+ X_POSIX       5  write        9               0        25165824      8.5970      8.6208
+ X_POSIX       5   read        0               0        25165824      8.6243      8.6403
+ X_POSIX       5   read        1        25165824       400000000      8.6419      8.8967
+ X_POSIX       5   read        2       425165824       400000000      8.8968      9.1339
+ X_POSIX       5   read        3       825165824       400000000      9.1339      9.3680
+ X_POSIX       5   read        4      1225165824       400000000      9.3680      9.6154
+ X_POSIX       5   read        5      1625165824       400000000      9.6155      9.8755
+ X_POSIX       5   read        6      2025165824       400000000      9.8756     10.1234
+ X_POSIX       5   read        7      2425165824       400000000     10.1235     10.3599
+ X_POSIX       5   read        8      2825165824       800000000     10.3600     10.8654
+ X_POSIX       5   read        9      3625165824       200000000     10.8655     10.9964
+
+# DXT, file_id: 11250573249789628784, file_name: /pscratch/spwalto/haccTest/darshan-Part00000006-of-00000032.data
+# DXT, rank: 6, hostname: ec6
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       6  write        0        25165824       400000000      3.8697      4.2843
+ X_POSIX       6  write        1       425165824       400000000      4.2844      6.6757
+ X_POSIX       6  write        2       825165824       400000000      6.6758      7.1603
+ X_POSIX       6  write        3      1225165824       400000000      7.1604      7.6076
+ X_POSIX       6  write        4      1625165824       400000000      7.6076      7.9811
+ X_POSIX       6  write        5      2025165824       400000000      7.9812      8.3566
+ X_POSIX       6  write        6      2425165824       400000000      8.3567      8.7392
+ X_POSIX       6  write        7      2825165824       800000000      8.7393      9.8123
+ X_POSIX       6  write        8      3625165824       200000000      9.8124     10.2537
+ X_POSIX       6  write        9               0        25165824     10.2538     10.3262
+ X_POSIX       6   read        0               0        25165824     10.3314     10.3461
+ X_POSIX       6   read        1        25165824       400000000     10.3479     10.6187
+ X_POSIX       6   read        2       425165824       400000000     10.6188     10.8797
+ X_POSIX       6   read        3       825165824       400000000     10.8798     11.1296
+ X_POSIX       6   read        4      1225165824       400000000     11.1297     11.3796
+ X_POSIX       6   read        5      1625165824       400000000     11.3797     11.6462
+ X_POSIX       6   read        6      2025165824       400000000     11.6462     11.9100
+ X_POSIX       6   read        7      2425165824       400000000     11.9101     12.1688
+ X_POSIX       6   read        8      2825165824       800000000     12.1689     12.6947
+ X_POSIX       6   read        9      3625165824       200000000     12.6948     12.8239
+
+# DXT, file_id: 5644758706384895531, file_name: /pscratch/spwalto/haccTest/darshan-Part00000007-of-00000032.data
+# DXT, rank: 7, hostname: ec6
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       7  write        0        25165824       400000000      3.2189      3.6186
+ X_POSIX       7  write        1       425165824       400000000      3.6188      4.0267
+ X_POSIX       7  write        2       825165824       400000000      4.0268      4.4937
+ X_POSIX       7  write        3      1225165824       400000000      4.4938      4.9511
+ X_POSIX       7  write        4      1625165824       400000000      4.9512      5.3416
+ X_POSIX       7  write        5      2025165824       400000000      5.3417      5.7035
+ X_POSIX       7  write        6      2425165824       400000000      5.7036      6.0798
+ X_POSIX       7  write        7      2825165824       800000000      6.0799      6.8684
+ X_POSIX       7  write        8      3625165824       200000000      6.8686      7.0639
+ X_POSIX       7  write        9               0        25165824      7.0640      7.0885
+ X_POSIX       7   read        0               0        25165824      7.0925      7.1052
+ X_POSIX       7   read        1        25165824       400000000      7.1068      7.3667
+ X_POSIX       7   read        2       425165824       400000000      7.3668      7.6260
+ X_POSIX       7   read        3       825165824       400000000      7.6261      7.8828
+ X_POSIX       7   read        4      1225165824       400000000      7.8829      8.1374
+ X_POSIX       7   read        5      1625165824       400000000      8.1375      8.4004
+ X_POSIX       7   read        6      2025165824       400000000      8.4005      8.6506
+ X_POSIX       7   read        7      2425165824       400000000      8.6507      8.8923
+ X_POSIX       7   read        8      2825165824       800000000      8.8924      9.3775
+ X_POSIX       7   read        9      3625165824       200000000      9.3776      9.4979
+
+# DXT, file_id: 6713185938115530105, file_name: /pscratch/spwalto/haccTest/darshan-Part00000008-of-00000032.data
+# DXT, rank: 8, hostname: ec7
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       8  write        0        25165824       400000000      3.8716      4.2811
+ X_POSIX       8  write        1       425165824       400000000      4.2813      6.6778
+ X_POSIX       8  write        2       825165824       400000000      6.6779      7.1543
+ X_POSIX       8  write        3      1225165824       400000000      7.1544      7.6407
+ X_POSIX       8  write        4      1625165824       400000000      7.6408      8.0970
+ X_POSIX       8  write        5      2025165824       400000000      8.0971      8.5537
+ X_POSIX       8  write        6      2425165824       400000000      8.5538      8.9794
+ X_POSIX       8  write        7      2825165824       800000000      8.9795      9.9242
+ X_POSIX       8  write        8      3625165824       200000000      9.9244     10.3886
+ X_POSIX       8  write        9               0        25165824     10.3887     10.4372
+ X_POSIX       8   read        0               0        25165824     10.4405     10.4571
+ X_POSIX       8   read        1        25165824       400000000     10.4586     10.7360
+ X_POSIX       8   read        2       425165824       400000000     10.7361     10.9911
+ X_POSIX       8   read        3       825165824       400000000     10.9912     11.2319
+ X_POSIX       8   read        4      1225165824       400000000     11.2320     11.4870
+ X_POSIX       8   read        5      1625165824       400000000     11.4871     11.7624
+ X_POSIX       8   read        6      2025165824       400000000     11.7625     12.0258
+ X_POSIX       8   read        7      2425165824       400000000     12.0259     12.2871
+ X_POSIX       8   read        8      2825165824       800000000     12.2872     12.8092
+ X_POSIX       8   read        9      3625165824       200000000     12.8093     12.9431
+
+# DXT, file_id: 4160190120989571242, file_name: /pscratch/spwalto/haccTest/darshan-Part00000009-of-00000032.data
+# DXT, rank: 9, hostname: ec7
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX       9  write        0        25165824       400000000      3.1648      3.5395
+ X_POSIX       9  write        1       425165824       400000000      3.5396      3.9293
+ X_POSIX       9  write        2       825165824       400000000      3.9293      4.3817
+ X_POSIX       9  write        3      1225165824       400000000      4.3818      4.8010
+ X_POSIX       9  write        4      1625165824       400000000      4.8011      6.7045
+ X_POSIX       9  write        5      2025165824       400000000      6.7046      7.1242
+ X_POSIX       9  write        6      2425165824       400000000      7.1243      7.5089
+ X_POSIX       9  write        7      2825165824       800000000      7.5090      8.3333
+ X_POSIX       9  write        8      3625165824       200000000      8.3334      8.5282
+ X_POSIX       9  write        9               0        25165824      8.5283      8.5519
+ X_POSIX       9   read        0               0        25165824      8.5554      8.5684
+ X_POSIX       9   read        1        25165824       400000000      8.5700      8.8198
+ X_POSIX       9   read        2       425165824       400000000      8.8199      9.0631
+ X_POSIX       9   read        3       825165824       400000000      9.0632      9.3039
+ X_POSIX       9   read        4      1225165824       400000000      9.3040      9.5439
+ X_POSIX       9   read        5      1625165824       400000000      9.5439      9.7931
+ X_POSIX       9   read        6      2025165824       400000000      9.7932     10.0340
+ X_POSIX       9   read        7      2425165824       400000000     10.0341     10.2703
+ X_POSIX       9   read        8      2825165824       800000000     10.2703     10.7521
+ X_POSIX       9   read        9      3625165824       200000000     10.7521     10.8736
+
+# DXT, file_id: 9655269172325643443, file_name: /pscratch/spwalto/haccTest/darshan-Part00000010-of-00000032.data
+# DXT, rank: 10, hostname: ec8
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      10  write        0        25165824       400000000      3.3487      3.7368
+ X_POSIX      10  write        1       425165824       400000000      3.7369      4.1534
+ X_POSIX      10  write        2       825165824       400000000      4.1535      4.6027
+ X_POSIX      10  write        3      1225165824       400000000      4.6027      5.0855
+ X_POSIX      10  write        4      1625165824       400000000      5.0856      5.5418
+ X_POSIX      10  write        5      2025165824       400000000      5.5419      6.0041
+ X_POSIX      10  write        6      2425165824       400000000      6.0042      6.4718
+ X_POSIX      10  write        7      2825165824       800000000      6.4719      7.3049
+ X_POSIX      10  write        8      3625165824       200000000      7.3050      7.5007
+ X_POSIX      10  write        9               0        25165824      7.5008      7.5259
+ X_POSIX      10   read        0               0        25165824      7.9327      7.9480
+ X_POSIX      10   read        1        25165824       400000000      7.9498      8.2108
+ X_POSIX      10   read        2       425165824       400000000      8.2109      8.4542
+ X_POSIX      10   read        3       825165824       400000000      8.4543      8.6886
+ X_POSIX      10   read        4      1225165824       400000000      8.6887      8.9252
+ X_POSIX      10   read        5      1625165824       400000000      8.9252      9.1726
+ X_POSIX      10   read        6      2025165824       400000000      9.1726      9.4116
+ X_POSIX      10   read        7      2425165824       400000000      9.4117      9.6467
+ X_POSIX      10   read        8      2825165824       800000000      9.6468     10.1174
+ X_POSIX      10   read        9      3625165824       200000000     10.1175     10.2388
+
+# DXT, file_id: 5944192875413058633, file_name: /pscratch/spwalto/haccTest/darshan-Part00000011-of-00000032.data
+# DXT, rank: 11, hostname: ec8
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      11  write        0        25165824       400000000      3.8547      4.2784
+ X_POSIX      11  write        1       425165824       400000000      4.2785      4.6916
+ X_POSIX      11  write        2       825165824       400000000      4.6917      5.1383
+ X_POSIX      11  write        3      1225165824       400000000      5.1384      5.6104
+ X_POSIX      11  write        4      1625165824       400000000      5.6105      6.0668
+ X_POSIX      11  write        5      2025165824       400000000      6.0669      6.5165
+ X_POSIX      11  write        6      2425165824       400000000      6.5166      6.9189
+ X_POSIX      11  write        7      2825165824       800000000      6.9190      7.7287
+ X_POSIX      11  write        8      3625165824       200000000      7.7288      7.9068
+ X_POSIX      11  write        9               0        25165824      7.9069      7.9291
+ X_POSIX      11   read        0               0        25165824      7.9328      7.9447
+ X_POSIX      11   read        1        25165824       400000000      7.9466      8.1786
+ X_POSIX      11   read        2       425165824       400000000      8.1787      8.4036
+ X_POSIX      11   read        3       825165824       400000000      8.4037      8.6308
+ X_POSIX      11   read        4      1225165824       400000000      8.6309      8.8613
+ X_POSIX      11   read        5      1625165824       400000000      8.8614      9.0987
+ X_POSIX      11   read        6      2025165824       400000000      9.0987      9.3280
+ X_POSIX      11   read        7      2425165824       400000000      9.3281      9.5548
+ X_POSIX      11   read        8      2825165824       800000000      9.5549     10.0090
+ X_POSIX      11   read        9      3625165824       200000000     10.0091     10.1240
+
+# DXT, file_id: 8217146196684432982, file_name: /pscratch/spwalto/haccTest/darshan-Part00000012-of-00000032.data
+# DXT, rank: 12, hostname: ec9
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      12  write        0        25165824       400000000      2.4480      2.8360
+ X_POSIX      12  write        1       425165824       400000000      2.8361      3.2235
+ X_POSIX      12  write        2       825165824       400000000      3.2236      3.6565
+ X_POSIX      12  write        3      1225165824       400000000      3.6566      4.1379
+ X_POSIX      12  write        4      1625165824       400000000      4.1380      4.5967
+ X_POSIX      12  write        5      2025165824       400000000      4.5968      5.0434
+ X_POSIX      12  write        6      2425165824       400000000      5.0435      5.4389
+ X_POSIX      12  write        7      2825165824       800000000      5.4390      6.2530
+ X_POSIX      12  write        8      3625165824       200000000      6.2531      6.4457
+ X_POSIX      12  write        9               0        25165824      6.4458      6.4693
+ X_POSIX      12   read        0               0        25165824      8.0142      8.0286
+ X_POSIX      12   read        1        25165824       400000000      8.0303      8.2676
+ X_POSIX      12   read        2       425165824       400000000      8.2677      8.4989
+ X_POSIX      12   read        3       825165824       400000000      8.4990      8.7248
+ X_POSIX      12   read        4      1225165824       400000000      8.7249      8.9523
+ X_POSIX      12   read        5      1625165824       400000000      8.9524      9.1941
+ X_POSIX      12   read        6      2025165824       400000000      9.1942      9.4261
+ X_POSIX      12   read        7      2425165824       400000000      9.4262      9.6533
+ X_POSIX      12   read        8      2825165824       800000000      9.6534     10.1058
+ X_POSIX      12   read        9      3625165824       200000000     10.1059     10.2207
+
+# DXT, file_id: 5937040747949820936, file_name: /pscratch/spwalto/haccTest/darshan-Part00000013-of-00000032.data
+# DXT, rank: 13, hostname: ec9
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      13  write        0        25165824       400000000      3.4690      3.8684
+ X_POSIX      13  write        1       425165824       400000000      3.8685      4.2752
+ X_POSIX      13  write        2       825165824       400000000      4.2753      4.7172
+ X_POSIX      13  write        3      1225165824       400000000      4.7173      5.1819
+ X_POSIX      13  write        4      1625165824       400000000      5.1820      5.6331
+ X_POSIX      13  write        5      2025165824       400000000      5.6333      6.0773
+ X_POSIX      13  write        6      2425165824       400000000      6.0774      6.5017
+ X_POSIX      13  write        7      2825165824       800000000      6.5018      7.2516
+ X_POSIX      13  write        8      3625165824       200000000      7.2517      7.4284
+ X_POSIX      13  write        9               0        25165824      7.4285      7.4517
+ X_POSIX      13   read        0               0        25165824      7.4548      7.4664
+ X_POSIX      13   read        1        25165824       400000000      7.4676      7.6915
+ X_POSIX      13   read        2       425165824       400000000      7.6916      7.9087
+ X_POSIX      13   read        3       825165824       400000000      7.9087      8.1251
+ X_POSIX      13   read        4      1225165824       400000000      8.1251      8.3470
+ X_POSIX      13   read        5      1625165824       400000000      8.3470      8.5826
+ X_POSIX      13   read        6      2025165824       400000000      8.5827      8.8085
+ X_POSIX      13   read        7      2425165824       400000000      8.8085      9.0294
+ X_POSIX      13   read        8      2825165824       800000000      9.0295      9.4747
+ X_POSIX      13   read        9      3625165824       200000000      9.4748      9.5876
+
+# DXT, file_id: 3211260657156544696, file_name: /pscratch/spwalto/haccTest/darshan-Part00000014-of-00000032.data
+# DXT, rank: 14, hostname: ec10
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      14  write        0        25165824       400000000      3.4218      3.9239
+ X_POSIX      14  write        1       425165824       400000000      3.9240      4.3919
+ X_POSIX      14  write        2       825165824       400000000      4.3920      4.8779
+ X_POSIX      14  write        3      1225165824       400000000      4.8780      5.3736
+ X_POSIX      14  write        4      1625165824       400000000      5.3737      5.8441
+ X_POSIX      14  write        5      2025165824       400000000      5.8442      6.3072
+ X_POSIX      14  write        6      2425165824       400000000      6.3073      6.7699
+ X_POSIX      14  write        7      2825165824       800000000      6.7700      7.7467
+ X_POSIX      14  write        8      3625165824       200000000      7.7468      7.9658
+ X_POSIX      14  write        9               0        25165824      7.9659      7.9929
+ X_POSIX      14   read        0               0        25165824      8.0145      8.0307
+ X_POSIX      14   read        1        25165824       400000000      8.0322      8.3225
+ X_POSIX      14   read        2       425165824       400000000      8.3226      8.6040
+ X_POSIX      14   read        3       825165824       400000000      8.6041      8.8842
+ X_POSIX      14   read        4      1225165824       400000000      8.8843      9.1248
+ X_POSIX      14   read        5      1625165824       400000000      9.1248      9.3684
+ X_POSIX      14   read        6      2025165824       400000000      9.3684      9.6038
+ X_POSIX      14   read        7      2425165824       400000000      9.6039      9.8362
+ X_POSIX      14   read        8      2825165824       800000000      9.8362     10.3092
+ X_POSIX      14   read        9      3625165824       200000000     10.3093     10.4331
+
+# DXT, file_id: 13476757001019444066, file_name: /pscratch/spwalto/haccTest/darshan-Part00000015-of-00000032.data
+# DXT, rank: 15, hostname: ec10
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      15  write        0        25165824       400000000      3.4216      3.9165
+ X_POSIX      15  write        1       425165824       400000000      3.9167      4.3801
+ X_POSIX      15  write        2       825165824       400000000      4.3802      4.8608
+ X_POSIX      15  write        3      1225165824       400000000      4.8609      5.3477
+ X_POSIX      15  write        4      1625165824       400000000      5.3478      5.8130
+ X_POSIX      15  write        5      2025165824       400000000      5.8131      6.2713
+ X_POSIX      15  write        6      2425165824       400000000      6.2714      6.7637
+ X_POSIX      15  write        7      2825165824       800000000      6.7638      7.7626
+ X_POSIX      15  write        8      3625165824       200000000      7.7627      7.9865
+ X_POSIX      15  write        9               0        25165824      7.9866      8.0110
+ X_POSIX      15   read        0               0        25165824      8.0146      8.0303
+ X_POSIX      15   read        1        25165824       400000000      8.0319      8.3147
+ X_POSIX      15   read        2       425165824       400000000      8.3147      8.5830
+ X_POSIX      15   read        3       825165824       400000000      8.5831      8.8442
+ X_POSIX      15   read        4      1225165824       400000000      8.8442      9.0768
+ X_POSIX      15   read        5      1625165824       400000000      9.0769      9.3121
+ X_POSIX      15   read        6      2025165824       400000000      9.3122      9.5412
+ X_POSIX      15   read        7      2425165824       400000000      9.5412      9.7648
+ X_POSIX      15   read        8      2825165824       800000000      9.7649     10.2279
+ X_POSIX      15   read        9      3625165824       200000000     10.2280     10.3464
+
+# DXT, file_id: 4022156528834146192, file_name: /pscratch/spwalto/haccTest/darshan-Part00000016-of-00000032.data
+# DXT, rank: 16, hostname: ec11
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      16  write        0        25165824       400000000      3.1637      3.5860
+ X_POSIX      16  write        1       425165824       400000000      3.5861      4.0130
+ X_POSIX      16  write        2       825165824       400000000      4.0131      4.4668
+ X_POSIX      16  write        3      1225165824       400000000      4.4669      4.9574
+ X_POSIX      16  write        4      1625165824       400000000      4.9575      5.4332
+ X_POSIX      16  write        5      2025165824       400000000      5.4333      5.9036
+ X_POSIX      16  write        6      2425165824       400000000      5.9037      6.3556
+ X_POSIX      16  write        7      2825165824       800000000      6.3557      7.1882
+ X_POSIX      16  write        8      3625165824       200000000      7.1883      7.3880
+ X_POSIX      16  write        9               0        25165824      7.3881      7.4119
+ X_POSIX      16   read        0               0        25165824     12.7787     12.7932
+ X_POSIX      16   read        1        25165824       400000000     12.7952     13.0388
+ X_POSIX      16   read        2       425165824       400000000     13.0389     13.2723
+ X_POSIX      16   read        3       825165824       400000000     13.2724     13.5025
+ X_POSIX      16   read        4      1225165824       400000000     13.5025     13.7319
+ X_POSIX      16   read        5      1625165824       400000000     13.7320     13.9731
+ X_POSIX      16   read        6      2025165824       400000000     13.9731     14.2067
+ X_POSIX      16   read        7      2425165824       400000000     14.2068     14.4356
+ X_POSIX      16   read        8      2825165824       800000000     14.4357     14.9007
+ X_POSIX      16   read        9      3625165824       200000000     14.9008     15.0179
+
+# DXT, file_id: 12682053355261189867, file_name: /pscratch/spwalto/haccTest/darshan-Part00000017-of-00000032.data
+# DXT, rank: 17, hostname: ec11
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      17  write        0        25165824       400000000      3.0763      3.5001
+ X_POSIX      17  write        1       425165824       400000000      3.5003      3.9354
+ X_POSIX      17  write        2       825165824       400000000      3.9355      4.3930
+ X_POSIX      17  write        3      1225165824       400000000      4.3932      4.8710
+ X_POSIX      17  write        4      1625165824       400000000      4.8711      5.3007
+ X_POSIX      17  write        5      2025165824       400000000      5.3008      5.6908
+ X_POSIX      17  write        6      2425165824       400000000      5.6909      6.0991
+ X_POSIX      17  write        7      2825165824       800000000      6.0991      8.0142
+ X_POSIX      17  write        8      3625165824       200000000      8.0143      8.7569
+ X_POSIX      17  write        9               0        25165824      8.7570      8.8415
+ X_POSIX      17   read        0               0        25165824      8.8462      8.8651
+ X_POSIX      17   read        1        25165824       400000000      8.8674      9.1338
+ X_POSIX      17   read        2       425165824       400000000      9.1339      9.3859
+ X_POSIX      17   read        3       825165824       400000000      9.3860      9.6349
+ X_POSIX      17   read        4      1225165824       400000000      9.6350      9.8865
+ X_POSIX      17   read        5      1625165824       400000000      9.8866     10.1474
+ X_POSIX      17   read        6      2025165824       400000000     10.1475     10.3956
+ X_POSIX      17   read        7      2425165824       400000000     10.3957     10.6460
+ X_POSIX      17   read        8      2825165824       800000000     10.6461     11.1721
+ X_POSIX      17   read        9      3625165824       200000000     11.1722     11.3058
+
+# DXT, file_id: 11889928910198975476, file_name: /pscratch/spwalto/haccTest/darshan-Part00000018-of-00000032.data
+# DXT, rank: 18, hostname: ec12
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      18  write        0        25165824       400000000      3.8698      4.2773
+ X_POSIX      18  write        1       425165824       400000000      4.2774      6.6754
+ X_POSIX      18  write        2       825165824       400000000      6.6755      7.1339
+ X_POSIX      18  write        3      1225165824       400000000      7.1340      7.5865
+ X_POSIX      18  write        4      1625165824       400000000      7.5865      7.9645
+ X_POSIX      18  write        5      2025165824       400000000      7.9646      8.3462
+ X_POSIX      18  write        6      2425165824       400000000      8.3463      8.7342
+ X_POSIX      18  write        7      2825165824       800000000      8.7343      9.7821
+ X_POSIX      18  write        8      3625165824       200000000      9.7822     12.7506
+ X_POSIX      18  write        9               0        25165824     12.7507     12.7741
+ X_POSIX      18   read        0               0        25165824     12.7777     12.7933
+ X_POSIX      18   read        1        25165824       400000000     12.7950     13.0633
+ X_POSIX      18   read        2       425165824       400000000     13.0633     13.3053
+ X_POSIX      18   read        3       825165824       400000000     13.3053     13.5433
+ X_POSIX      18   read        4      1225165824       400000000     13.5434     13.7832
+ X_POSIX      18   read        5      1625165824       400000000     13.7833     14.0383
+ X_POSIX      18   read        6      2025165824       400000000     14.0383     14.2802
+ X_POSIX      18   read        7      2425165824       400000000     14.2803     14.5166
+ X_POSIX      18   read        8      2825165824       800000000     14.5167     14.9896
+ X_POSIX      18   read        9      3625165824       200000000     14.9896     15.1096
+
+# DXT, file_id: 840370613950799298, file_name: /pscratch/spwalto/haccTest/darshan-Part00000019-of-00000032.data
+# DXT, rank: 19, hostname: ec12
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      19  write        0        25165824       400000000      2.4209      2.8010
+ X_POSIX      19  write        1       425165824       400000000      2.8011      3.1948
+ X_POSIX      19  write        2       825165824       400000000      3.1949      3.6216
+ X_POSIX      19  write        3      1225165824       400000000      3.6217      4.0761
+ X_POSIX      19  write        4      1625165824       400000000      4.0762      4.5117
+ X_POSIX      19  write        5      2025165824       400000000      4.5118      4.8904
+ X_POSIX      19  write        6      2425165824       400000000      4.8905      5.2588
+ X_POSIX      19  write        7      2825165824       800000000      5.2589      6.0387
+ X_POSIX      19  write        8      3625165824       200000000      6.0387      6.2200
+ X_POSIX      19  write        9               0        25165824      6.2201      6.2434
+ X_POSIX      19   read        0               0        25165824      6.2472      6.2592
+ X_POSIX      19   read        1        25165824       400000000      6.2606      6.4902
+ X_POSIX      19   read        2       425165824       400000000      6.4903      6.7364
+ X_POSIX      19   read        3       825165824       400000000      6.7365      6.9925
+ X_POSIX      19   read        4      1225165824       400000000      6.9926      7.2411
+ X_POSIX      19   read        5      1625165824       400000000      7.2412      7.4978
+ X_POSIX      19   read        6      2025165824       400000000      7.4979      7.7573
+ X_POSIX      19   read        7      2425165824       400000000      7.7574      8.0110
+ X_POSIX      19   read        8      2825165824       800000000      8.0111      8.5088
+ X_POSIX      19   read        9      3625165824       200000000      8.5089      8.6374
+
+# DXT, file_id: 12980315688737361588, file_name: /pscratch/spwalto/haccTest/darshan-Part00000020-of-00000032.data
+# DXT, rank: 20, hostname: ec13
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      20  write        0        25165824       400000000      3.5055      3.9154
+ X_POSIX      20  write        1       425165824       400000000      3.9155      4.3332
+ X_POSIX      20  write        2       825165824       400000000      4.3333      4.7844
+ X_POSIX      20  write        3      1225165824       400000000      4.7845      5.2632
+ X_POSIX      20  write        4      1625165824       400000000      5.2632      5.7260
+ X_POSIX      20  write        5      2025165824       400000000      5.7261      6.1862
+ X_POSIX      20  write        6      2425165824       400000000      6.1863      6.8790
+ X_POSIX      20  write        7      2825165824       800000000      6.8791     10.3751
+ X_POSIX      20  write        8      3625165824       200000000     10.3752     10.8897
+ X_POSIX      20  write        9               0        25165824     10.8898     10.9586
+ X_POSIX      20   read        0               0        25165824     10.9621     10.9775
+ X_POSIX      20   read        1        25165824       400000000     10.9792     11.2541
+ X_POSIX      20   read        2       425165824       400000000     11.2542     11.5127
+ X_POSIX      20   read        3       825165824       400000000     11.5127     11.7628
+ X_POSIX      20   read        4      1225165824       400000000     11.7629     12.0097
+ X_POSIX      20   read        5      1625165824       400000000     12.0098     12.2697
+ X_POSIX      20   read        6      2025165824       400000000     12.2698     12.5318
+ X_POSIX      20   read        7      2425165824       400000000     12.5319     12.7901
+ X_POSIX      20   read        8      2825165824       800000000     12.7902     13.3111
+ X_POSIX      20   read        9      3625165824       200000000     13.3112     13.4445
+
+# DXT, file_id: 967130757202595403, file_name: /pscratch/spwalto/haccTest/darshan-Part00000021-of-00000032.data
+# DXT, rank: 21, hostname: ec13
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      21  write        0        25165824       400000000      2.4263      2.8105
+ X_POSIX      21  write        1       425165824       400000000      2.8106      3.1992
+ X_POSIX      21  write        2       825165824       400000000      3.1993      3.6480
+ X_POSIX      21  write        3      1225165824       400000000      3.6481      4.1219
+ X_POSIX      21  write        4      1625165824       400000000      4.1220      4.5242
+ X_POSIX      21  write        5      2025165824       400000000      4.5243      4.9266
+ X_POSIX      21  write        6      2425165824       400000000      4.9267      5.3331
+ X_POSIX      21  write        7      2825165824       800000000      5.3332      6.1796
+ X_POSIX      21  write        8      3625165824       200000000      6.1797      6.3702
+ X_POSIX      21  write        9               0        25165824      6.3703      6.3948
+ X_POSIX      21   read        0               0        25165824      6.3982      6.4110
+ X_POSIX      21   read        1        25165824       400000000      6.4124      6.6662
+ X_POSIX      21   read        2       425165824       400000000      6.6663      6.9132
+ X_POSIX      21   read        3       825165824       400000000      6.9133      7.1590
+ X_POSIX      21   read        4      1225165824       400000000      7.1591      7.4022
+ X_POSIX      21   read        5      1625165824       400000000      7.4023      7.6529
+ X_POSIX      21   read        6      2025165824       400000000      7.6529      7.8888
+ X_POSIX      21   read        7      2425165824       400000000      7.8889      8.1181
+ X_POSIX      21   read        8      2825165824       800000000      8.1182      8.5789
+ X_POSIX      21   read        9      3625165824       200000000      8.5790      8.6982
+
+# DXT, file_id: 14737313756711942529, file_name: /pscratch/spwalto/haccTest/darshan-Part00000022-of-00000032.data
+# DXT, rank: 22, hostname: ec14
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      22  write        0        25165824       400000000      3.4664      3.8762
+ X_POSIX      22  write        1       425165824       400000000      3.8763      4.2873
+ X_POSIX      22  write        2       825165824       400000000      4.2874      4.7457
+ X_POSIX      22  write        3      1225165824       400000000      4.7458      5.2462
+ X_POSIX      22  write        4      1625165824       400000000      5.2463      5.7162
+ X_POSIX      22  write        5      2025165824       400000000      5.7163      6.1779
+ X_POSIX      22  write        6      2425165824       400000000      6.1780      6.6264
+ X_POSIX      22  write        7      2825165824       800000000      6.6265      7.4189
+ X_POSIX      22  write        8      3625165824       200000000      7.4190      7.6095
+ X_POSIX      22  write        9               0        25165824      7.6096      7.6326
+ X_POSIX      22   read        0               0        25165824      8.6449      8.6607
+ X_POSIX      22   read        1        25165824       400000000      8.6626      8.9392
+ X_POSIX      22   read        2       425165824       400000000      8.9392      9.2065
+ X_POSIX      22   read        3       825165824       400000000      9.2066      9.4690
+ X_POSIX      22   read        4      1225165824       400000000      9.4691      9.7362
+ X_POSIX      22   read        5      1625165824       400000000      9.7362     10.0126
+ X_POSIX      22   read        6      2025165824       400000000     10.0127     10.2717
+ X_POSIX      22   read        7      2425165824       400000000     10.2717     10.5218
+ X_POSIX      22   read        8      2825165824       800000000     10.5219     11.0612
+ X_POSIX      22   read        9      3625165824       200000000     11.0614     11.1925
+
+# DXT, file_id: 5662825052517866183, file_name: /pscratch/spwalto/haccTest/darshan-Part00000023-of-00000032.data
+# DXT, rank: 23, hostname: ec14
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      23  write        0        25165824       400000000      3.0765      3.4678
+ X_POSIX      23  write        1       425165824       400000000      3.4679      3.8904
+ X_POSIX      23  write        2       825165824       400000000      3.8905      4.3509
+ X_POSIX      23  write        3      1225165824       400000000      4.3510      4.8190
+ X_POSIX      23  write        4      1625165824       400000000      4.8191      5.2415
+ X_POSIX      23  write        5      2025165824       400000000      5.2416      5.6315
+ X_POSIX      23  write        6      2425165824       400000000      5.6316      6.0221
+ X_POSIX      23  write        7      2825165824       800000000      6.0222      7.7744
+ X_POSIX      23  write        8      3625165824       200000000      7.7745      8.5503
+ X_POSIX      23  write        9               0        25165824      8.5504      8.6410
+ X_POSIX      23   read        0               0        25165824      8.6449      8.6641
+ X_POSIX      23   read        1        25165824       400000000      8.6659      8.9312
+ X_POSIX      23   read        2       425165824       400000000      8.9313      9.1857
+ X_POSIX      23   read        3       825165824       400000000      9.1858      9.4342
+ X_POSIX      23   read        4      1225165824       400000000      9.4343      9.6906
+ X_POSIX      23   read        5      1625165824       400000000      9.6907      9.9625
+ X_POSIX      23   read        6      2025165824       400000000      9.9626     10.2131
+ X_POSIX      23   read        7      2425165824       400000000     10.2132     10.4545
+ X_POSIX      23   read        8      2825165824       800000000     10.4545     10.9768
+ X_POSIX      23   read        9      3625165824       200000000     10.9769     11.1119
+
+# DXT, file_id: 14828537209919636030, file_name: /pscratch/spwalto/haccTest/darshan-Part00000024-of-00000032.data
+# DXT, rank: 24, hostname: ec15
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      24  write        0        25165824       400000000      3.5060      3.9323
+ X_POSIX      24  write        1       425165824       400000000      3.9324      4.3742
+ X_POSIX      24  write        2       825165824       400000000      4.3743      4.8505
+ X_POSIX      24  write        3      1225165824       400000000      4.8506      5.3287
+ X_POSIX      24  write        4      1625165824       400000000      5.3288      5.7145
+ X_POSIX      24  write        5      2025165824       400000000      5.7146      6.1065
+ X_POSIX      24  write        6      2425165824       400000000      6.1066      6.8928
+ X_POSIX      24  write        7      2825165824       800000000      6.8929     10.3208
+ X_POSIX      24  write        8      3625165824       200000000     10.3209     10.8310
+ X_POSIX      24  write        9               0        25165824     10.8311     10.8929
+ X_POSIX      24   read        0               0        25165824     10.9694     10.9855
+ X_POSIX      24   read        1        25165824       400000000     10.9871     11.2614
+ X_POSIX      24   read        2       425165824       400000000     11.2615     11.5170
+ X_POSIX      24   read        3       825165824       400000000     11.5171     11.7606
+ X_POSIX      24   read        4      1225165824       400000000     11.7608     12.0071
+ X_POSIX      24   read        5      1625165824       400000000     12.0072     12.2797
+ X_POSIX      24   read        6      2025165824       400000000     12.2798     12.5459
+ X_POSIX      24   read        7      2425165824       400000000     12.5460     12.8003
+ X_POSIX      24   read        8      2825165824       800000000     12.8004     13.3101
+ X_POSIX      24   read        9      3625165824       200000000     13.3102     13.4395
+
+# DXT, file_id: 10788082166645481674, file_name: /pscratch/spwalto/haccTest/darshan-Part00000025-of-00000032.data
+# DXT, rank: 25, hostname: ec15
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      25  write        0        25165824       400000000      3.6396      4.0635
+ X_POSIX      25  write        1       425165824       400000000      4.0636      4.4873
+ X_POSIX      25  write        2       825165824       400000000      4.4874      4.9535
+ X_POSIX      25  write        3      1225165824       400000000      4.9536      5.4292
+ X_POSIX      25  write        4      1625165824       400000000      5.4292      5.8696
+ X_POSIX      25  write        5      2025165824       400000000      5.8697      6.2645
+ X_POSIX      25  write        6      2425165824       400000000      6.2646      6.6635
+ X_POSIX      25  write        7      2825165824       800000000      6.6636      7.8395
+ X_POSIX      25  write        8      3625165824       200000000      7.8396      8.5227
+ X_POSIX      25  write        9               0        25165824      8.5228      8.5465
+ X_POSIX      25   read        0               0        25165824      8.5503      8.5660
+ X_POSIX      25   read        1        25165824       400000000      8.5674      8.8202
+ X_POSIX      25   read        2       425165824       400000000      8.8203      9.0582
+ X_POSIX      25   read        3       825165824       400000000      9.0582      9.2913
+ X_POSIX      25   read        4      1225165824       400000000      9.2913      9.5341
+ X_POSIX      25   read        5      1625165824       400000000      9.5341      9.7882
+ X_POSIX      25   read        6      2025165824       400000000      9.7882     10.0344
+ X_POSIX      25   read        7      2425165824       400000000     10.0345     10.2755
+ X_POSIX      25   read        8      2825165824       800000000     10.2756     10.7639
+ X_POSIX      25   read        9      3625165824       200000000     10.7639     10.8853
+
+# DXT, file_id: 7608367648067616848, file_name: /pscratch/spwalto/haccTest/darshan-Part00000026-of-00000032.data
+# DXT, rank: 26, hostname: ec16
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      26  write        0        25165824       400000000      2.4391      2.8328
+ X_POSIX      26  write        1       425165824       400000000      2.8329      3.2291
+ X_POSIX      26  write        2       825165824       400000000      3.2292      3.6622
+ X_POSIX      26  write        3      1225165824       400000000      3.6623      4.1429
+ X_POSIX      26  write        4      1625165824       400000000      4.1430      4.6027
+ X_POSIX      26  write        5      2025165824       400000000      4.6028      5.0597
+ X_POSIX      26  write        6      2425165824       400000000      5.0598      5.5221
+ X_POSIX      26  write        7      2825165824       800000000      5.5222      6.3564
+ X_POSIX      26  write        8      3625165824       200000000      6.3565      6.5476
+ X_POSIX      26  write        9               0        25165824      6.5477      6.5719
+ X_POSIX      26   read        0               0        25165824      7.6245      7.6405
+ X_POSIX      26   read        1        25165824       400000000      7.6420      7.9240
+ X_POSIX      26   read        2       425165824       400000000      7.9241      8.2008
+ X_POSIX      26   read        3       825165824       400000000      8.2009      8.4697
+ X_POSIX      26   read        4      1225165824       400000000      8.4697      8.7198
+ X_POSIX      26   read        5      1625165824       400000000      8.7199      8.9593
+ X_POSIX      26   read        6      2025165824       400000000      8.9594      9.1905
+ X_POSIX      26   read        7      2425165824       400000000      9.1905      9.4184
+ X_POSIX      26   read        8      2825165824       800000000      9.4185      9.8769
+ X_POSIX      26   read        9      3625165824       200000000      9.8770      9.9931
+
+# DXT, file_id: 261727140369376217, file_name: /pscratch/spwalto/haccTest/darshan-Part00000027-of-00000032.data
+# DXT, rank: 27, hostname: ec16
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      27  write        0        25165824       400000000      3.6393      4.0613
+ X_POSIX      27  write        1       425165824       400000000      4.0614      4.4914
+ X_POSIX      27  write        2       825165824       400000000      4.4915      4.9570
+ X_POSIX      27  write        3      1225165824       400000000      4.9571      5.4226
+ X_POSIX      27  write        4      1625165824       400000000      5.4227      5.8567
+ X_POSIX      27  write        5      2025165824       400000000      5.8567      6.2543
+ X_POSIX      27  write        6      2425165824       400000000      6.2544      6.6537
+ X_POSIX      27  write        7      2825165824       800000000      6.6538      7.4070
+ X_POSIX      27  write        8      3625165824       200000000      7.4071      7.5981
+ X_POSIX      27  write        9               0        25165824      7.5982      7.6204
+ X_POSIX      27   read        0               0        25165824      7.6242      7.6392
+ X_POSIX      27   read        1        25165824       400000000      7.6409      7.9200
+ X_POSIX      27   read        2       425165824       400000000      7.9201      8.1895
+ X_POSIX      27   read        3       825165824       400000000      8.1896      8.4501
+ X_POSIX      27   read        4      1225165824       400000000      8.4502      8.7001
+ X_POSIX      27   read        5      1625165824       400000000      8.7001      8.9364
+ X_POSIX      27   read        6      2025165824       400000000      8.9365      9.1638
+ X_POSIX      27   read        7      2425165824       400000000      9.1638      9.3869
+ X_POSIX      27   read        8      2825165824       800000000      9.3870      9.8408
+ X_POSIX      27   read        9      3625165824       200000000      9.8409      9.9547
+
+# DXT, file_id: 6649334922103369484, file_name: /pscratch/spwalto/haccTest/darshan-Part00000028-of-00000032.data
+# DXT, rank: 28, hostname: ec17
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      28  write        0        25165824       400000000      2.4336      2.8147
+ X_POSIX      28  write        1       425165824       400000000      2.8149      3.2071
+ X_POSIX      28  write        2       825165824       400000000      3.2073      3.6470
+ X_POSIX      28  write        3      1225165824       400000000      3.6471      4.1204
+ X_POSIX      28  write        4      1625165824       400000000      4.1205      4.5696
+ X_POSIX      28  write        5      2025165824       400000000      4.5697      5.0104
+ X_POSIX      28  write        6      2425165824       400000000      5.0105      5.4450
+ X_POSIX      28  write        7      2825165824       800000000      5.4451      6.2681
+ X_POSIX      28  write        8      3625165824       200000000      6.2682      6.4556
+ X_POSIX      28  write        9               0        25165824      6.4557      6.4796
+ X_POSIX      28   read        0               0        25165824     10.9703     10.9845
+ X_POSIX      28   read        1        25165824       400000000     10.9861     11.2176
+ X_POSIX      28   read        2       425165824       400000000     11.2176     11.4449
+ X_POSIX      28   read        3       825165824       400000000     11.4450     11.6710
+ X_POSIX      28   read        4      1225165824       400000000     11.6711     11.8982
+ X_POSIX      28   read        5      1625165824       400000000     11.8983     12.1409
+ X_POSIX      28   read        6      2025165824       400000000     12.1409     12.3722
+ X_POSIX      28   read        7      2425165824       400000000     12.3723     12.6008
+ X_POSIX      28   read        8      2825165824       800000000     12.6009     13.0596
+ X_POSIX      28   read        9      3625165824       200000000     13.0596     13.1777
+
+# DXT, file_id: 8311826021534316764, file_name: /pscratch/spwalto/haccTest/darshan-Part00000029-of-00000032.data
+# DXT, rank: 29, hostname: ec17
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      29  write        0        25165824       400000000      3.4430      3.8508
+ X_POSIX      29  write        1       425165824       400000000      3.8509      4.2518
+ X_POSIX      29  write        2       825165824       400000000      4.2519      4.6865
+ X_POSIX      29  write        3      1225165824       400000000      4.6866      5.1464
+ X_POSIX      29  write        4      1625165824       400000000      5.1464      5.5846
+ X_POSIX      29  write        5      2025165824       400000000      5.5846      6.0245
+ X_POSIX      29  write        6      2425165824       400000000      6.0246      6.4274
+ X_POSIX      29  write        7      2825165824       800000000      6.4275      7.1776
+ X_POSIX      29  write        8      3625165824       200000000      7.1777      7.3565
+ X_POSIX      29  write        9               0        25165824      7.3566      7.3790
+ X_POSIX      29   read        0               0        25165824      7.3820      7.3941
+ X_POSIX      29   read        1        25165824       400000000      7.3957      7.6243
+ X_POSIX      29   read        2       425165824       400000000      7.6243      7.8453
+ X_POSIX      29   read        3       825165824       400000000      7.8454      8.0606
+ X_POSIX      29   read        4      1225165824       400000000      8.0606      8.2766
+ X_POSIX      29   read        5      1625165824       400000000      8.2767      8.5069
+ X_POSIX      29   read        6      2025165824       400000000      8.5070      8.7268
+ X_POSIX      29   read        7      2425165824       400000000      8.7269      8.9418
+ X_POSIX      29   read        8      2825165824       800000000      8.9419      9.3742
+ X_POSIX      29   read        9      3625165824       200000000      9.3743      9.4846
+
+# DXT, file_id: 16574365689759941985, file_name: /pscratch/spwalto/haccTest/darshan-Part00000030-of-00000032.data
+# DXT, rank: 30, hostname: ec18
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      30  write        0        25165824       400000000      3.5051      3.9141
+ X_POSIX      30  write        1       425165824       400000000      3.9142      4.3414
+ X_POSIX      30  write        2       825165824       400000000      4.3415      4.8154
+ X_POSIX      30  write        3      1225165824       400000000      4.8155      5.2978
+ X_POSIX      30  write        4      1625165824       400000000      5.2979      5.6856
+ X_POSIX      30  write        5      2025165824       400000000      5.6857      6.0750
+ X_POSIX      30  write        6      2425165824       400000000      6.0751      6.8846
+ X_POSIX      30  write        7      2825165824       800000000      6.8847     10.3758
+ X_POSIX      30  write        8      3625165824       200000000     10.3759     10.8846
+ X_POSIX      30  write        9               0        25165824     10.8848     10.9649
+ X_POSIX      30   read        0               0        25165824     10.9688     10.9832
+ X_POSIX      30   read        1        25165824       400000000     10.9848     11.2563
+ X_POSIX      30   read        2       425165824       400000000     11.2564     11.5150
+ X_POSIX      30   read        3       825165824       400000000     11.5150     11.7504
+ X_POSIX      30   read        4      1225165824       400000000     11.7504     11.9944
+ X_POSIX      30   read        5      1625165824       400000000     11.9945     12.2545
+ X_POSIX      30   read        6      2025165824       400000000     12.2546     12.5087
+ X_POSIX      30   read        7      2425165824       400000000     12.5088     12.7643
+ X_POSIX      30   read        8      2825165824       800000000     12.7644     13.2735
+ X_POSIX      30   read        9      3625165824       200000000     13.2736     13.4022
+
+# DXT, file_id: 9766495152298282751, file_name: /pscratch/spwalto/haccTest/darshan-Part00000031-of-00000032.data
+# DXT, rank: 31, hostname: ec18
+# DXT, write_count: 10, read_count: 10
+# DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)
+ X_POSIX      31  write        0        25165824       400000000      2.4190      2.7910
+ X_POSIX      31  write        1       425165824       400000000      2.7911      3.1744
+ X_POSIX      31  write        2       825165824       400000000      3.1745      3.6033
+ X_POSIX      31  write        3      1225165824       400000000      3.6034      4.0832
+ X_POSIX      31  write        4      1625165824       400000000      4.0832      4.5116
+ X_POSIX      31  write        5      2025165824       400000000      4.5117      4.9046
+ X_POSIX      31  write        6      2425165824       400000000      4.9047      5.2990
+ X_POSIX      31  write        7      2825165824       800000000      5.2991      6.1328
+ X_POSIX      31  write        8      3625165824       200000000      6.1328      6.3331
+ X_POSIX      31  write        9               0        25165824      6.3332      6.3556
+ X_POSIX      31   read        0               0        25165824      6.3590      6.3717
+ X_POSIX      31   read        1        25165824       400000000      6.3733      6.6247
+ X_POSIX      31   read        2       425165824       400000000      6.6248      6.8703
+ X_POSIX      31   read        3       825165824       400000000      6.8704      7.1103
+ X_POSIX      31   read        4      1225165824       400000000      7.1104      7.3509
+ X_POSIX      31   read        5      1625165824       400000000      7.3510      7.6033
+ X_POSIX      31   read        6      2025165824       400000000      7.6033      7.8425
+ X_POSIX      31   read        7      2425165824       400000000      7.8426      8.0723
+ X_POSIX      31   read        8      2825165824       800000000      8.0723      8.5361
+ X_POSIX      31   read        9      3625165824       200000000      8.5362      8.6575
