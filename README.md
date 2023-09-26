@@ -309,6 +309,51 @@ Where:
 ``$PBS_JOB_ID=slurm id of current job``
 ``$DARSHAN_PATH=/projects/ovis/darshanConnector/common/darshan/build/install``
 
+### Slurm Output
+Below is a slurm output example for HACC-IO with 1 node, 10 million particles and 32 tasks:
+```sh
+cat /pscratch/<user>/darshan-ldms-output/17301901-HACC_pscratch_10.out
+Tue Sep 26 14:14:57 MDT 2023: Stressor Started
+-------- Aggregate Performance --------
+ WRITE Checkpoint Perf: 1954.54 BW[MB/s] 12965306368 Bytes 6.32612 MaxTime[sec]
+-------- Aggregate Performance --------
+ READ Restart Perf: 8973.73 BW[MB/s] 12965306368 Bytes 1.37788 MaxTime[sec]
+ CONTENTS VERIFIED... Success
+Tue Sep 26 14:19:30 MDT 2023: Stressor Killed
+The DiffOfTime = 272.390139881
+306M    /pscratch/<user>/haccTest/darshan-Part00000000-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000001-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000002-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000003-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000004-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000005-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000006-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000007-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000008-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000009-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000010-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000011-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000012-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000013-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000014-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000015-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000016-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000017-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000018-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000019-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000020-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000021-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000022-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000023-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000024-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000025-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000026-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000027-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000028-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000029-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000030-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000031-of-00000032.data
+```
 
 
 ## Data collected 
