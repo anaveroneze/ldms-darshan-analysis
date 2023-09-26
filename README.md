@@ -243,6 +243,69 @@ stress-ng --class os --tz -v --all 2 &
 stress-ng --class os --tz -v --all 4 &
 ```
 
+## Job Execution Setup
+### Scontrol
+The output of ``scontrol show job <job-id>`` of the HACC-IO execution with 10 million particles, 16 nodes and 32 tasks per node:
+
+```sh
+ Command=/projects/ovis/darshanConnector/common/darshan/darshan-test/regression/cray-module-common/slurm-submit.sl --ntasks-per-node=32 /projects/ovis/darshanConnector/apps/rhel9.7/hacc-io/hacc_io 10000000 /pscratch/<user>/haccTest/darshan
+   WorkDir=/ceeprojects/ovis/darshanConnector/common/darshan/darshan-test/regression/test-cases
+   StdErr=/pscratch/<user>/darshan-ldms-output/17301435-HACC_pscratch_10.err
+   StdIn=/dev/null
+   StdOut=/pscratch/<user>/darshan-ldms-output/17301435-HACC_pscratch_10.out
+```
+### slurm-submit.sl
+The ``slurm-submit.sl`` is where the stress-ng and job are started and is shown below:
+```sh
+#!/bin/bash -l
+export PBS_JOBID=$SLURM_JOB_ID
+export DARSHAN_LOGFILE=$DARSHAN_TMP/${PROG}.${PBS_JOBID}.darshan
+
+mkdir /tmp/stress-tmp/
+
+{
+stress-ng --temp-path /tmp/stress-tmp/ --class cpu --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class cpu-cache --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class io --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class filesystem --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class memory --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+
+#stress-ng --temp-path /tmp/stress-tmp/ --class cpu --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class cpu-cache --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class io --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class filesystem --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class memory --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+} 2> $DARSHAN_TMP/stress-ng.${PBS_JOBID}.err
+
+START=$(date +%s.%N)
+srun --mpi=pmi2 $@
+END=$(date +%s.%N)
+
+killall -2 stress-ng | echo "$(date -d @$(date +%s.%3N)): Stressor Killed"
+
+DIFF=$(echo "$END - $START" | bc)
+echo "The DiffOfTime = $DIFF"
+
+# confirm files have been written to successfully
+du -h /pscratch/<user>/haccTest/darshan*
+
+# parse log with the dxt parser
+$DARSHAN_PATH/bin/darshan-dxt-parser --show-incomplete $DARSHAN_LOGFILE > $DARSHAN_TMP/${PROG}.${PBS_JOBID}-dxt.darshan.txt
+if [ $? -ne 0 ]; then
+    echo "Error: failed to parse ${DARSHAN_LOGFILE} for dxt tracing" 1>&2
+    exit 1
+fi
+
+# parse log with normal parser
+$DARSHAN_PATH/bin/darshan-parser --all $DARSHAN_LOGFILE > $DARSHAN_TMP/${PROG}.${PBS_JOBID}.darshan.txt
+if [ $? -ne 0 ]; then
+    echo "Error: failed to parse ${DARSHAN_LOGFILE}" 1>&2
+    exit 1
+fi
+```
+Where ``$DARSHAN_LOGFILE=/pscratch/<user>/darshan-ldms-output`` and ``$PROG=HACC_pscratch_10``
+
+
 ## Data collected 
 
 Each experiment will collect **Darshan-LDMS** and **LDMS system utilization data**.
