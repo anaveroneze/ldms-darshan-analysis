@@ -304,10 +304,10 @@ if [ $? -ne 0 ]; then
 fi
 ```
 Where:
-``$DARSHAN_TMP=/pscratch/<user>/darshan-ldms-output``
-``$PROG=HACC_pscratch_10``
-``$PBS_JOB_ID=slurm id of current job``
-``$DARSHAN_PATH=/projects/ovis/darshanConnector/common/darshan/build/install``
+- ``$DARSHAN_TMP=/pscratch/<user>/darshan-ldms-output``
+- ``$PROG=HACC_pscratch_10``
+- ``$PBS_JOB_ID=slurm id of current job``
+- ``$DARSHAN_PATH=/projects/ovis/darshanConnector/common/darshan/build/install``
 
 ### Slurm Output
 Below is a slurm output example for HACC-IO with 1 node, 10 million particles and 32 tasks:
