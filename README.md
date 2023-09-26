@@ -303,7 +303,12 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 ```
-Where ``$DARSHAN_LOGFILE=/pscratch/<user>/darshan-ldms-output`` and ``$PROG=HACC_pscratch_10``
+Where:
+``$DARSHAN_TMP=/pscratch/<user>/darshan-ldms-output``
+``$PROG=HACC_pscratch_10``
+``$PBS_JOB_ID=slurm id of current job``
+``$DARSHAN_PATH=/projects/ovis/darshanConnector/common/darshan/build/install``
+
 
 
 ## Data collected 
