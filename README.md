@@ -243,6 +243,119 @@ stress-ng --class os --tz -v --all 2 &
 stress-ng --class os --tz -v --all 4 &
 ```
 
+## Job Execution Setup
+### Scontrol
+The output of ``scontrol show job <job-id>`` of the HACC-IO execution with 10 million particles, 16 nodes and 32 tasks per node:
+
+```sh
+ Command=/projects/ovis/darshanConnector/common/darshan/darshan-test/regression/cray-module-common/slurm-submit.sl --ntasks-per-node=32 /projects/ovis/darshanConnector/apps/rhel9.7/hacc-io/hacc_io 10000000 /pscratch/<user>/haccTest/darshan
+   WorkDir=/ceeprojects/ovis/darshanConnector/common/darshan/darshan-test/regression/test-cases
+   StdErr=/pscratch/<user>/darshan-ldms-output/17301435-HACC_pscratch_10.err
+   StdIn=/dev/null
+   StdOut=/pscratch/<user>/darshan-ldms-output/17301435-HACC_pscratch_10.out
+```
+### slurm-submit.sl
+The ``slurm-submit.sl`` is where the stress-ng and job are started and is shown below:
+```sh
+#!/bin/bash -l
+export PBS_JOBID=$SLURM_JOB_ID
+export DARSHAN_LOGFILE=$DARSHAN_TMP/${PROG}.${PBS_JOBID}.darshan
+
+mkdir /tmp/stress-tmp/
+
+{
+stress-ng --temp-path /tmp/stress-tmp/ --class cpu --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class cpu-cache --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class io --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class filesystem --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class memory --tz -v --all 4 | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+
+#stress-ng --temp-path /tmp/stress-tmp/ --class cpu --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class cpu-cache --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class io --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class filesystem --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+#stress-ng --temp-path /tmp/stress-tmp/ --class memory --tz -v --all 4 -t 10s | echo "$(date -d @$(date +%s.%3N)): Stressor Started" &
+} 2> $DARSHAN_TMP/stress-ng.${PBS_JOBID}.err
+
+START=$(date +%s.%N)
+srun --mpi=pmi2 $@
+END=$(date +%s.%N)
+
+killall -2 stress-ng | echo "$(date -d @$(date +%s.%3N)): Stressor Killed"
+
+DIFF=$(echo "$END - $START" | bc)
+echo "The DiffOfTime = $DIFF"
+
+# confirm files have been written to successfully
+du -h /pscratch/<user>/haccTest/darshan*
+
+# parse log with the dxt parser
+$DARSHAN_PATH/bin/darshan-dxt-parser --show-incomplete $DARSHAN_LOGFILE > $DARSHAN_TMP/${PROG}.${PBS_JOBID}-dxt.darshan.txt
+if [ $? -ne 0 ]; then
+    echo "Error: failed to parse ${DARSHAN_LOGFILE} for dxt tracing" 1>&2
+    exit 1
+fi
+
+# parse log with normal parser
+$DARSHAN_PATH/bin/darshan-parser --all $DARSHAN_LOGFILE > $DARSHAN_TMP/${PROG}.${PBS_JOBID}.darshan.txt
+if [ $? -ne 0 ]; then
+    echo "Error: failed to parse ${DARSHAN_LOGFILE}" 1>&2
+    exit 1
+fi
+```
+Where:
+- ``$DARSHAN_TMP=/pscratch/<user>/darshan-ldms-output``
+- ``$PROG=HACC_pscratch_10``
+- ``$PBS_JOB_ID=slurm id of current job``
+- ``$DARSHAN_PATH=/projects/ovis/darshanConnector/common/darshan/build/install``
+
+### Slurm Output
+Below is a slurm output example for HACC-IO with 1 node, 10 million particles and 32 tasks:
+```sh
+cat /pscratch/<user>/darshan-ldms-output/17301901-HACC_pscratch_10.out
+Tue Sep 26 14:14:57 MDT 2023: Stressor Started
+-------- Aggregate Performance --------
+ WRITE Checkpoint Perf: 1954.54 BW[MB/s] 12965306368 Bytes 6.32612 MaxTime[sec]
+-------- Aggregate Performance --------
+ READ Restart Perf: 8973.73 BW[MB/s] 12965306368 Bytes 1.37788 MaxTime[sec]
+ CONTENTS VERIFIED... Success
+Tue Sep 26 14:19:30 MDT 2023: Stressor Killed
+The DiffOfTime = 272.390139881
+306M    /pscratch/<user>/haccTest/darshan-Part00000000-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000001-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000002-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000003-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000004-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000005-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000006-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000007-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000008-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000009-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000010-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000011-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000012-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000013-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000014-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000015-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000016-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000017-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000018-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000019-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000020-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000021-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000022-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000023-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000024-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000025-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000026-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000027-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000028-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000029-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000030-of-00000032.data
+306M    /pscratch/<user>/haccTest/darshan-Part00000031-of-00000032.data
+```
+
+
 ## Data collected 
 
 Each experiment will collect **Darshan-LDMS** and **LDMS system utilization data**.
