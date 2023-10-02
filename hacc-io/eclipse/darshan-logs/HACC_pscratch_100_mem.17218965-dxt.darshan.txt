@@ -1,7 +1,7 @@
 # darshan log version: 3.41
 # compression method: ZLIB
 # exe: 
-# uid: 99066
+# uid: 12345
 # jobid: 17218965
 # start_time: 1694979993
 # start_time_asci: Sun Sep 17 13:46:33 2023
@@ -30,7 +30,7 @@
 # DXT_POSIX module data
 # ***************************************************
 
-# DXT, file_id: 11565115021251038815, file_name: /pscratch/spwalto/haccTest/darshan-Part00000000-of-00000032.data
+# DXT, file_id: 11565115021251038815, file_name: /pscratch/user/haccTest/darshan-Part00000000-of-00000032.data
 # DXT, rank: 0, hostname: ec1
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -56,7 +56,7 @@
  X_POSIX       0   read        8      2825165824       800000000      9.9612     10.4450
  X_POSIX       0   read        9      3625165824       200000000     10.4451     10.5664
 
-# DXT, file_id: 10331366759179474848, file_name: /pscratch/spwalto/haccTest/darshan-Part00000001-of-00000032.data
+# DXT, file_id: 10331366759179474848, file_name: /pscratch/user/haccTest/darshan-Part00000001-of-00000032.data
 # DXT, rank: 1, hostname: ec1
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -82,7 +82,7 @@
  X_POSIX       1   read        8      2825165824       800000000      9.1650      9.6347
  X_POSIX       1   read        9      3625165824       200000000      9.6348      9.7537
 
-# DXT, file_id: 688261604096148575, file_name: /pscratch/spwalto/haccTest/darshan-Part00000002-of-00000032.data
+# DXT, file_id: 688261604096148575, file_name: /pscratch/user/haccTest/darshan-Part00000002-of-00000032.data
 # DXT, rank: 2, hostname: ec2
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -108,7 +108,7 @@
  X_POSIX       2   read        8      2825165824       800000000      9.4891      9.9573
  X_POSIX       2   read        9      3625165824       200000000      9.9574     10.0744
 
-# DXT, file_id: 8041626340763145071, file_name: /pscratch/spwalto/haccTest/darshan-Part00000003-of-00000032.data
+# DXT, file_id: 8041626340763145071, file_name: /pscratch/user/haccTest/darshan-Part00000003-of-00000032.data
 # DXT, rank: 3, hostname: ec2
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -134,7 +134,7 @@
  X_POSIX       3   read        8      2825165824       800000000      9.2191      9.6626
  X_POSIX       3   read        9      3625165824       200000000      9.6627      9.7746
 
-# DXT, file_id: 15107931838529066586, file_name: /pscratch/spwalto/haccTest/darshan-Part00000004-of-00000032.data
+# DXT, file_id: 15107931838529066586, file_name: /pscratch/user/haccTest/darshan-Part00000004-of-00000032.data
 # DXT, rank: 4, hostname: ec3
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -160,7 +160,7 @@
  X_POSIX       4   read        8      2825165824       800000000      9.2792      9.7406
  X_POSIX       4   read        9      3625165824       200000000      9.7406      9.8578
 
-# DXT, file_id: 16469326234947104427, file_name: /pscratch/spwalto/haccTest/darshan-Part00000005-of-00000032.data
+# DXT, file_id: 16469326234947104427, file_name: /pscratch/user/haccTest/darshan-Part00000005-of-00000032.data
 # DXT, rank: 5, hostname: ec3
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -186,7 +186,7 @@
  X_POSIX       5   read        8      2825165824       800000000      9.0960      9.5331
  X_POSIX       5   read        9      3625165824       200000000      9.5332      9.6428
 
-# DXT, file_id: 11250573249789628784, file_name: /pscratch/spwalto/haccTest/darshan-Part00000006-of-00000032.data
+# DXT, file_id: 11250573249789628784, file_name: /pscratch/user/haccTest/darshan-Part00000006-of-00000032.data
 # DXT, rank: 6, hostname: ec4
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -212,7 +212,7 @@
  X_POSIX       6   read        8      2825165824       800000000      9.1380      9.5986
  X_POSIX       6   read        9      3625165824       200000000      9.5987      9.7150
 
-# DXT, file_id: 5644758706384895531, file_name: /pscratch/spwalto/haccTest/darshan-Part00000007-of-00000032.data
+# DXT, file_id: 5644758706384895531, file_name: /pscratch/user/haccTest/darshan-Part00000007-of-00000032.data
 # DXT, rank: 7, hostname: ec4
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -238,7 +238,7 @@
  X_POSIX       7   read        8      2825165824       800000000      8.6208      9.0873
  X_POSIX       7   read        9      3625165824       200000000      9.0874      9.2082
 
-# DXT, file_id: 6713185938115530105, file_name: /pscratch/spwalto/haccTest/darshan-Part00000008-of-00000032.data
+# DXT, file_id: 6713185938115530105, file_name: /pscratch/user/haccTest/darshan-Part00000008-of-00000032.data
 # DXT, rank: 8, hostname: ec5
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -264,7 +264,7 @@
  X_POSIX       8   read        8      2825165824       800000000      9.7988     10.2460
  X_POSIX       8   read        9      3625165824       200000000     10.2461     10.3617
 
-# DXT, file_id: 4160190120989571242, file_name: /pscratch/spwalto/haccTest/darshan-Part00000009-of-00000032.data
+# DXT, file_id: 4160190120989571242, file_name: /pscratch/user/haccTest/darshan-Part00000009-of-00000032.data
 # DXT, rank: 9, hostname: ec5
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -290,7 +290,7 @@
  X_POSIX       9   read        8      2825165824       800000000      8.6137      9.0754
  X_POSIX       9   read        9      3625165824       200000000      9.0755      9.1936
 
-# DXT, file_id: 9655269172325643443, file_name: /pscratch/spwalto/haccTest/darshan-Part00000010-of-00000032.data
+# DXT, file_id: 9655269172325643443, file_name: /pscratch/user/haccTest/darshan-Part00000010-of-00000032.data
 # DXT, rank: 10, hostname: ec6
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -316,7 +316,7 @@
  X_POSIX      10   read        8      2825165824       800000000      8.8607      9.3304
  X_POSIX      10   read        9      3625165824       200000000      9.3305      9.4478
 
-# DXT, file_id: 5944192875413058633, file_name: /pscratch/spwalto/haccTest/darshan-Part00000011-of-00000032.data
+# DXT, file_id: 5944192875413058633, file_name: /pscratch/user/haccTest/darshan-Part00000011-of-00000032.data
 # DXT, rank: 11, hostname: ec6
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -342,7 +342,7 @@
  X_POSIX      11   read        8      2825165824       800000000      8.6577      9.0953
  X_POSIX      11   read        9      3625165824       200000000      9.0954      9.2059
 
-# DXT, file_id: 8217146196684432982, file_name: /pscratch/spwalto/haccTest/darshan-Part00000012-of-00000032.data
+# DXT, file_id: 8217146196684432982, file_name: /pscratch/user/haccTest/darshan-Part00000012-of-00000032.data
 # DXT, rank: 12, hostname: ec7
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -368,7 +368,7 @@
  X_POSIX      12   read        8      2825165824       800000000     10.0143     10.4821
  X_POSIX      12   read        9      3625165824       200000000     10.4821     10.5963
 
-# DXT, file_id: 5937040747949820936, file_name: /pscratch/spwalto/haccTest/darshan-Part00000013-of-00000032.data
+# DXT, file_id: 5937040747949820936, file_name: /pscratch/user/haccTest/darshan-Part00000013-of-00000032.data
 # DXT, rank: 13, hostname: ec7
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -394,7 +394,7 @@
  X_POSIX      13   read        8      2825165824       800000000      9.9953     10.4711
  X_POSIX      13   read        9      3625165824       200000000     10.4712     10.5864
 
-# DXT, file_id: 3211260657156544696, file_name: /pscratch/spwalto/haccTest/darshan-Part00000014-of-00000032.data
+# DXT, file_id: 3211260657156544696, file_name: /pscratch/user/haccTest/darshan-Part00000014-of-00000032.data
 # DXT, rank: 14, hostname: ec8
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -420,7 +420,7 @@
  X_POSIX      14   read        8      2825165824       800000000      9.1471      9.6105
  X_POSIX      14   read        9      3625165824       200000000      9.6106      9.7274
 
-# DXT, file_id: 13476757001019444066, file_name: /pscratch/spwalto/haccTest/darshan-Part00000015-of-00000032.data
+# DXT, file_id: 13476757001019444066, file_name: /pscratch/user/haccTest/darshan-Part00000015-of-00000032.data
 # DXT, rank: 15, hostname: ec8
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -446,7 +446,7 @@
  X_POSIX      15   read        8      2825165824       800000000      8.6586      9.1288
  X_POSIX      15   read        9      3625165824       200000000      9.1289      9.2488
 
-# DXT, file_id: 4022156528834146192, file_name: /pscratch/spwalto/haccTest/darshan-Part00000016-of-00000032.data
+# DXT, file_id: 4022156528834146192, file_name: /pscratch/user/haccTest/darshan-Part00000016-of-00000032.data
 # DXT, rank: 16, hostname: ec9
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -472,7 +472,7 @@
  X_POSIX      16   read        8      2825165824       800000000      9.8523     10.3026
  X_POSIX      16   read        9      3625165824       200000000     10.3027     10.4164
 
-# DXT, file_id: 12682053355261189867, file_name: /pscratch/spwalto/haccTest/darshan-Part00000017-of-00000032.data
+# DXT, file_id: 12682053355261189867, file_name: /pscratch/user/haccTest/darshan-Part00000017-of-00000032.data
 # DXT, rank: 17, hostname: ec9
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -498,7 +498,7 @@
  X_POSIX      17   read        8      2825165824       800000000      8.7530      9.2106
  X_POSIX      17   read        9      3625165824       200000000      9.2107      9.3274
 
-# DXT, file_id: 11889928910198975476, file_name: /pscratch/spwalto/haccTest/darshan-Part00000018-of-00000032.data
+# DXT, file_id: 11889928910198975476, file_name: /pscratch/user/haccTest/darshan-Part00000018-of-00000032.data
 # DXT, rank: 18, hostname: ec10
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -524,7 +524,7 @@
  X_POSIX      18   read        8      2825165824       800000000      9.1217      9.5625
  X_POSIX      18   read        9      3625165824       200000000      9.5626      9.6742
 
-# DXT, file_id: 840370613950799298, file_name: /pscratch/spwalto/haccTest/darshan-Part00000019-of-00000032.data
+# DXT, file_id: 840370613950799298, file_name: /pscratch/user/haccTest/darshan-Part00000019-of-00000032.data
 # DXT, rank: 19, hostname: ec10
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -550,7 +550,7 @@
  X_POSIX      19   read        8      2825165824       800000000      9.1166      9.5772
  X_POSIX      19   read        9      3625165824       200000000      9.5773      9.6954
 
-# DXT, file_id: 12980315688737361588, file_name: /pscratch/spwalto/haccTest/darshan-Part00000020-of-00000032.data
+# DXT, file_id: 12980315688737361588, file_name: /pscratch/user/haccTest/darshan-Part00000020-of-00000032.data
 # DXT, rank: 20, hostname: ec11
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -576,7 +576,7 @@
  X_POSIX      20   read        8      2825165824       800000000      9.5521     10.0200
  X_POSIX      20   read        9      3625165824       200000000     10.0201     10.1379
 
-# DXT, file_id: 967130757202595403, file_name: /pscratch/spwalto/haccTest/darshan-Part00000021-of-00000032.data
+# DXT, file_id: 967130757202595403, file_name: /pscratch/user/haccTest/darshan-Part00000021-of-00000032.data
 # DXT, rank: 21, hostname: ec11
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -602,7 +602,7 @@
  X_POSIX      21   read        8      2825165824       800000000      8.5858      9.0507
  X_POSIX      21   read        9      3625165824       200000000      9.0508      9.1650
 
-# DXT, file_id: 14737313756711942529, file_name: /pscratch/spwalto/haccTest/darshan-Part00000022-of-00000032.data
+# DXT, file_id: 14737313756711942529, file_name: /pscratch/user/haccTest/darshan-Part00000022-of-00000032.data
 # DXT, rank: 22, hostname: ec12
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -628,7 +628,7 @@
  X_POSIX      22   read        8      2825165824       800000000      9.5701     10.0365
  X_POSIX      22   read        9      3625165824       200000000     10.0366     10.1553
 
-# DXT, file_id: 5662825052517866183, file_name: /pscratch/spwalto/haccTest/darshan-Part00000023-of-00000032.data
+# DXT, file_id: 5662825052517866183, file_name: /pscratch/user/haccTest/darshan-Part00000023-of-00000032.data
 # DXT, rank: 23, hostname: ec12
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -654,7 +654,7 @@
  X_POSIX      23   read        8      2825165824       800000000      9.4362      9.9030
  X_POSIX      23   read        9      3625165824       200000000      9.9031     10.0201
 
-# DXT, file_id: 14828537209919636030, file_name: /pscratch/spwalto/haccTest/darshan-Part00000024-of-00000032.data
+# DXT, file_id: 14828537209919636030, file_name: /pscratch/user/haccTest/darshan-Part00000024-of-00000032.data
 # DXT, rank: 24, hostname: ec13
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -680,7 +680,7 @@
  X_POSIX      24   read        8      2825165824       800000000      9.9019     10.3679
  X_POSIX      24   read        9      3625165824       200000000     10.3680     10.4816
 
-# DXT, file_id: 10788082166645481674, file_name: /pscratch/spwalto/haccTest/darshan-Part00000025-of-00000032.data
+# DXT, file_id: 10788082166645481674, file_name: /pscratch/user/haccTest/darshan-Part00000025-of-00000032.data
 # DXT, rank: 25, hostname: ec13
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -706,7 +706,7 @@
  X_POSIX      25   read        8      2825165824       800000000      8.6085      9.0724
  X_POSIX      25   read        9      3625165824       200000000      9.0724      9.1876
 
-# DXT, file_id: 7608367648067616848, file_name: /pscratch/spwalto/haccTest/darshan-Part00000026-of-00000032.data
+# DXT, file_id: 7608367648067616848, file_name: /pscratch/user/haccTest/darshan-Part00000026-of-00000032.data
 # DXT, rank: 26, hostname: ec14
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -732,7 +732,7 @@
  X_POSIX      26   read        8      2825165824       800000000      8.9972      9.4687
  X_POSIX      26   read        9      3625165824       200000000      9.4687      9.5890
 
-# DXT, file_id: 261727140369376217, file_name: /pscratch/spwalto/haccTest/darshan-Part00000027-of-00000032.data
+# DXT, file_id: 261727140369376217, file_name: /pscratch/user/haccTest/darshan-Part00000027-of-00000032.data
 # DXT, rank: 27, hostname: ec14
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -758,7 +758,7 @@
  X_POSIX      27   read        8      2825165824       800000000      8.3384      8.7868
  X_POSIX      27   read        9      3625165824       200000000      8.7869      8.9007
 
-# DXT, file_id: 6649334922103369484, file_name: /pscratch/spwalto/haccTest/darshan-Part00000028-of-00000032.data
+# DXT, file_id: 6649334922103369484, file_name: /pscratch/user/haccTest/darshan-Part00000028-of-00000032.data
 # DXT, rank: 28, hostname: ec15
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -784,7 +784,7 @@
  X_POSIX      28   read        8      2825165824       800000000     10.0569     10.5278
  X_POSIX      28   read        9      3625165824       200000000     10.5278     10.6425
 
-# DXT, file_id: 8311826021534316764, file_name: /pscratch/spwalto/haccTest/darshan-Part00000029-of-00000032.data
+# DXT, file_id: 8311826021534316764, file_name: /pscratch/user/haccTest/darshan-Part00000029-of-00000032.data
 # DXT, rank: 29, hostname: ec15
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -810,7 +810,7 @@
  X_POSIX      29   read        8      2825165824       800000000      8.9584      9.4681
  X_POSIX      29   read        9      3625165824       200000000      9.4682      9.5936
 
-# DXT, file_id: 16574365689759941985, file_name: /pscratch/spwalto/haccTest/darshan-Part00000030-of-00000032.data
+# DXT, file_id: 16574365689759941985, file_name: /pscratch/user/haccTest/darshan-Part00000030-of-00000032.data
 # DXT, rank: 30, hostname: ec16
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
@@ -836,7 +836,7 @@
  X_POSIX      30   read        8      2825165824       800000000      9.0314      9.4913
  X_POSIX      30   read        9      3625165824       200000000      9.4914      9.6078
 
-# DXT, file_id: 9766495152298282751, file_name: /pscratch/spwalto/haccTest/darshan-Part00000031-of-00000032.data
+# DXT, file_id: 9766495152298282751, file_name: /pscratch/user/haccTest/darshan-Part00000031-of-00000032.data
 # DXT, rank: 31, hostname: ec16
 # DXT, write_count: 10, read_count: 10
 # DXT, mnt_pt: UNKNOWN, fs_type: UNKNOWN
