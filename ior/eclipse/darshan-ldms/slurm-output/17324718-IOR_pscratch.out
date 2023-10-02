@@ -1,17 +1,17 @@
 Thu Sep 28 15:50:45 MDT 2023: Application Started
 IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
 Began               : Thu Sep 28 15:50:47 2023
-Command line        : /projects/ovis/darshanConnector/apps/rhel9.7/ior/src/ior -w -r -i 6 -b 2m -t 4k -s 1024 -F -k -o /pscratch/spwalto/iorTest/darshan
+Command line        : /projects/ovis/darshanConnector/apps/rhel9.7/ior/src/ior -w -r -i 6 -b 2m -t 4k -s 1024 -F -k -o /pscratch/user/iorTest/darshan
 Machine             : Linux ec87
 TestID              : 0
 StartTime           : Thu Sep 28 15:50:47 2023
-Path                : /pscratch/spwalto/iorTest/darshan.00000000
+Path                : /pscratch/user/iorTest/darshan.00000000
 FS                  : 18684.8 TiB   Used FS: 71.0%   Inodes: 7360.1 Mi   Used Inodes: 26.3%
 
 Options: 
 api                 : POSIX
 apiVersion          : 
-test filename       : /pscratch/spwalto/iorTest/darshan
+test filename       : /pscratch/user/iorTest/darshan
 access              : file-per-process
 type                : independent
 segments            : 1024
