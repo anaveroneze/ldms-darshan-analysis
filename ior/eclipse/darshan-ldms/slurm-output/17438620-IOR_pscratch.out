@@ -1,0 +1,55 @@
+Wed Oct 11 16:19:51 MDT 2023: Application Started
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Wed Oct 11 16:19:55 2023
+Command line        : /projects/ovis/darshanConnector/apps/rhel9.7/ior/src/ior -i 6 -b 144k -t 24k -s 1024 -F -C -e -k -o /pscratch/user/iorTest/darshan
+Machine             : Linux n1465
+TestID              : 0
+StartTime           : Wed Oct 11 16:19:55 2023
+Path                : /pscratch/user/iorTest/darshan.00000000
+FS                  : 18684.8 TiB   Used FS: 72.6%   Inodes: 7083.2 Mi   Used Inodes: 27.7%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /pscratch/user/iorTest/darshan
+access              : file-per-process
+type                : independent
+segments            : 1024
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 1
+tasks               : 32
+clients per node    : 32
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 6
+xfersize            : 24576 bytes
+blocksize           : 147456 bytes
+aggregate filesize  : 4.50 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     5658       242401     0.107624    144.00     24.00      0.039427   0.811087   0.287062   0.814471   0   
+read      20007      859087     0.031528    144.00     24.00      0.002908   0.228857   0.072122   0.230315   0   
+write     6944       297744     0.085053    144.00     24.00      0.038066   0.660325   0.209614   0.663636   1   
+read      19870      852512     0.026567    144.00     24.00      0.003003   0.230622   0.073473   0.231904   1   
+write     6839       293374     0.089394    144.00     24.00      0.035525   0.670162   0.209300   0.673812   2   
+read      19862      853452     0.026627    144.00     24.00      0.003182   0.230368   0.074137   0.231999   2   
+write     6257       268041     0.088952    144.00     24.00      0.035731   0.733499   0.269219   0.736457   3   
+read      19954      856634     0.026774    144.00     24.00      0.002979   0.229512   0.069547   0.230929   3   
+write     6928       296961     0.092403    144.00     24.00      0.033187   0.662066   0.210020   0.665098   4   
+read      19720      845761     0.028210    144.00     24.00      0.002773   0.232463   0.078662   0.233675   4   
+write     6942       297413     0.105923    144.00     24.00      0.031038   0.661061   0.211552   0.663803   5   
+read      20248      868886     0.027292    144.00     24.00      0.002981   0.226276   0.066069   0.227582   5   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        6943.57    5657.66    6594.51     483.93  296258.81  241393.49  281365.55   20647.62    0.70288         NA            NA     0     32  32    6   1     1        1         0    0   1024   147456    24576    4608.0 POSIX      0
+read        20247.65   19719.70   19943.56     162.67  863899.69  841373.69  850925.17    6940.59    0.23107         NA            NA     0     32  32    6   1     1        1         0    0   1024   147456    24576    4608.0 POSIX      0
+Finished            : Wed Oct 11 16:20:02 2023
+Wed Oct 11 16:20:04 MDT 2023: Application Ended
+The DiffOfTime = 13.021448722
