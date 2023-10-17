@@ -362,29 +362,22 @@ Each experiment will collect **Darshan-LDMS** and **LDMS system utilization data
 
 # Experiments with IOR
 
-- Run 10 experiments
-- Stressors: IO, filesystem, memory and cpu
-- Stressors starting at the same time during all execution
-  
+We want to show how LDMS-Darshan logs can be useful to detect I/O bottlenecks at runtime and later to diagnosis in real time.
+
 ## Plan
 
-IOR was executed on 1 node with 16 tasks (i.e. ranks).
-Execution line: ior -w -r -i 6 -b 2m -t 4k -s 1024 -F -k -o /pscratch/user/iorTest/darshan
--w/-r: read and write are enabled,
--i: repeat the same test 6 times
--b: blocksize of 2m
--t: transfersize of 4k
--s: segmentcount of 1024
--F: file per process
--o: Location of test file(s)
--k: keep test file(s) on program exit (didn’t upload these to the repo)
-The URL that I referred to when configuring IOR: https://ior.readthedocs.io/en/latest/userDoc/options.html
-The main reason I chose these block/transfer/segment sizes is so that each test run was longer than 10 seconds
-Each test was around ~38secs for a total job runtime of 4 mins
-Since the iteration is 6 then we should see 6 patterns that should be identical (i.e. read/writes across all ranks start at the same time).
-
-The csv data is broken up into 22 separate files (too large to upload to github as one file).
-
+- Benchmark: IOR
+- Run 10 experiments
+  - Clean run
+  - With stressors: IO, filesystem, memory and cpu
+- Stressors:
+  - Starting at the same time during all execution 
+  - Running on a different core than IOR 
+  - Pin one stressor to each core in the same node 
+  - If run in different nodes set one rank per node
+- Set same parameter - app deals with same amount of I/O for all iterations and among all ranks 
+- Collecting files: Darshan DXT, Slurm, LDMS-Darshan logs
+  
 ## Eclipse specs
 
 - Model name: Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz
