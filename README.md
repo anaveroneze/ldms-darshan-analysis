@@ -404,13 +404,29 @@ The csv data is broken up into 22 separate files (too large to upload to github 
 - Interconnect: QPI (Quick Path Interconnect)
 - Total Memory: 264047956 kB
 
-
 Add header to the csvs:
 ```bash
 sed -i '1s/^/uid,exe,job_id,rank,ProducerName,file,record_id,module,type,max_byte,switches,flushes,cnt,op,pt_sel,irreg_hslab,reg_hslab,ndims,npoints,off,len,start,dur,total,timestamp\n/' 17324718-IOR_pscratch_22.csv
 ```
 
-Trying to install Darshan locally:
+## Install Darshan locally:
+
 ```sh
-./configure --with-log-path=/home/ana/Documents/2023/ldms-darshan-analysis/ --with-jobid-env=NONE CC=gcc
+wget https://ftp.mcs.anl.gov/pub/darshan/releases/darshan-3.4.4.tar.gz
+tar -xzvf darshan-3.4.4.tar.gz
+mkdir build/ && mkdir build/logs
+./prepare.sh && cd build/
+../configure --with-log-path-by-env=LOGFILE_PATH_DARSHAN --prefix=/<path-to-darshan>/build/install --with-jobid-env=PBS_JOBID CC=mpicc && make && make install
+```
+
+To run IOR or other apps collecting traces:
+```bash 
+export LD_PRELOAD=/path-to-darshan-install/lib/libdarshan.so
+export LOGFILE_PATH_DARSHAN=<path-to-darshan>/build/logs
+./ior -i 6 -b 144k -t 24k -s 1024 -F -C -e -k -o /pscratch/user/iorTest/darshan
+```
+
+Parse results to textual format:
+```bash
+darshan-parser $LOGFILE_PATH_DARSHAN/filename.darshan > $LOGFILE_PATH_DARSHAN/filename.txt
 ```
