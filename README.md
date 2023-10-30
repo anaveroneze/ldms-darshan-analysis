@@ -2,7 +2,7 @@
 
 ## Darshan-LDMS absolute timestamp
 
-Run I/O benchmarks with system stressors to show that we can use the system timestamps collected by Darshan-LDMS to diagnose application bottlenecks.
+Explore running I/O benchmarks with system stressors to show that we can use the system timestamps collected by Darshan-LDMS to diagnose application bottlenecks automatically.
 
 Using stress-ng for stressing the system: https://wiki.ubuntu.com/Kernel/Reference/stress-ng
 
@@ -28,10 +28,6 @@ stress-ng --class memory --tz -v --all 4 &
 ```
 
 We will collect LDMS-Darshan and system logs (meminfo, procstat, lustre, dstat).
-
-Applications:
-- HACC-IO
-- MPI-IO
 
 ## First test:
 
@@ -61,7 +57,7 @@ stress-ng --class memory --tz -v --all 4 -t 10s &
 
 Run one stressor for each run, so a total of 10 experiments + 2 normal executions (no stressors).
 
-# Experimental Design
+# Experimental Design 
 
 Organizing experimental plan for reporting the benefits of having the absolute timestamp collected by Darshan-LDMS to  identify I/O bottlenecks, by using the LDMS-Darshan information itself, and also by correlating with other system telemetry data. We will run I/O benchmarks and real applications with and without system stressors and evalutate the performance of the experiments using LDMS-Darshan logs.
 
@@ -354,20 +350,17 @@ The DiffOfTime = 272.390139881
 306M    /pscratch/<user>/haccTest/darshan-Part00000030-of-00000032.data
 306M    /pscratch/<user>/haccTest/darshan-Part00000031-of-00000032.data
 ```
-
-
 ## Data collected 
 
 Each experiment will collect **Darshan-LDMS** and **LDMS system utilization data**.
 
-# Experiments with IOR
+# [IN PROGRESS] Experiments with IOR
 
-We want to show how LDMS-Darshan logs can be useful to detect I/O bottlenecks at runtime and later to diagnosis in real time.
-
-## Plan
+We want to show how LDMS-Darshan logs can be used to detect I/O bottlenecks at runtime and to diagnose it in real time. We will prove it by running applications with and without stressors to show, for example, that a shared system can impact I/O performance.
 
 - Benchmark: IOR
-- Run 10 experiments
+- ``` ior -i 6 -b 4m -t 2m -s 1024 -F -C -e -k -o /pscratch/user/iorTest/darshan```
+- Run 5 experiments
   - Clean run
   - With stressors: IO, filesystem, memory and cpu
 - Stressors:
@@ -376,7 +369,7 @@ We want to show how LDMS-Darshan logs can be useful to detect I/O bottlenecks at
   - Pin one stressor to each core in the same node 
   - If run in different nodes set one rank per node
 - Set same parameter - app deals with same amount of I/O for all iterations and among all ranks 
-- Collecting files: Darshan DXT, Slurm, LDMS-Darshan logs
+- Collecting files: Slurm, LDMS-Darshan logs, system usage logs
   
 ## Eclipse specs
 
@@ -397,9 +390,27 @@ We want to show how LDMS-Darshan logs can be useful to detect I/O bottlenecks at
 - Interconnect: QPI (Quick Path Interconnect)
 - Total Memory: 264047956 kB
 
+## Post-processing logs:
+
 Add header to the csvs:
 ```bash
 sed -i '1s/^/uid,exe,job_id,rank,ProducerName,file,record_id,module,type,max_byte,switches,flushes,cnt,op,pt_sel,irreg_hslab,reg_hslab,ndims,npoints,off,len,start,dur,total,timestamp\n/' 17324718-IOR_pscratch_22.csv
+```
+
+Create CSV from DXT:
+```bash
+# Remove headers
+sed -i '/^#/d' $filename
+# Remove multiple spaces and replace with one
+cat $filename | tr -s ' ' > tmp.csv
+# Replace space with comma
+sed -e 's/\s\+/,/g' tmp.csv > $filename
+sed -i '/^$/d' $filename
+
+# Add header:
+n,Module,Rank,Wt/Rd,Segment,Offset,Length,Start,End
+
+cat file1 >> file2
 ```
 
 ## Install Darshan locally:
@@ -423,3 +434,29 @@ Parse results to textual format:
 ```bash
 darshan-parser $LOGFILE_PATH_DARSHAN/filename.darshan > $LOGFILE_PATH_DARSHAN/filename.txt
 ```
+
+## Runs with different FS and ranks
+
+1. 3 runs (17534968, 17534969, 17534976) with 32 ranks: ``short_runs/ folders``. Command: 
+
+```bash
+/projects/ovis/darshanConnector/apps/rhel9.7/ior/src/ior -i 6 -b 144k -t 24k -s 1024 -F -C -e -k -o /pscratch/spwalto/iorTest/darshan
+```
+
+2. 3 runs (17532847, 17532848, 17532849) with the output file writing to memory (i.e. tmp/) and 36 ranks attached to a core (i.e. --cpu-bind=v,RANK).
+
+```bash
+/projects/ovis/darshanConnector/apps/rhel9.7/ior/src/ior -i 6 -b 2m -t 1m -s 6 -F -C -e -k -o /tmp/tmp.dJNPwjm8QH
+```
+
+3. 3 runs (17533880, 17533919, 17533963) with the output file writing to pscratch filesystem and 36 ranks attached to a core (i.e. --cpu-bind=v,RANK).
+
+```bash
+/projects/ovis/darshanConnector/apps/rhel9.7/ior/src/ior -i 6 -b 4m -t 2m -s 1024 -F -C -e -k -o /pscratch/user/iorTest/darshan
+``` 
+
+## Analysis and Visualization
+
+- Code for analyzing data and generating plots: [./analysis/](./analysis/)
+- Figures in: [./figures/](./analysis/)
+- Code for automatically identifying anomalies in: [./code/](./code/)
