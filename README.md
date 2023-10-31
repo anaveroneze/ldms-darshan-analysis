@@ -458,5 +458,42 @@ darshan-parser $LOGFILE_PATH_DARSHAN/filename.darshan > $LOGFILE_PATH_DARSHAN/fi
 ## Analysis and Visualization
 
 - Code for analyzing data and generating plots: [./analysis/](./analysis/)
-- Figures in: [./figures/](./analysis/)
+- Figures in: [./figures/ior/](./figures/ior/)
 - Code for automatically identifying anomalies in: [./code/](./code/)
+
+## Darshan-LDMS + System usage
+
+Focusing on the first iteration of the first execution:
+
+![image info](./figures/ior/17533880.png)
+
+![image info](./figures/ior/darshan-ldms-17533880.png)
+
+There are a few interesting bottlenecks we can try to identify the source in this case:
+1. Some longer operations
+2. Long pause before closing after writing
+3. Some ranks finishing way faster than others
+4. There is no operations between the end of the last read close and the opening of files for write. The application is doing something
+
+In an ideal automatic tool, it would have to check:
+1. Identify longer operations 
+2. Identify long intervals between last read/write and a met operation open/close 
+3. Identify distance between the first rank to finish and others
+4. Identify long intervals between operations in the same rank
+
+I will start doing manual correlation of system logs for specific time ranges we found application bottlenecks using Darshan-LDMS so we learn which parameters are interesting and can implement the Python code to make it automatically.
+
+### Lustre logs:
+
+![image info](./figures/ior/lustre-17533880.png)
+
+- open and close: number of file open and close operations. 
+- fsync: This attribute counts the number of fsync operations. Frequent fsync operations can indicate synchronization points in your I/O benchmark, which might be a source of performance bottlenecks.
+- inode_permission: permissions are checked whenever a process attempts to perform an operation on a file or directory in a Unix-like filesystem. 
+- read_bytes.sum and write_bytes.sum: number of bytes read and written, it can indicate high I/O activity.
+- seek: number of seek operations, which can impact disk performance. A high number of seeks might indicate that your I/O benchmark is accessing data in a non-sequential manner, potentially causing disk head movement and slowdowns.
+
+The opens are very fast and instant, but the closes are not, as we saw, some ranks take an interval before closing the file. The inode results are expected, with an increase before starting writing and reading in the file. The number of bytes written and read also follow the application pattern collected by LDMS.
+
+The interesting results are for the number of synchronization operations that increase when the application is performing the synchronization before the reading phase, indicating that these interval without I/O is due to this synchronization to ensure all ranks closed the file. For the seeks, that increased gradually showing that IOR is exploring the disk access during all execution when reads and writes are executing. The last are the closes behavior, which shows that some closes took a long time to finish.
+
