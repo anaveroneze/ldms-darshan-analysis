@@ -1,0 +1,276 @@
+stress-ng: debug: [208911] 72 processors online, 72 processors configured
+stress-ng: info:  [208911] dispatching hogs: 4 bsearch, 4 cache, 4 heapsort, 4 hsearch, 4 icache, 4 lockbus, 4 lsearch, 4 malloc, 4 matrix, 4 membarrier, 4 memcpy, 4 mergesort, 4 qsort, 4 str, 4 stream, 4 tsearch, 4 vecmath, 4 wcs, 4 zlib
+stress-ng: debug: [208911] cache allocate: default cache size: 46080K
+stress-ng: debug: [208911] starting stressors
+stress-ng: debug: [208926] stress-ng-lsearch: started [208926] (instance 0)
+stress-ng: debug: [208925] stress-ng-lockbus: started [208925] (instance 0)
+stress-ng: debug: [208924] stress-ng-icache: started [208924] (instance 0)
+stress-ng: debug: [208927] stress-ng-malloc: started [208927] (instance 0)
+stress-ng: debug: [208928] stress-ng-matrix: started [208928] (instance 0)
+stress-ng: debug: [208923] stress-ng-hsearch: started [208923] (instance 0)
+stress-ng: debug: [208929] stress-ng-membarrier: started [208929] (instance 0)
+stress-ng: debug: [208930] stress-ng-memcpy: started [208930] (instance 0)
+stress-ng: info:  [208929] stress-ng-membarrier: this stressor is not implemented on this system: x86_64 Linux 3.10.0-1160.95.1.1chaos.ch6.x86_64
+stress-ng: debug: [208929] stress-ng-membarrier: exited [208929] (instance 0)
+stress-ng: debug: [208922] stress-ng-heapsort: started [208922] (instance 0)
+stress-ng: debug: [208931] stress-ng-mergesort: started [208931] (instance 0)
+stress-ng: debug: [208932] stress-ng-qsort: started [208932] (instance 0)
+stress-ng: debug: [208933] stress-ng-str: started [208933] (instance 0)
+stress-ng: debug: [208934] stress-ng-stream: started [208934] (instance 0)
+stress-ng: debug: [208936] stress-ng-vecmath: started [208936] (instance 0)
+stress-ng: debug: [208935] stress-ng-tsearch: started [208935] (instance 0)
+stress-ng: debug: [208921] stress-ng-cache: started [208921] (instance 0)
+stress-ng: debug: [208921] stress-ng-cache: using cache buffer size of 46080K
+stress-ng: debug: [208938] stress-ng-wcs: started [208938] (instance 0)
+stress-ng: debug: [208940] stress-ng-bsearch: started [208940] (instance 1)
+stress-ng: debug: [208943] stress-ng-hsearch: started [208943] (instance 1)
+stress-ng: debug: [208946] stress-ng-lsearch: started [208946] (instance 1)
+stress-ng: debug: [208945] stress-ng-lockbus: started [208945] (instance 1)
+stress-ng: debug: [208939] stress-ng-zlib: started [208939] (instance 0)
+stress-ng: debug: [208941] stress-ng-cache: started [208941] (instance 1)
+stress-ng: debug: [208944] stress-ng-icache: started [208944] (instance 1)
+stress-ng: debug: [208942] stress-ng-heapsort: started [208942] (instance 1)
+stress-ng: debug: [208947] stress-ng-malloc: started [208947] (instance 1)
+stress-ng: debug: [208948] stress-ng-matrix: started [208948] (instance 1)
+stress-ng: debug: [208920] stress-ng-bsearch: started [208920] (instance 0)
+stress-ng: debug: [208954] stress-ng-memcpy: started [208954] (instance 1)
+stress-ng: debug: [208956] stress-ng-qsort: started [208956] (instance 1)
+stress-ng: debug: [208959] stress-ng-tsearch: started [208959] (instance 1)
+stress-ng: debug: [208958] stress-ng-stream: started [208958] (instance 1)
+stress-ng: debug: [208960] stress-ng-vecmath: started [208960] (instance 1)
+stress-ng: debug: [208957] stress-ng-str: started [208957] (instance 1)
+stress-ng: debug: [208955] stress-ng-mergesort: started [208955] (instance 1)
+stress-ng: debug: [208961] stress-ng-wcs: started [208961] (instance 1)
+stress-ng: debug: [208962] stress-ng-zlib: started [208962] (instance 1)
+stress-ng: debug: [208953] stress-ng-membarrier: started [208953] (instance 1)
+stress-ng: info:  [208953] stress-ng-membarrier: this stressor is not implemented on this system: x86_64 Linux 3.10.0-1160.95.1.1chaos.ch6.x86_64
+stress-ng: debug: [208953] stress-ng-membarrier: exited [208953] (instance 1)
+stress-ng: debug: [208963] stress-ng-bsearch: started [208963] (instance 2)
+stress-ng: debug: [208969] stress-ng-lockbus: started [208969] (instance 2)
+stress-ng: debug: [208971] stress-ng-malloc: started [208971] (instance 2)
+stress-ng: debug: [208966] stress-ng-heapsort: started [208966] (instance 2)
+stress-ng: debug: [208972] stress-ng-matrix: started [208972] (instance 2)
+stress-ng: debug: [208973] stress-ng-membarrier: started [208973] (instance 2)
+stress-ng: debug: [208968] stress-ng-icache: started [208968] (instance 2)
+stress-ng: debug: [208967] stress-ng-hsearch: started [208967] (instance 2)
+stress-ng: debug: [208970] stress-ng-lsearch: started [208970] (instance 2)
+stress-ng: info:  [208973] stress-ng-membarrier: this stressor is not implemented on this system: x86_64 Linux 3.10.0-1160.95.1.1chaos.ch6.x86_64
+stress-ng: debug: [208973] stress-ng-membarrier: exited [208973] (instance 2)
+stress-ng: debug: [208974] stress-ng-memcpy: started [208974] (instance 2)
+stress-ng: debug: [208965] stress-ng-cache: started [208965] (instance 2)
+stress-ng: debug: [208981] stress-ng-vecmath: started [208981] (instance 2)
+stress-ng: debug: [208980] stress-ng-tsearch: started [208980] (instance 2)
+stress-ng: debug: [208982] stress-ng-wcs: started [208982] (instance 2)
+stress-ng: debug: [208984] stress-ng-bsearch: started [208984] (instance 3)
+stress-ng: debug: [208979] stress-ng-stream: started [208979] (instance 2)
+stress-ng: debug: [208978] stress-ng-str: started [208978] (instance 2)
+stress-ng: debug: [208983] stress-ng-zlib: started [208983] (instance 2)
+stress-ng: debug: [208977] stress-ng-qsort: started [208977] (instance 2)
+stress-ng: debug: [208985] stress-ng-cache: started [208985] (instance 3)
+stress-ng: debug: [208986] stress-ng-heapsort: started [208986] (instance 3)
+stress-ng: debug: [208976] stress-ng-mergesort: started [208976] (instance 2)
+stress-ng: debug: [208987] stress-ng-hsearch: started [208987] (instance 3)
+stress-ng: debug: [208988] stress-ng-icache: started [208988] (instance 3)
+stress-ng: debug: [208989] stress-ng-lockbus: started [208989] (instance 3)
+stress-ng: debug: [208990] stress-ng-lsearch: started [208990] (instance 3)
+stress-ng: info:  [208934] stress-ng-stream: stressor loosely based on a variant of the STREAM benchmark code
+stress-ng: info:  [208934] stress-ng-stream: do NOT submit any of these results to the STREAM benchmark results
+stress-ng: info:  [208934] stress-ng-stream: Using CPU cache size of 46080K
+stress-ng: debug: [209084] stress-ng-mergesort: started [209084] (instance 3)
+stress-ng: debug: [209081] stress-ng-matrix: started [209081] (instance 3)
+stress-ng: debug: [209086] stress-ng-str: started [209086] (instance 3)
+stress-ng: debug: [209083] stress-ng-memcpy: started [209083] (instance 3)
+stress-ng: debug: [209082] stress-ng-membarrier: started [209082] (instance 3)
+stress-ng: debug: [209085] stress-ng-qsort: started [209085] (instance 3)
+stress-ng: info:  [209082] stress-ng-membarrier: this stressor is not implemented on this system: x86_64 Linux 3.10.0-1160.95.1.1chaos.ch6.x86_64
+stress-ng: debug: [209082] stress-ng-membarrier: exited [209082] (instance 3)
+stress-ng: debug: [209087] stress-ng-stream: started [209087] (instance 3)
+stress-ng: debug: [208911] 76 stressors spawned
+stress-ng: debug: [209080] stress-ng-malloc: started [209080] (instance 3)
+stress-ng: debug: [209089] stress-ng-vecmath: started [209089] (instance 3)
+stress-ng: debug: [209090] stress-ng-wcs: started [209090] (instance 3)
+stress-ng: debug: [209091] stress-ng-zlib: started [209091] (instance 3)
+stress-ng: debug: [209088] stress-ng-tsearch: started [209088] (instance 3)
+stress-ng: fail:  [208931] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208931] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208955] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208955] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208931] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208955] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208931] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208976] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208955] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [209084] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208931] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+info: 5 failures reached, aborting stress process
+stress-ng: debug: [208931] stress-ng-mergesort: exited [208931] (instance 0)
+stress-ng: fail:  [208976] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208955] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+info: 5 failures reached, aborting stress process
+stress-ng: debug: [208955] stress-ng-mergesort: exited [208955] (instance 1)
+stress-ng: fail:  [208976] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [209084] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208976] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [209084] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [208976] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+info: 5 failures reached, aborting stress process
+stress-ng: debug: [208976] stress-ng-mergesort: exited [208976] (instance 2)
+stress-ng: fail:  [209084] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [209084] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+info: 5 failures reached, aborting stress process
+stress-ng: debug: [209084] stress-ng-mergesort: exited [209084] (instance 3)
+stress-ng: debug: [208923] stress-ng-hsearch: exited [208923] (instance 0)
+stress-ng: debug: [208924] stress-ng-icache: exited [208924] (instance 0)
+stress-ng: debug: [208938] stress-ng-wcs: exited [208938] (instance 0)
+stress-ng: debug: [208941] stress-ng-cache: total [0]
+stress-ng: debug: [208941] stress-ng-cache: exited [208941] (instance 1)
+stress-ng: debug: [208936] stress-ng-vecmath: exited [208936] (instance 0)
+stress-ng: debug: [208926] stress-ng-lsearch: exited [208926] (instance 0)
+stress-ng: debug: [208948] stress-ng-matrix: exited [208948] (instance 1)
+stress-ng: debug: [208946] stress-ng-lsearch: exited [208946] (instance 1)
+stress-ng: debug: [208921] stress-ng-cache: total [0]
+stress-ng: debug: [208921] stress-ng-cache: exited [208921] (instance 0)
+stress-ng: debug: [208942] stress-ng-heapsort: exited [208942] (instance 1)
+stress-ng: debug: [208930] stress-ng-memcpy: exited [208930] (instance 0)
+stress-ng: debug: [208943] stress-ng-hsearch: exited [208943] (instance 1)
+stress-ng: debug: [208928] stress-ng-matrix: exited [208928] (instance 0)
+stress-ng: debug: [208940] stress-ng-bsearch: exited [208940] (instance 1)
+stress-ng: debug: [208933] stress-ng-str: exited [208933] (instance 0)
+stress-ng: debug: [208956] stress-ng-qsort: exited [208956] (instance 1)
+stress-ng: debug: [208922] stress-ng-heapsort: exited [208922] (instance 0)
+stress-ng: debug: [208961] stress-ng-wcs: exited [208961] (instance 1)
+stress-ng: debug: [208957] stress-ng-str: exited [208957] (instance 1)
+stress-ng: debug: [208960] stress-ng-vecmath: exited [208960] (instance 1)
+stress-ng: debug: [208944] stress-ng-icache: exited [208944] (instance 1)
+stress-ng: debug: [208932] stress-ng-qsort: exited [208932] (instance 0)
+stress-ng: debug: [208963] stress-ng-bsearch: exited [208963] (instance 2)
+stress-ng: debug: [208925] stress-ng-lockbus: exited [208925] (instance 0)
+stress-ng: debug: [208954] stress-ng-memcpy: exited [208954] (instance 1)
+stress-ng: debug: [208967] stress-ng-hsearch: exited [208967] (instance 2)
+stress-ng: debug: [208968] stress-ng-icache: exited [208968] (instance 2)
+stress-ng: debug: [208966] stress-ng-heapsort: exited [208966] (instance 2)
+stress-ng: debug: [208972] stress-ng-matrix: exited [208972] (instance 2)
+stress-ng: debug: [208920] stress-ng-bsearch: exited [208920] (instance 0)
+stress-ng: debug: [208970] stress-ng-lsearch: exited [208970] (instance 2)
+stress-ng: debug: [208945] stress-ng-lockbus: exited [208945] (instance 1)
+stress-ng: debug: [208965] stress-ng-cache: total [0]
+stress-ng: debug: [208965] stress-ng-cache: exited [208965] (instance 2)
+stress-ng: debug: [208911] process [208920] terminated
+stress-ng: debug: [208911] process [208940] terminated
+stress-ng: debug: [208911] process [208963] terminated
+stress-ng: debug: [208974] stress-ng-memcpy: exited [208974] (instance 2)
+stress-ng: debug: [208978] stress-ng-str: exited [208978] (instance 2)
+stress-ng: debug: [208969] stress-ng-lockbus: exited [208969] (instance 2)
+stress-ng: debug: [208977] stress-ng-qsort: exited [208977] (instance 2)
+stress-ng: debug: [208981] stress-ng-vecmath: exited [208981] (instance 2)
+stress-ng: debug: [208982] stress-ng-wcs: exited [208982] (instance 2)
+stress-ng: debug: [208985] stress-ng-cache: total [0]
+stress-ng: debug: [208985] stress-ng-cache: exited [208985] (instance 3)
+stress-ng: debug: [208986] stress-ng-heapsort: exited [208986] (instance 3)
+stress-ng: debug: [208987] stress-ng-hsearch: exited [208987] (instance 3)
+stress-ng: debug: [208984] stress-ng-bsearch: exited [208984] (instance 3)
+stress-ng: debug: [208911] process [208984] terminated
+stress-ng: debug: [208911] process [208921] terminated
+stress-ng: debug: [208911] process [208941] terminated
+stress-ng: debug: [208911] process [208965] terminated
+stress-ng: debug: [208911] process [208985] terminated
+stress-ng: debug: [208911] process [208922] terminated
+stress-ng: debug: [208911] process [208942] terminated
+stress-ng: debug: [208911] process [208966] terminated
+stress-ng: debug: [208911] process [208986] terminated
+stress-ng: debug: [208911] process [208923] terminated
+stress-ng: debug: [208911] process [208943] terminated
+stress-ng: debug: [208911] process [208967] terminated
+stress-ng: debug: [208911] process [208987] terminated
+stress-ng: debug: [208911] process [208924] terminated
+stress-ng: debug: [208911] process [208944] terminated
+stress-ng: debug: [208911] process [208968] terminated
+stress-ng: debug: [208988] stress-ng-icache: exited [208988] (instance 3)
+stress-ng: debug: [208911] process [208988] terminated
+stress-ng: debug: [208911] process [208925] terminated
+stress-ng: debug: [208911] process [208945] terminated
+stress-ng: debug: [208911] process [208969] terminated
+stress-ng: debug: [208990] stress-ng-lsearch: exited [208990] (instance 3)
+stress-ng: debug: [208989] stress-ng-lockbus: exited [208989] (instance 3)
+stress-ng: debug: [208911] process [208989] terminated
+stress-ng: debug: [208911] process [208926] terminated
+stress-ng: debug: [208911] process [208946] terminated
+stress-ng: debug: [208911] process [208970] terminated
+stress-ng: debug: [208911] process [208990] terminated
+stress-ng: debug: [209081] stress-ng-matrix: exited [209081] (instance 3)
+stress-ng: debug: [209085] stress-ng-qsort: exited [209085] (instance 3)
+stress-ng: debug: [208927] stress-ng-malloc: exited [208927] (instance 0)
+stress-ng: debug: [208911] process [208927] terminated
+stress-ng: debug: [209086] stress-ng-str: exited [209086] (instance 3)
+stress-ng: debug: [208947] stress-ng-malloc: exited [208947] (instance 1)
+stress-ng: debug: [208911] process [208947] terminated
+stress-ng: debug: [209083] stress-ng-memcpy: exited [209083] (instance 3)
+stress-ng: debug: [209090] stress-ng-wcs: exited [209090] (instance 3)
+stress-ng: debug: [208971] stress-ng-malloc: exited [208971] (instance 2)
+stress-ng: debug: [208911] process [208971] terminated
+stress-ng: debug: [209089] stress-ng-vecmath: exited [209089] (instance 3)
+stress-ng: debug: [209080] stress-ng-malloc: exited [209080] (instance 3)
+stress-ng: debug: [208911] process [209080] terminated
+stress-ng: debug: [208911] process [208928] terminated
+stress-ng: debug: [208911] process [208948] terminated
+stress-ng: debug: [208911] process [208972] terminated
+stress-ng: debug: [208911] process [209081] terminated
+stress-ng: debug: [208911] process [208929] terminated
+stress-ng: debug: [208911] process [208953] terminated
+stress-ng: debug: [208911] process [208973] terminated
+stress-ng: debug: [208911] process [209082] terminated
+stress-ng: debug: [208911] process [208930] terminated
+stress-ng: debug: [208911] process [208954] terminated
+stress-ng: debug: [208911] process [208974] terminated
+stress-ng: debug: [208911] process [209083] terminated
+stress-ng: debug: [208911] process [208931] terminated
+stress-ng: debug: [208911] process [208955] terminated
+stress-ng: debug: [208911] process [208976] terminated
+stress-ng: debug: [208911] process [209084] terminated
+stress-ng: debug: [208911] process [208932] terminated
+stress-ng: debug: [208911] process [208956] terminated
+stress-ng: debug: [208911] process [208977] terminated
+stress-ng: debug: [208911] process [209085] terminated
+stress-ng: debug: [208911] process [208933] terminated
+stress-ng: debug: [208911] process [208957] terminated
+stress-ng: debug: [208911] process [208978] terminated
+stress-ng: debug: [208911] process [209086] terminated
+stress-ng: debug: [208935] stress-ng-tsearch: exited [208935] (instance 0)
+stress-ng: debug: [208959] stress-ng-tsearch: exited [208959] (instance 1)
+stress-ng: debug: [208980] stress-ng-tsearch: exited [208980] (instance 2)
+stress-ng: info:  [208934] stress-ng-stream: run too short to determine memory rate
+stress-ng: debug: [209088] stress-ng-tsearch: exited [209088] (instance 3)
+stress-ng: debug: [208934] stress-ng-stream: exited [208934] (instance 0)
+stress-ng: debug: [208911] process [208934] terminated
+stress-ng: debug: [208958] stress-ng-stream: exited [208958] (instance 1)
+stress-ng: debug: [208911] process [208958] terminated
+stress-ng: debug: [208979] stress-ng-stream: exited [208979] (instance 2)
+stress-ng: debug: [208911] process [208979] terminated
+stress-ng: debug: [209087] stress-ng-stream: exited [209087] (instance 3)
+stress-ng: debug: [208911] process [209087] terminated
+stress-ng: debug: [208911] process [208935] terminated
+stress-ng: debug: [208911] process [208959] terminated
+stress-ng: debug: [208911] process [208980] terminated
+stress-ng: debug: [208911] process [209088] terminated
+stress-ng: debug: [208911] process [208936] terminated
+stress-ng: debug: [208911] process [208960] terminated
+stress-ng: debug: [208911] process [208981] terminated
+stress-ng: debug: [208911] process [209089] terminated
+stress-ng: debug: [208911] process [208938] terminated
+stress-ng: debug: [208911] process [208961] terminated
+stress-ng: debug: [208911] process [208982] terminated
+stress-ng: debug: [208911] process [209090] terminated
+stress-ng: info:  [209091] stress-ng-zlib: instance 3: compression ratio: 47.48%
+stress-ng: debug: [209091] stress-ng-zlib: exited [209091] (instance 3)
+stress-ng: info:  [208962] stress-ng-zlib: instance 1: compression ratio: 32.80%
+stress-ng: debug: [208962] stress-ng-zlib: exited [208962] (instance 1)
+stress-ng: info:  [208983] stress-ng-zlib: instance 2: compression ratio: 51.51%
+stress-ng: debug: [208983] stress-ng-zlib: exited [208983] (instance 2)
+stress-ng: info:  [208939] stress-ng-zlib: instance 0: compression ratio: 25.24%
+stress-ng: debug: [208939] stress-ng-zlib: exited [208939] (instance 0)
+stress-ng: debug: [208911] process [208939] terminated
+stress-ng: debug: [208911] process [208962] terminated
+stress-ng: debug: [208911] process [208983] terminated
+stress-ng: debug: [208911] process [209091] terminated
+stress-ng: info:  [208911] successful run completed in 35.98s
+stress-ng: info:  [208911] thermal zone temperatures not available

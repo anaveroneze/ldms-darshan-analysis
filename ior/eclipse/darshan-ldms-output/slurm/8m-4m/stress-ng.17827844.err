@@ -1,0 +1,365 @@
+stress-ng: debug: [174636] 72 processors online, 72 processors configured
+stress-ng: info:  [174636] dispatching hogs: 4 af-alg, 4 atomic, 4 bsearch, 4 context, 4 cpu, 4 cpu-online, 4 crypt, 4 fp-error, 4 getrandom, 4 heapsort, 4 hsearch, 4 longjmp, 4 lsearch, 4 matrix, 4 mergesort, 4 nop, 4 numa, 4 opcode, 4 qsort, 4 rdrand, 4 str, 4 stream, 4 tsc, 4 tsearch, 4 vecmath, 4 wcs, 4 zlib
+stress-ng: debug: [174636] cache allocate: default cache size: 46080K
+stress-ng: debug: [174636] starting stressors
+stress-ng: debug: [174653] stress-ng-crypt: started [174653] (instance 0)
+stress-ng: debug: [174652] stress-ng-cpu-online: started [174652] (instance 0)
+stress-ng: info:  [174652] stress-ng-cpu-online: need root privilege to run this stressor
+stress-ng: debug: [174652] stress-ng-cpu-online: exited [174652] (instance 0)
+stress-ng: debug: [174651] stress-ng-cpu: started [174651] (instance 0)
+stress-ng: debug: [174654] stress-ng-fp-error: started [174654] (instance 0)
+stress-ng: debug: [174655] stress-ng-getrandom: started [174655] (instance 0)
+stress-ng: debug: [174650] stress-ng-context: started [174650] (instance 0)
+stress-ng: debug: [174656] stress-ng-heapsort: started [174656] (instance 0)
+stress-ng: debug: [174657] stress-ng-hsearch: started [174657] (instance 0)
+stress-ng: debug: [174649] stress-ng-bsearch: started [174649] (instance 0)
+stress-ng: debug: [174658] stress-ng-longjmp: started [174658] (instance 0)
+stress-ng: debug: [174659] stress-ng-lsearch: started [174659] (instance 0)
+stress-ng: debug: [174660] stress-ng-matrix: started [174660] (instance 0)
+stress-ng: debug: [174661] stress-ng-mergesort: started [174661] (instance 0)
+stress-ng: debug: [174663] stress-ng-numa: started [174663] (instance 0)
+stress-ng: debug: [174664] stress-ng-opcode: started [174664] (instance 0)
+stress-ng: debug: [174662] stress-ng-nop: started [174662] (instance 0)
+stress-ng: debug: [174665] stress-ng-qsort: started [174665] (instance 0)
+stress-ng: info:  [174663] stress-ng-numa: system has 2 of a maximum 1024 memory NUMA nodes
+stress-ng: debug: [174648] stress-ng-atomic: started [174648] (instance 0)
+stress-ng: debug: [174666] stress-ng-rdrand: started [174666] (instance 0)
+stress-ng: debug: [174667] stress-ng-str: started [174667] (instance 0)
+stress-ng: debug: [174670] stress-ng-tsearch: started [174670] (instance 0)
+stress-ng: debug: [174673] stress-ng-zlib: started [174673] (instance 0)
+stress-ng: debug: [174674] stress-ng-af-alg: started [174674] (instance 1)
+stress-ng: debug: [174672] stress-ng-wcs: started [174672] (instance 0)
+stress-ng: debug: [174675] stress-ng-atomic: started [174675] (instance 1)
+stress-ng: debug: [174668] stress-ng-stream: started [174668] (instance 0)
+stress-ng: debug: [174671] stress-ng-vecmath: started [174671] (instance 0)
+stress-ng: debug: [174669] stress-ng-tsc: started [174669] (instance 0)
+stress-ng: debug: [174669] stress-ng-tsc: exited [174669] (instance 0)
+stress-ng: debug: [174666] stress-ng-rdrand: exited [174666] (instance 0)
+stress-ng: debug: [174676] stress-ng-bsearch: started [174676] (instance 1)
+stress-ng: debug: [174677] stress-ng-context: started [174677] (instance 1)
+stress-ng: debug: [174647] stress-ng-af-alg: started [174647] (instance 0)
+stress-ng: debug: [174685] stress-ng-fp-error: started [174685] (instance 1)
+stress-ng: debug: [174687] stress-ng-heapsort: started [174687] (instance 1)
+stress-ng: debug: [174688] stress-ng-hsearch: started [174688] (instance 1)
+stress-ng: debug: [174689] stress-ng-longjmp: started [174689] (instance 1)
+stress-ng: debug: [174683] stress-ng-cpu-online: started [174683] (instance 1)
+stress-ng: debug: [174684] stress-ng-crypt: started [174684] (instance 1)
+stress-ng: debug: [174686] stress-ng-getrandom: started [174686] (instance 1)
+stress-ng: debug: [174690] stress-ng-lsearch: started [174690] (instance 1)
+stress-ng: debug: [174683] stress-ng-cpu-online: exited [174683] (instance 1)
+stress-ng: debug: [174691] stress-ng-matrix: started [174691] (instance 1)
+stress-ng: debug: [174692] stress-ng-mergesort: started [174692] (instance 1)
+stress-ng: debug: [174682] stress-ng-cpu: started [174682] (instance 1)
+stress-ng: debug: [174705] stress-ng-opcode: started [174705] (instance 1)
+stress-ng: debug: [174704] stress-ng-numa: started [174704] (instance 1)
+stress-ng: debug: [174734] stress-ng-qsort: started [174734] (instance 1)
+stress-ng: debug: [174735] stress-ng-rdrand: started [174735] (instance 1)
+stress-ng: debug: [174735] stress-ng-rdrand: exited [174735] (instance 1)
+stress-ng: debug: [174736] stress-ng-str: started [174736] (instance 1)
+stress-ng: debug: [174737] stress-ng-stream: started [174737] (instance 1)
+stress-ng: debug: [174738] stress-ng-tsc: started [174738] (instance 1)
+stress-ng: debug: [174738] stress-ng-tsc: exited [174738] (instance 1)
+stress-ng: debug: [174755] stress-ng-tsearch: started [174755] (instance 1)
+stress-ng: debug: [174756] stress-ng-vecmath: started [174756] (instance 1)
+stress-ng: debug: [174703] stress-ng-nop: started [174703] (instance 1)
+stress-ng: debug: [174759] stress-ng-wcs: started [174759] (instance 1)
+stress-ng: debug: [174760] stress-ng-zlib: started [174760] (instance 1)
+stress-ng: debug: [174761] stress-ng-af-alg: started [174761] (instance 2)
+stress-ng: debug: [174763] stress-ng-bsearch: started [174763] (instance 2)
+stress-ng: debug: [174762] stress-ng-atomic: started [174762] (instance 2)
+stress-ng: debug: [174767] stress-ng-context: started [174767] (instance 2)
+stress-ng: debug: [174768] stress-ng-cpu: started [174768] (instance 2)
+stress-ng: debug: [174771] stress-ng-cpu-online: started [174771] (instance 2)
+stress-ng: debug: [174772] stress-ng-crypt: started [174772] (instance 2)
+stress-ng: debug: [174773] stress-ng-fp-error: started [174773] (instance 2)
+stress-ng: debug: [174771] stress-ng-cpu-online: exited [174771] (instance 2)
+stress-ng: debug: [174774] stress-ng-getrandom: started [174774] (instance 2)
+stress-ng: debug: [174803] stress-ng-heapsort: started [174803] (instance 2)
+stress-ng: debug: [174804] stress-ng-hsearch: started [174804] (instance 2)
+stress-ng: debug: [174805] stress-ng-longjmp: started [174805] (instance 2)
+stress-ng: debug: [174806] stress-ng-lsearch: started [174806] (instance 2)
+stress-ng: debug: [174807] stress-ng-matrix: started [174807] (instance 2)
+stress-ng: debug: [174808] stress-ng-mergesort: started [174808] (instance 2)
+stress-ng: debug: [174809] stress-ng-nop: started [174809] (instance 2)
+stress-ng: debug: [174810] stress-ng-numa: started [174810] (instance 2)
+stress-ng: debug: [174811] stress-ng-opcode: started [174811] (instance 2)
+stress-ng: debug: [174829] stress-ng-rdrand: started [174829] (instance 2)
+stress-ng: debug: [174829] stress-ng-rdrand: exited [174829] (instance 2)
+stress-ng: debug: [174833] stress-ng-tsc: started [174833] (instance 2)
+stress-ng: debug: [174832] stress-ng-stream: started [174832] (instance 2)
+stress-ng: debug: [174831] stress-ng-str: started [174831] (instance 2)
+stress-ng: debug: [174833] stress-ng-tsc: exited [174833] (instance 2)
+stress-ng: info:  [174668] stress-ng-stream: stressor loosely based on a variant of the STREAM benchmark code
+stress-ng: info:  [174668] stress-ng-stream: do NOT submit any of these results to the STREAM benchmark results
+stress-ng: info:  [174668] stress-ng-stream: Using CPU cache size of 46080K
+stress-ng: debug: [174850] stress-ng-vecmath: started [174850] (instance 2)
+stress-ng: debug: [174849] stress-ng-tsearch: started [174849] (instance 2)
+stress-ng: debug: [174828] stress-ng-qsort: started [174828] (instance 2)
+stress-ng: debug: [174854] stress-ng-wcs: started [174854] (instance 2)
+stress-ng: debug: [174856] stress-ng-af-alg: started [174856] (instance 3)
+stress-ng: debug: [174855] stress-ng-zlib: started [174855] (instance 2)
+stress-ng: debug: [174860] stress-ng-atomic: started [174860] (instance 3)
+stress-ng: debug: [174862] stress-ng-context: started [174862] (instance 3)
+stress-ng: debug: [174861] stress-ng-bsearch: started [174861] (instance 3)
+stress-ng: debug: [174942] stress-ng-crypt: started [174942] (instance 3)
+stress-ng: debug: [174941] stress-ng-cpu-online: started [174941] (instance 3)
+stress-ng: debug: [174943] stress-ng-fp-error: started [174943] (instance 3)
+stress-ng: debug: [174940] stress-ng-cpu: started [174940] (instance 3)
+stress-ng: debug: [174941] stress-ng-cpu-online: exited [174941] (instance 3)
+stress-ng: debug: [174952] stress-ng-getrandom: started [174952] (instance 3)
+stress-ng: debug: [174957] stress-ng-matrix: started [174957] (instance 3)
+stress-ng: debug: [174954] stress-ng-hsearch: started [174954] (instance 3)
+stress-ng: debug: [174956] stress-ng-lsearch: started [174956] (instance 3)
+stress-ng: debug: [174958] stress-ng-mergesort: started [174958] (instance 3)
+stress-ng: debug: [174955] stress-ng-longjmp: started [174955] (instance 3)
+stress-ng: debug: [174953] stress-ng-heapsort: started [174953] (instance 3)
+stress-ng: debug: [174959] stress-ng-nop: started [174959] (instance 3)
+stress-ng: debug: [174964] stress-ng-opcode: started [174964] (instance 3)
+stress-ng: debug: [174966] stress-ng-rdrand: started [174966] (instance 3)
+stress-ng: debug: [174968] stress-ng-stream: started [174968] (instance 3)
+stress-ng: debug: [174970] stress-ng-tsearch: started [174970] (instance 3)
+stress-ng: debug: [174967] stress-ng-str: started [174967] (instance 3)
+stress-ng: debug: [174969] stress-ng-tsc: started [174969] (instance 3)
+stress-ng: debug: [174965] stress-ng-qsort: started [174965] (instance 3)
+stress-ng: debug: [174971] stress-ng-vecmath: started [174971] (instance 3)
+stress-ng: debug: [174969] stress-ng-tsc: exited [174969] (instance 3)
+stress-ng: debug: [174966] stress-ng-rdrand: exited [174966] (instance 3)
+stress-ng: debug: [174972] stress-ng-wcs: started [174972] (instance 3)
+stress-ng: debug: [174963] stress-ng-numa: started [174963] (instance 3)
+stress-ng: debug: [174636] 108 stressors spawned
+stress-ng: debug: [174980] stress-ng-zlib: started [174980] (instance 3)
+stress-ng: fail:  [174661] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174661] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174692] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174661] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174692] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174661] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174808] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174692] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174661] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+info: 5 failures reached, aborting stress process
+stress-ng: debug: [174661] stress-ng-mergesort: exited [174661] (instance 0)
+stress-ng: fail:  [174692] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174808] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174692] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+info: 5 failures reached, aborting stress process
+stress-ng: debug: [174692] stress-ng-mergesort: exited [174692] (instance 1)
+stress-ng: fail:  [174808] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174808] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174958] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174808] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+info: 5 failures reached, aborting stress process
+stress-ng: debug: [174808] stress-ng-mergesort: exited [174808] (instance 2)
+stress-ng: fail:  [174958] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174958] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174958] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+stress-ng: fail:  [174958] stress-ng-mergesort: mergesort failed: 22 (Invalid argument)
+info: 5 failures reached, aborting stress process
+stress-ng: debug: [174958] stress-ng-mergesort: exited [174958] (instance 3)
+stress-ng: debug: [174650] stress-ng-context: exited [174650] (instance 0)
+stress-ng: debug: [174648] stress-ng-atomic: exited [174648] (instance 0)
+stress-ng: debug: [174655] stress-ng-getrandom: exited [174655] (instance 0)
+stress-ng: debug: [174667] stress-ng-str: exited [174667] (instance 0)
+stress-ng: debug: [174657] stress-ng-hsearch: exited [174657] (instance 0)
+stress-ng: debug: [174656] stress-ng-heapsort: exited [174656] (instance 0)
+stress-ng: debug: [174660] stress-ng-matrix: exited [174660] (instance 0)
+stress-ng: debug: [174672] stress-ng-wcs: exited [174672] (instance 0)
+stress-ng: debug: [174665] stress-ng-qsort: exited [174665] (instance 0)
+stress-ng: debug: [174658] stress-ng-longjmp: exited [174658] (instance 0)
+stress-ng: debug: [174649] stress-ng-bsearch: exited [174649] (instance 0)
+stress-ng: debug: [174659] stress-ng-lsearch: exited [174659] (instance 0)
+stress-ng: debug: [174677] stress-ng-context: exited [174677] (instance 1)
+stress-ng: debug: [174671] stress-ng-vecmath: exited [174671] (instance 0)
+stress-ng: debug: [174662] stress-ng-nop: exited [174662] (instance 0)
+stress-ng: debug: [174654] stress-ng-fp-error: exited [174654] (instance 0)
+stress-ng: debug: [174664] stress-ng-opcode: exited [174664] (instance 0)
+stress-ng: debug: [174675] stress-ng-atomic: exited [174675] (instance 1)
+stress-ng: debug: [174676] stress-ng-bsearch: exited [174676] (instance 1)
+stress-ng: debug: [174653] stress-ng-crypt: exited [174653] (instance 0)
+stress-ng: debug: [174674] stress-ng-af-alg: exited [174674] (instance 1)
+stress-ng: debug: [174686] stress-ng-getrandom: exited [174686] (instance 1)
+stress-ng: debug: [174854] stress-ng-wcs: exited [174854] (instance 2)
+stress-ng: debug: [174703] stress-ng-nop: exited [174703] (instance 1)
+stress-ng: debug: [174831] stress-ng-str: exited [174831] (instance 2)
+stress-ng: debug: [174805] stress-ng-longjmp: exited [174805] (instance 2)
+stress-ng: debug: [174687] stress-ng-heapsort: exited [174687] (instance 1)
+stress-ng: debug: [174804] stress-ng-hsearch: exited [174804] (instance 2)
+stress-ng: debug: [174803] stress-ng-heapsort: exited [174803] (instance 2)
+stress-ng: debug: [174690] stress-ng-lsearch: exited [174690] (instance 1)
+stress-ng: debug: [174688] stress-ng-hsearch: exited [174688] (instance 1)
+stress-ng: debug: [174759] stress-ng-wcs: exited [174759] (instance 1)
+stress-ng: debug: [174691] stress-ng-matrix: exited [174691] (instance 1)
+stress-ng: debug: [174685] stress-ng-fp-error: exited [174685] (instance 1)
+stress-ng: debug: [174773] stress-ng-fp-error: exited [174773] (instance 2)
+stress-ng: debug: [174762] stress-ng-atomic: exited [174762] (instance 2)
+stress-ng: debug: [174774] stress-ng-getrandom: exited [174774] (instance 2)
+stress-ng: debug: [174809] stress-ng-nop: exited [174809] (instance 2)
+stress-ng: debug: [174767] stress-ng-context: exited [174767] (instance 2)
+stress-ng: debug: [174850] stress-ng-vecmath: exited [174850] (instance 2)
+stress-ng: debug: [174705] stress-ng-opcode: exited [174705] (instance 1)
+stress-ng: debug: [174807] stress-ng-matrix: exited [174807] (instance 2)
+stress-ng: debug: [174736] stress-ng-str: exited [174736] (instance 1)
+stress-ng: debug: [174689] stress-ng-longjmp: exited [174689] (instance 1)
+stress-ng: debug: [174806] stress-ng-lsearch: exited [174806] (instance 2)
+stress-ng: debug: [174811] stress-ng-opcode: exited [174811] (instance 2)
+stress-ng: debug: [174828] stress-ng-qsort: exited [174828] (instance 2)
+stress-ng: debug: [174734] stress-ng-qsort: exited [174734] (instance 1)
+stress-ng: debug: [174856] stress-ng-af-alg: exited [174856] (instance 3)
+stress-ng: debug: [174756] stress-ng-vecmath: exited [174756] (instance 1)
+stress-ng: debug: [174763] stress-ng-bsearch: exited [174763] (instance 2)
+stress-ng: debug: [174684] stress-ng-crypt: exited [174684] (instance 1)
+stress-ng: debug: [174761] stress-ng-af-alg: exited [174761] (instance 2)
+stress-ng: debug: [174772] stress-ng-crypt: exited [174772] (instance 2)
+stress-ng: debug: [174647] stress-ng-af-alg: exited [174647] (instance 0)
+stress-ng: debug: [174636] process [174647] terminated
+stress-ng: debug: [174636] process [174674] terminated
+stress-ng: debug: [174636] process [174761] terminated
+stress-ng: debug: [174636] process [174856] terminated
+stress-ng: debug: [174636] process [174648] terminated
+stress-ng: debug: [174636] process [174675] terminated
+stress-ng: debug: [174636] process [174762] terminated
+stress-ng: debug: [174651] stress-ng-cpu: exited [174651] (instance 0)
+stress-ng: debug: [174670] stress-ng-tsearch: exited [174670] (instance 0)
+stress-ng: debug: [174682] stress-ng-cpu: exited [174682] (instance 1)
+stress-ng: debug: [174862] stress-ng-context: exited [174862] (instance 3)
+stress-ng: debug: [174755] stress-ng-tsearch: exited [174755] (instance 1)
+stress-ng: debug: [174860] stress-ng-atomic: exited [174860] (instance 3)
+stress-ng: debug: [174768] stress-ng-cpu: exited [174768] (instance 2)
+stress-ng: debug: [174636] process [174860] terminated
+stress-ng: debug: [174636] process [174649] terminated
+stress-ng: debug: [174636] process [174676] terminated
+stress-ng: debug: [174636] process [174763] terminated
+stress-ng: debug: [174972] stress-ng-wcs: exited [174972] (instance 3)
+stress-ng: debug: [174965] stress-ng-qsort: exited [174965] (instance 3)
+stress-ng: debug: [174957] stress-ng-matrix: exited [174957] (instance 3)
+stress-ng: debug: [174953] stress-ng-heapsort: exited [174953] (instance 3)
+stress-ng: debug: [174943] stress-ng-fp-error: exited [174943] (instance 3)
+stress-ng: debug: [174861] stress-ng-bsearch: exited [174861] (instance 3)
+stress-ng: debug: [174636] process [174861] terminated
+stress-ng: debug: [174636] process [174650] terminated
+stress-ng: debug: [174636] process [174677] terminated
+stress-ng: debug: [174636] process [174767] terminated
+stress-ng: debug: [174636] process [174862] terminated
+stress-ng: debug: [174636] process [174651] terminated
+stress-ng: debug: [174636] process [174682] terminated
+stress-ng: debug: [174636] process [174768] terminated
+stress-ng: debug: [174954] stress-ng-hsearch: exited [174954] (instance 3)
+stress-ng: debug: [174956] stress-ng-lsearch: exited [174956] (instance 3)
+stress-ng: debug: [174971] stress-ng-vecmath: exited [174971] (instance 3)
+stress-ng: debug: [174964] stress-ng-opcode: exited [174964] (instance 3)
+stress-ng: debug: [174955] stress-ng-longjmp: exited [174955] (instance 3)
+stress-ng: debug: [174959] stress-ng-nop: exited [174959] (instance 3)
+stress-ng: debug: [174963] stress-ng-numa: exited [174963] (instance 3)
+stress-ng: debug: [174952] stress-ng-getrandom: exited [174952] (instance 3)
+stress-ng: debug: [174967] stress-ng-str: exited [174967] (instance 3)
+stress-ng: debug: [174942] stress-ng-crypt: exited [174942] (instance 3)
+stress-ng: debug: [174849] stress-ng-tsearch: exited [174849] (instance 2)
+stress-ng: debug: [174940] stress-ng-cpu: exited [174940] (instance 3)
+stress-ng: debug: [174636] process [174940] terminated
+stress-ng: debug: [174636] process [174652] terminated
+stress-ng: debug: [174636] process [174683] terminated
+stress-ng: debug: [174636] process [174771] terminated
+stress-ng: debug: [174636] process [174941] terminated
+stress-ng: debug: [174636] process [174653] terminated
+stress-ng: debug: [174636] process [174684] terminated
+stress-ng: debug: [174636] process [174772] terminated
+stress-ng: debug: [174636] process [174942] terminated
+stress-ng: debug: [174636] process [174654] terminated
+stress-ng: debug: [174636] process [174685] terminated
+stress-ng: debug: [174636] process [174773] terminated
+stress-ng: debug: [174636] process [174943] terminated
+stress-ng: debug: [174636] process [174655] terminated
+stress-ng: debug: [174636] process [174686] terminated
+stress-ng: debug: [174636] process [174774] terminated
+stress-ng: debug: [174636] process [174952] terminated
+stress-ng: debug: [174636] process [174656] terminated
+stress-ng: debug: [174636] process [174687] terminated
+stress-ng: debug: [174636] process [174803] terminated
+stress-ng: debug: [174636] process [174953] terminated
+stress-ng: debug: [174636] process [174657] terminated
+stress-ng: debug: [174636] process [174688] terminated
+stress-ng: debug: [174636] process [174804] terminated
+stress-ng: debug: [174636] process [174954] terminated
+stress-ng: debug: [174636] process [174658] terminated
+stress-ng: debug: [174636] process [174689] terminated
+stress-ng: debug: [174636] process [174805] terminated
+stress-ng: debug: [174636] process [174955] terminated
+stress-ng: debug: [174636] process [174659] terminated
+stress-ng: debug: [174636] process [174690] terminated
+stress-ng: debug: [174636] process [174806] terminated
+stress-ng: debug: [174636] process [174956] terminated
+stress-ng: debug: [174636] process [174660] terminated
+stress-ng: debug: [174636] process [174691] terminated
+stress-ng: debug: [174636] process [174807] terminated
+stress-ng: debug: [174636] process [174957] terminated
+stress-ng: debug: [174636] process [174661] terminated
+stress-ng: debug: [174636] process [174692] terminated
+stress-ng: debug: [174636] process [174808] terminated
+stress-ng: debug: [174636] process [174958] terminated
+stress-ng: debug: [174636] process [174662] terminated
+stress-ng: debug: [174636] process [174703] terminated
+stress-ng: debug: [174636] process [174809] terminated
+stress-ng: debug: [174636] process [174959] terminated
+stress-ng: info:  [174760] stress-ng-zlib: instance 1: compression ratio: 46.67%
+stress-ng: debug: [174760] stress-ng-zlib: exited [174760] (instance 1)
+stress-ng: debug: [174970] stress-ng-tsearch: exited [174970] (instance 3)
+stress-ng: debug: [174704] stress-ng-numa: exited [174704] (instance 1)
+stress-ng: info:  [174668] stress-ng-stream: run too short to determine memory rate
+stress-ng: debug: [174668] stress-ng-stream: exited [174668] (instance 0)
+stress-ng: debug: [174737] stress-ng-stream: exited [174737] (instance 1)
+stress-ng: info:  [174855] stress-ng-zlib: instance 2: compression ratio: 30.01%
+stress-ng: debug: [174855] stress-ng-zlib: exited [174855] (instance 2)
+stress-ng: debug: [174832] stress-ng-stream: exited [174832] (instance 2)
+stress-ng: debug: [174968] stress-ng-stream: exited [174968] (instance 3)
+stress-ng: debug: [174810] stress-ng-numa: exited [174810] (instance 2)
+stress-ng: info:  [174673] stress-ng-zlib: instance 0: compression ratio: 15.98%
+stress-ng: debug: [174673] stress-ng-zlib: exited [174673] (instance 0)
+stress-ng: debug: [174663] stress-ng-numa: exited [174663] (instance 0)
+stress-ng: debug: [174636] process [174663] terminated
+stress-ng: debug: [174636] process [174704] terminated
+stress-ng: debug: [174636] process [174810] terminated
+stress-ng: debug: [174636] process [174963] terminated
+stress-ng: debug: [174636] process [174664] terminated
+stress-ng: debug: [174636] process [174705] terminated
+stress-ng: debug: [174636] process [174811] terminated
+stress-ng: debug: [174636] process [174964] terminated
+stress-ng: debug: [174636] process [174665] terminated
+stress-ng: debug: [174636] process [174734] terminated
+stress-ng: debug: [174636] process [174828] terminated
+stress-ng: debug: [174636] process [174965] terminated
+stress-ng: debug: [174636] process [174666] terminated
+stress-ng: debug: [174636] process [174735] terminated
+stress-ng: debug: [174636] process [174829] terminated
+stress-ng: debug: [174636] process [174966] terminated
+stress-ng: debug: [174636] process [174667] terminated
+stress-ng: debug: [174636] process [174736] terminated
+stress-ng: debug: [174636] process [174831] terminated
+stress-ng: debug: [174636] process [174967] terminated
+stress-ng: debug: [174636] process [174668] terminated
+stress-ng: debug: [174636] process [174737] terminated
+stress-ng: debug: [174636] process [174832] terminated
+stress-ng: debug: [174636] process [174968] terminated
+stress-ng: debug: [174636] process [174669] terminated
+stress-ng: debug: [174636] process [174738] terminated
+stress-ng: debug: [174636] process [174833] terminated
+stress-ng: debug: [174636] process [174969] terminated
+stress-ng: debug: [174636] process [174670] terminated
+stress-ng: debug: [174636] process [174755] terminated
+stress-ng: debug: [174636] process [174849] terminated
+stress-ng: debug: [174636] process [174970] terminated
+stress-ng: debug: [174636] process [174671] terminated
+stress-ng: debug: [174636] process [174756] terminated
+stress-ng: debug: [174636] process [174850] terminated
+stress-ng: debug: [174636] process [174971] terminated
+stress-ng: debug: [174636] process [174672] terminated
+stress-ng: debug: [174636] process [174759] terminated
+stress-ng: debug: [174636] process [174854] terminated
+stress-ng: debug: [174636] process [174972] terminated
+stress-ng: debug: [174636] process [174673] terminated
+stress-ng: debug: [174636] process [174760] terminated
+stress-ng: debug: [174636] process [174855] terminated
+stress-ng: info:  [174980] stress-ng-zlib: instance 3: compression ratio: 43.98%
+stress-ng: debug: [174980] stress-ng-zlib: exited [174980] (instance 3)
+stress-ng: debug: [174636] process [174980] terminated
+stress-ng: info:  [174636] successful run completed in 40.08s
+stress-ng: info:  [174636] thermal zone temperatures not available

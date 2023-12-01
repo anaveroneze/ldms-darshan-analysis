@@ -1,0 +1,2 @@
+mkdir: cannot create directory ‘/tmp/stress-tmp/’: File exists
+stress-ng: no process found

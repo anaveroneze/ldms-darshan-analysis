@@ -1,0 +1,47 @@
+Thu Nov 30 15:49:28 MST 2023: cpu-cache stressor started
+Thu Nov 30 15:49:28 MST 2023: Application Started
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Thu Nov 30 15:49:36 2023
+Command line        : /projects/ovis/darshanConnector/apps/rhel9.7/ior/build/bin/ior -b 8m -t 4m -s 1024 -F -C -e -k -o /pscratch/spwalto/iorTest/darshan
+Machine             : Linux ec32
+TestID              : 0
+StartTime           : Thu Nov 30 15:49:36 2023
+Path                : /pscratch/spwalto/iorTest/darshan.00000000
+FS                  : 18684.8 TiB   Used FS: 74.5%   Inodes: 6884.4 Mi   Used Inodes: 30.8%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /pscratch/spwalto/iorTest/darshan
+access              : file-per-process
+type                : independent
+segments            : 1024
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 1
+tasks               : 36
+clients per node    : 36
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 4 MiB
+blocksize           : 8 MiB
+aggregate filesize  : 288 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     505.02     126.26     291.79      8192       4096       0.368084   583.94     554.76     583.96     0   
+read      699.90     175.10     210.53      8192       4096       0.003204   421.07     360.72     421.36     0   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write         505.02     505.02     505.02       0.00     126.26     126.26     126.26       0.00  583.95545         NA            NA     0     36  36    1   1     1        1         0    0   1024  8388608  4194304  294912.0 POSIX      0
+read          699.90     699.90     699.90       0.00     174.98     174.98     174.98       0.00  421.36247         NA            NA     0     36  36    1   1     1        1         0    0   1024  8388608  4194304  294912.0 POSIX      0
+Finished            : Thu Nov 30 16:06:21 2023
+Thu Nov 30 16:06:37 MST 2023: Application Ended
+Thu Nov 30 16:06:38 MST 2023: Stressor Killed
+The DiffOfTime = 1029.879743106
