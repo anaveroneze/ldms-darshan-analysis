@@ -2,17 +2,17 @@ Thu Nov 30 15:13:12 MST 2023: cpu stressor started
 Thu Nov 30 15:13:12 MST 2023: Application Started
 IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
 Began               : Thu Nov 30 15:13:31 2023
-Command line        : /projects/ovis/darshanConnector/apps/rhel9.7/ior/build/bin/ior -b 8m -t 4m -s 1024 -F -C -e -k -o /pscratch/spwalto/iorTest/darshan
-Machine             : Linux ec17
+Command line        : /projects/ovis/darshanConnector/apps/rhel9.7/ior/build/bin/ior -b 8m -t 4m -s 1024 -F -C -e -k -o /pscratch/user/iorTest/darshan
+Machine             : Linux n17
 TestID              : 0
 StartTime           : Thu Nov 30 15:13:31 2023
-Path                : /pscratch/spwalto/iorTest/darshan.00000000
+Path                : /pscratch/user/iorTest/darshan.00000000
 FS                  : 18684.8 TiB   Used FS: 74.5%   Inodes: 6884.8 Mi   Used Inodes: 30.8%
 
 Options: 
 api                 : POSIX
 apiVersion          : 
-test filename       : /pscratch/spwalto/iorTest/darshan
+test filename       : /pscratch/user/iorTest/darshan
 access              : file-per-process
 type                : independent
 segments            : 1024

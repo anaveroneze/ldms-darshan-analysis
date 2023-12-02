@@ -1,4 +1,4 @@
-/nscratch/spwalto/iorTest/darshan.00000000
+/nscratch/user/iorTest/darshan.00000000
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -7,7 +7,7 @@ lmm_stripe_offset: 16
 	obdidx		 objid		 objid		 group
 	    16	      80481151	    0x4cc0b7f	   0x240000400
 
-/nscratch/spwalto/iorTest/darshan.00000001
+/nscratch/user/iorTest/darshan.00000001
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -16,7 +16,7 @@ lmm_stripe_offset: 14
 	obdidx		 objid		 objid		 group
 	    14	      81301989	    0x4d891e5	   0x600000400
 
-/nscratch/spwalto/iorTest/darshan.00000002
+/nscratch/user/iorTest/darshan.00000002
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -25,7 +25,7 @@ lmm_stripe_offset: 10
 	obdidx		 objid		 objid		 group
 	    10	      78441219	    0x4aceb03	   0x4c0000400
 
-/nscratch/spwalto/iorTest/darshan.00000003
+/nscratch/user/iorTest/darshan.00000003
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -34,7 +34,7 @@ lmm_stripe_offset: 20
 	obdidx		 objid		 objid		 group
 	    20	      79253880	    0x4b95178	   0x300000400
 
-/nscratch/spwalto/iorTest/darshan.00000004
+/nscratch/user/iorTest/darshan.00000004
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -43,7 +43,7 @@ lmm_stripe_offset: 4
 	obdidx		 objid		 objid		 group
 	     4	      78682024	    0x4b097a8	   0x2c0000400
 
-/nscratch/spwalto/iorTest/darshan.00000005
+/nscratch/user/iorTest/darshan.00000005
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -52,7 +52,7 @@ lmm_stripe_offset: 12
 	obdidx		 objid		 objid		 group
 	    12	      80349023	    0x4ca075f	   0x440000400
 
-/nscratch/spwalto/iorTest/darshan.00000006
+/nscratch/user/iorTest/darshan.00000006
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -61,7 +61,7 @@ lmm_stripe_offset: 6
 	obdidx		 objid		 objid		 group
 	     6	      79980736	    0x4c468c0	   0x500000400
 
-/nscratch/spwalto/iorTest/darshan.00000007
+/nscratch/user/iorTest/darshan.00000007
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -70,7 +70,7 @@ lmm_stripe_offset: 24
 	obdidx		 objid		 objid		 group
 	    24	      65930011	    0x3ee031b	   0x380000400
 
-/nscratch/spwalto/iorTest/darshan.00000008
+/nscratch/user/iorTest/darshan.00000008
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -79,7 +79,7 @@ lmm_stripe_offset: 18
 	obdidx		 objid		 objid		 group
 	    18	      79988639	    0x4c4879f	   0x680000400
 
-/nscratch/spwalto/iorTest/darshan.00000009
+/nscratch/user/iorTest/darshan.00000009
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -88,7 +88,7 @@ lmm_stripe_offset: 28
 	obdidx		 objid		 objid		 group
 	    28	      80787621	    0x4d0b8a5	   0x3c0000400
 
-/nscratch/spwalto/iorTest/darshan.00000010
+/nscratch/user/iorTest/darshan.00000010
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -97,7 +97,7 @@ lmm_stripe_offset: 32
 	obdidx		 objid		 objid		 group
 	    32	      80197470	    0x4c7b75e	   0x340000400
 
-/nscratch/spwalto/iorTest/darshan.00000011
+/nscratch/user/iorTest/darshan.00000011
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -106,7 +106,7 @@ lmm_stripe_offset: 26
 	obdidx		 objid		 objid		 group
 	    26	      80359856	    0x4ca31b0	   0x540000400
 
-/nscratch/spwalto/iorTest/darshan.00000012
+/nscratch/user/iorTest/darshan.00000012
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -115,7 +115,7 @@ lmm_stripe_offset: 22
 	obdidx		 objid		 objid		 group
 	    22	      63085867	    0x3c29d2b	   0x640000400
 
-/nscratch/spwalto/iorTest/darshan.00000013
+/nscratch/user/iorTest/darshan.00000013
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -124,7 +124,7 @@ lmm_stripe_offset: 34
 	obdidx		 objid		 objid		 group
 	    34	      79975852	    0x4c455ac	   0x480000400
 
-/nscratch/spwalto/iorTest/darshan.00000014
+/nscratch/user/iorTest/darshan.00000014
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
@@ -133,7 +133,7 @@ lmm_stripe_offset: 30
 	obdidx		 objid		 objid		 group
 	    30	      77872971	    0x4a43f4b	   0x580000400
 
-/nscratch/spwalto/iorTest/darshan.00000015
+/nscratch/user/iorTest/darshan.00000015
 lmm_stripe_count:  1
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
