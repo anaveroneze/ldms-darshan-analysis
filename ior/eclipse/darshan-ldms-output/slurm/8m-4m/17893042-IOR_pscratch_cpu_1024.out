@@ -1,0 +1,46 @@
+Thu Dec  7 14:09:01 MST 2023: cpu stressor started
+Thu Dec  7 14:09:01 MST 2023: Application Started
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Thu Dec  7 14:09:18 2023
+Command line        : /projects/ovis/darshanConnector/apps/rhel9.7/ior/build/bin/ior -b 8m -t 4m -s 1024 -F -C -e -k -o /pscratch/user/iorTest/darshan
+Machine             : Linux n8
+TestID              : 0
+StartTime           : Thu Dec  7 14:09:18 2023
+Path                : /pscratch/user/iorTest/darshan.00000000
+FS                  : 18684.8 TiB   Used FS: 68.6%   Inodes: 7376.2 Mi   Used Inodes: 29.0%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /pscratch/user/iorTest/darshan
+access              : file-per-process
+type                : independent
+segments            : 1024
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 1
+tasks               : 36
+clients per node    : 36
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 4 MiB
+blocksize           : 8 MiB
+aggregate filesize  : 288 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     362.63     90.66      21.80       8192       4096       0.050067   813.25     775.25     813.27     0   
+read      606.30     151.69     48.20       8192       4096       0.030624   486.05     393.20     486.41     0   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write         362.63     362.63     362.63       0.00      90.66      90.66      90.66       0.00  813.26901         NA            NA     0     36  36    1   1     1        1         0    0   1024  8388608  4194304  294912.0 POSIX      0
+read          606.30     606.30     606.30       0.00     151.57     151.57     151.57       0.00  486.41361         NA            NA     0     36  36    1   1     1        1         0    0   1024  8388608  4194304  294912.0 POSIX      0
+Finished            : Thu Dec  7 14:30:58 2023
+Thu Dec  7 14:31:16 MST 2023: Application Ended
+The DiffOfTime = 1335.722589047
