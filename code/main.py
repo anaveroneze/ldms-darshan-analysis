@@ -104,9 +104,12 @@ def get_visualizations(filename, figname):
 
     r = ro.r
     r.source("./code/temporal_vis.R")
-    r.plot_temporal(filename, "./figures/ior/teste1.png")
-    r.plot_long_temporal(filename, "./figures/ior/teste2.png")
-    r.plot_max_temporal(filename, "./figures/ior/teste3.png")
+    # r.plot_temporal(filename, "./figures/ior/teste1.png")
+    # r.plot_long_temporal(filename, "./figures/ior/teste2.png")
+    # r.plot_max_temporal(filename, "./figures/ior/teste3.png")
+    # r.plot_bandwidth_per_rank(filename, "./figures/ior/teste4.png")
+    # r.plot_duration(filename, "./figures/ior/teste5.png")
+    r.plot_heatmap_temporal(filename, "./figures/ior/teste6.png")
 
     return 
 
