@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from math import sqrt 
 import rpy2.robjects as ro
+import seaborn as sns
+from datetime import datetime
 
 # Types of anomalies:
 # 1. Identify longer operations 
@@ -27,24 +29,20 @@ class Job:
         print("JOB CHARACTERISTICS:")
         print("---------------------------------------")
         print("Job ID:", self.job)
-        print(len(self.ranks), "Rank (s):", self.ranks)
-        print(len(self.ranks), "Node (s):", self.nodes)
+        print(len(self.ranks), "Rank (s):", sorted(self.ranks))
+        print(len(self.ranks), "Node (s):", sorted(self.nodes))
         print("Users:", self.users)
         print("Directory:", self.exe)
-        print("Operations filenames:", self.filename)
-        print("\n")
+        # print("Operations filenames:", self.filename)
 
 def get_statistics(df, self):
 
-    print("---------------------------------------")
-    print("EXECUTION SUMMARY:")
-    print("---------------------------------------")
-    print("Modules being collected:", df['module'].unique())
-    print("Module data:", list(df.type).count('MOD'))
-    print("Meta data:", list(df.type).count('MET'))
+    print("Modules collected:", df['module'].unique())
+    print("Module data (MOD):", list(df.type).count('MOD'))
+    print("Meta data (MET):", list(df.type).count('MET'))
     exec_time = round(df['end'].max() - df['start'].min(), 5)
-    print("I/O Execution time:", exec_time, "seconds")
-    print("Bandwidth (MiB/second):", round((df['len'].sum()/exec_time)/(1024 ** 2), 2))
+    print("I/O execution time:", exec_time, "seconds")
+    print("Total bandwidth (MiB/second):", round((df['len'].sum()/exec_time)/(1024 ** 2), 2))
 
     df_rw = df[df['op'].isin(["read", "write"])]
     df_read = df[df['op'] == "read"]
@@ -74,42 +72,152 @@ def get_statistics(df, self):
     pivot_df = df.pivot_table(index=None, columns='op', values='len', aggfunc='sum')  
     for op, duration in total_durations.items():
         print(f'Duration for {op}s: {round(duration, 4)} seconds')
-        bytesproc = round((pivot_df[op].max()/(1024 ** 2))/duration, 4)
-        print("Bandwidth:", bytesproc, "(MiB/second)")
+        if op == "read" or op == "write":
+            bytesproc = round((pivot_df[op].max()/(1024 ** 2))/duration, 4)
+            print("Bandwidth:", bytesproc, "(MiB/second)")
 
     print("\n")
-    print("READS (MiB):", df_read['len'].sum()/(1024 ** 2))
-    print("Mean duration:", round(df_read['dur'].sum()/(36*6), 2), "seconds")
-    print("Max (MiB):", round((df_read['len'].max()/(1024 ** 2)), 2))
-    print("Min (MiB):", round((df_read['len'].min()/(1024 ** 2)), 2))
-    print("Max per rank (MiB):", round(df_read.groupby('rank')['len'].agg('sum').max() / (1024 ** 2), 2))
-    print("Min per rank (MiB):", round(df_read.groupby('rank')['len'].agg('sum').min() / (1024 ** 2), 2))
+    print("READS (MiB):", round(df_read['len'].sum()/(1024 ** 2)))
+    print("Max MiB per rank:", round(df_read.groupby('rank')['len'].agg('sum').max() / (1024 ** 2)))
+    print("Min MiB per rank:", round(df_read.groupby('rank')['len'].agg('sum').min() / (1024 ** 2)))
     print("Bandwidth (MiB/second):", round((df_read['len'].sum()/(df_read['end'].max() - df_read['start'].min()))/(1024 ** 2), 2))
+    print("\nWRITES (MiB):", round(df_write['len'].sum()/(1024 ** 2)))
+    print("Max MiB per rank:", round(df_write.groupby('rank')['len'].agg('sum').max() / (1024 ** 2)))
+    print("Min MiB per rank:", round(df_write.groupby('rank')['len'].agg('sum').min() / (1024 ** 2)))
+    print("Bandwidth (MiB/second):", round((df_write['len'].sum()/(df_write['end'].max() - df_write['start'].min()))/(1024 ** 2), 2))
 
-    print("\n")
-    print("WRITES (MiB):", df_write['len'].sum()/(1024 ** 2))
-    print("Mean duration:", round(df_write['dur'].sum()/(36*6), 2), "seconds")
-    print("Max (MiB):", round((df_write['len'].max()/(1024 ** 2)), 2))
-    print("Min (MiB):", round((df_write['len'].min()/(1024 ** 2)), 2))
-    print("Max per rank (MiB):", round(df_write.groupby('rank')['len'].agg('sum').max() / (1024 ** 2), 2))
-    print("Min per rank (MiB):", round(df_write.groupby('rank')['len'].agg('sum').min() / (1024 ** 2), 2))
+    # IMBALANCE METRICS:
+    # Average = sum time computing / number of ranks
+    # Imbalance time = time that would be saved if the load was perfectly balanced across resources
+    # Percent Imbalance = performance that could be gained if load was perfectly balanced
+    # Imbalance Percentage = percentage of time that resources (excluding the slowest one) are
+    # not involved in computing 
+    print("---------------------------------------")
+    print("LOAD IMBALANCE METRICS:")
+    print("---------------------------------------")
+    # Get difference between execution time and time processing I/O per rank
+    df_idle = df.groupby('rank')['dur'].sum().reset_index()
+    df_idle.columns = ['Rank', 'I/O Time']
+    df_idle['Total time - I/O Time'] = exec_time - df_idle['I/O Time']
+    df_idle = df_idle.sort_values(by='Total time - I/O Time', ascending=False)
+
+    print("Total execution time:", exec_time)
+    num_ranks = df_idle['I/O Time'].nunique()
+    average = df_idle['I/O Time'].sum() / num_ranks
+    print("- Average:", round(average), "seconds")
+    it = df_idle['I/O Time'].max() - average
+    print("- Imbalance Time:", round(it, 2), "seconds")
+    pi = ((df_idle['I/O Time'].max() / average) - 1) * 100
+    print("- Percent Imbalance:", round(pi, 2), "%")
+    ip = (it / df_idle['I/O Time'].max()) * (num_ranks / (num_ranks - 1))
+    print("- Imbalance Percentage:", round(ip, 2), "%")
+    std = np.std(df_idle['I/O Time'])
+    print("- Standard deviation", round(std, 2))
 
     print("---------------------------------------")
-    print("EXECUTION SUMMARY PER RANK: ")
+    print("PROFILE PER RANK: ")
     print("---------------------------------------")
+    print("Total time without executing I/O operations:")
+    df['start'] = pd.to_datetime(df['start'], unit='s').dt.round('S')
+    df['end'] = pd.to_datetime(df['end'], unit='s').dt.round('S')
+    print(df_idle)
 
-    # TODO -----
+    # # Iterate over each operation
+    # for op in df_delay['op'].unique():
 
-def get_visualizations(filename, figname):
+    #     op_data = df_delay[df_delay['op'] == op]
+    #     rank_fast = op_data.loc[op_data['end'].idxmin()]['rank']
+    #     rank_slow = op_data.loc[op_data['end'].idxmax()]['rank']
+
+    #     time_fast = op_data[op_data['rank'] == rank_fast]['end'].values[0]
+    #     time_slow = op_data[op_data['rank'] == rank_slow]['end'].values[0]
+    #     time_diff = time_slow - time_fast
+
+    #     # Append the results to the result DataFrame
+    #     result_df = pd.concat([result_df, pd.DataFrame([{'op': op, 'rank_fast': rank_fast, 'rank_slow': rank_slow, 
+    #         'time_fast': time_fast, 'time_slow': time_slow, 'diff': time_diff}])], ignore_index=True)
+
+
+def get_visualizations_R(filename, figname):
 
     r = ro.r
     r.source("./code/temporal_vis.R")
-    # r.plot_temporal(filename, "./figures/ior/teste1.png")
-    # r.plot_long_temporal(filename, "./figures/ior/teste2.png")
-    # r.plot_max_temporal(filename, "./figures/ior/teste3.png")
-    # r.plot_bandwidth_per_rank(filename, "./figures/ior/teste4.png")
-    # r.plot_duration(filename, "./figures/ior/teste5.png")
-    r.plot_heatmap_temporal(filename, "./figures/ior/teste6.png")
+    r.plot_temporal(filename, "./figures/ior/teste1.png")
+    r.plot_long_temporal(filename, "./figures/ior/teste2.png")
+    r.plot_max_temporal(filename, "./figures/ior/teste3.png")
+    r.plot_bandwidth_per_rank(filename, "./figures/ior/teste4.png")
+    r.plot_duration(filename, "./figures/ior/teste5.png")
+
+    return 
+
+def get_visualizations_py(df, figname):
+
+    df.read = df[df['op'] == "read"]
+    mask = df.read['len']>0 
+    df.read = df.read[mask]
+    fig, ax = plt.subplots(1, 1, figsize=(20, 6))  # Adjust the figsize parameter for figure dimensions
+
+    df.read['timestamp'] = pd.to_datetime(df.read['timestamp'], unit='s').dt.round('S')
+    df.read['dur'] = pd.to_timedelta(df.read['dur'], unit='s').dt.round('S')
+    df.read['start'] = df.read['timestamp'] - df.read['dur']
+    df.read['rank_time'] = df.read['start'] - min(df.read['start'])
+
+    df.read['rank_time'] = pd.cut(df.read['start'].dt.round('S'), bins=20)
+    df.read = df.read.groupby(by=["op","rank_time"])["len"].sum().reset_index()
+    df.read['len'] = df.read['len'] / 1024 / 1024
+    df.read = df.read.pivot(index="op", columns="rank_time", values="len")
+    sns.heatmap(ax=ax, data=df.read, cmap="mako", cbar_kws={'label': 'MiB processed'})
+    ax.set_ylabel("Operation")
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
+    ax.set_xlabel("Timestamp")
+    plt.tight_layout()
+    plt.savefig("./figures/ior/teste6-read.png")
+    plt.clf()
+    plt.close()
+    
+    #################################################################
+    df.write = df[df['op'] == "write"]
+    mask = df.write['len']>0 
+    df.write = df.write[mask]
+    fig, ax = plt.subplots(1, 1, figsize=(20, 6))  # Adjust the figsize parameter for figure dimensions
+
+    df.write['timestamp'] = pd.to_datetime(df.write['timestamp'], unit='s').dt.round('S')
+    df.write['dur'] = pd.to_timedelta(df.write['dur'], unit='s').dt.round('S')
+    df.write['start'] = df.write['timestamp'] - df.write['dur']
+    df.write['rank_time'] = df.write['start'] - min(df.write['start'])
+
+    df.write['rank_time'] = pd.cut(df.write['start'], bins=20)
+    df.write = df.write.groupby(by=["op","rank_time"])["len"].sum().reset_index()
+    df.write['len'] = df.write['len'] / 1024 / 1024
+    df.write = df.write.pivot(index="op", columns="rank_time", values="len")
+    sns.heatmap(ax=ax, data=df.write, cmap="mako", cbar_kws={'label': 'MiB processed'})
+    ax.set_ylabel("Operation")
+    ax.set_xlabel("Timestamp")
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig("./figures/ior/teste6-write.png")
+    plt.clf()
+    plt.close()
+
+    #################################################################3
+    mask = df['len']>0 
+    df = df[mask]
+    fig, ax = plt.subplots(1, 1, figsize=(10, 10))  # Adjust the figsize parameter for figure dimensions
+
+    df['start'] = df['timestamp'] - df['dur']
+    df['rank_time'] = df['start'] - min(df['start'])
+    df['rank_time'] = pd.cut(df['start'], bins=10)
+    df = df.groupby(by=["rank","rank_time"])["len"].sum().reset_index()
+    df['len'] = df['len'] / 1024 / 1024
+    df = df.pivot(index="rank", columns="rank_time", values="len")
+    sns.heatmap(ax=ax, data=df, cmap="mako", cbar_kws={'label': 'MiB processed'})
+    ax.set_ylabel("Rank")
+    ax.set_xlabel("Timestamp")
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig("./figures/ior/teste7.png")
+    plt.clf()
+    plt.close()
 
     return 
 
@@ -124,10 +232,19 @@ def detect_bottlenecks(df):
         print("- Rank %d executed a %s for %f seconds" % (row['rank'], row["op"], row["dur"]))
         print("timestamp %s - %s\n" % (row['timestamp'], row['timestamp'] + row["dur"]))
 
+def correlate_system(filename, filename_sys):
+    
+    r = ro.r
+    r.source("./code/system_vis.R")
+    r.plot_temporal(filename, filename_sys, "./figures/ior/teste6.png")
+
+    return 
+
 def main():
     
     parser = argparse.ArgumentParser(description="Detect anomalies in I/O benchmarks:")
     parser.add_argument('-i', '--input', type=str, help='Input log', default="")
+    parser.add_argument('-s', '--system', type=str, help='Input system log', default="")
     parser.add_argument('-p', '--print', type=int, help='Printing dataframe', default=0)
 
     args = parser.parse_args()   
@@ -152,7 +269,11 @@ def main():
         # Job profile
         get_statistics(local_df, job)
         # Job visualizations
-        get_visualizations(args.input, "./figures/ior/teste.png")
+        # get_visualizations_R(args.input, "./figures/ior/teste.png")
+        # get_visualizations_py(local_df, "./figures/ior/teste.png")
+
+    if(args.system):
+        correlate_system(args.input, args.system)
 
 if __name__ == '__main__':
 
