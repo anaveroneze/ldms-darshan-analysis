@@ -1,3 +1,4 @@
+# Author: Ana Solorzano
 #!/bin/bash
 
 # Script to get machine information before running and experiment in a new machine
