@@ -1,0 +1,324 @@
+/pscratch/spwalto/iorTest/darshan.00000000
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 22
+	obdidx		 objid		 objid		 group
+	    22	     110508276	    0x69638f4	   0x840000400
+
+/pscratch/spwalto/iorTest/darshan.00000001
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 19
+	obdidx		 objid		 objid		 group
+	    19	     109557927	    0x687b8a7	   0x700000400
+
+/pscratch/spwalto/iorTest/darshan.00000002
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 16
+	obdidx		 objid		 objid		 group
+	    16	     109247216	    0x682faf0	   0x680000400
+
+/pscratch/spwalto/iorTest/darshan.00000003
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 12
+	obdidx		 objid		 objid		 group
+	    12	     112057378	    0x6addc22	   0x580000400
+
+/pscratch/spwalto/iorTest/darshan.00000004
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 11
+	obdidx		 objid		 objid		 group
+	    11	     245195012	    0xe9d6104	   0x400000400
+
+/pscratch/spwalto/iorTest/darshan.00000005
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 21
+	obdidx		 objid		 objid		 group
+	    21	     109555011	    0x687ad43	   0x7c0000400
+
+/pscratch/spwalto/iorTest/darshan.00000006
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	     240661681	    0xe5834b1	   0x480000400
+
+/pscratch/spwalto/iorTest/darshan.00000007
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 11
+	obdidx		 objid		 objid		 group
+	    11	     245195011	    0xe9d6103	   0x400000400
+
+/pscratch/spwalto/iorTest/darshan.00000008
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 21
+	obdidx		 objid		 objid		 group
+	    21	     109555012	    0x687ad44	   0x7c0000400
+
+/pscratch/spwalto/iorTest/darshan.00000009
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 8
+	obdidx		 objid		 objid		 group
+	     8	     243737109	    0xe872215	   0x280000400
+
+/pscratch/spwalto/iorTest/darshan.00000010
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 14
+	obdidx		 objid		 objid		 group
+	    14	     106804974	    0x65db6ee	   0x600000400
+
+/pscratch/spwalto/iorTest/darshan.00000011
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 11
+	obdidx		 objid		 objid		 group
+	    11	     245195013	    0xe9d6105	   0x400000400
+
+/pscratch/spwalto/iorTest/darshan.00000012
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 15
+	obdidx		 objid		 objid		 group
+	    15	     109744373	    0x68a90f5	   0x640000400
+
+/pscratch/spwalto/iorTest/darshan.00000013
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 3
+	obdidx		 objid		 objid		 group
+	     3	     242933534	    0xe7adf1e	   0x240000400
+
+/pscratch/spwalto/iorTest/darshan.00000014
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 23
+	obdidx		 objid		 objid		 group
+	    23	     111448444	    0x6a4917c	   0x800000400
+
+/pscratch/spwalto/iorTest/darshan.00000015
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 14
+	obdidx		 objid		 objid		 group
+	    14	     106804973	    0x65db6ed	   0x600000400
+
+/pscratch/spwalto/iorTest/darshan.00000016
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 10
+	obdidx		 objid		 objid		 group
+	    10	     240228077	    0xe5196ed	   0x440000400
+
+/pscratch/spwalto/iorTest/darshan.00000017
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 4
+	obdidx		 objid		 objid		 group
+	     4	     235399966	    0xe07eb1e	   0x4c0000400
+
+/pscratch/spwalto/iorTest/darshan.00000018
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 6
+	obdidx		 objid		 objid		 group
+	     6	     232452927	    0xddaf33f	   0x500000400
+
+/pscratch/spwalto/iorTest/darshan.00000019
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 18
+	obdidx		 objid		 objid		 group
+	    18	     112101984	    0x6ae8a60	   0x740000400
+
+/pscratch/spwalto/iorTest/darshan.00000020
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 18
+	obdidx		 objid		 objid		 group
+	    18	     112101986	    0x6ae8a62	   0x740000400
+
+/pscratch/spwalto/iorTest/darshan.00000021
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 18
+	obdidx		 objid		 objid		 group
+	    18	     112101985	    0x6ae8a61	   0x740000400
+
+/pscratch/spwalto/iorTest/darshan.00000022
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 23
+	obdidx		 objid		 objid		 group
+	    23	     111448443	    0x6a4917b	   0x800000400
+
+/pscratch/spwalto/iorTest/darshan.00000023
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 19
+	obdidx		 objid		 objid		 group
+	    19	     109557928	    0x687b8a8	   0x700000400
+
+/pscratch/spwalto/iorTest/darshan.00000024
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 9
+	obdidx		 objid		 objid		 group
+	     9	     239630387	    0xe487833	   0x3c0000400
+
+/pscratch/spwalto/iorTest/darshan.00000025
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 15
+	obdidx		 objid		 objid		 group
+	    15	     109744374	    0x68a90f6	   0x640000400
+
+/pscratch/spwalto/iorTest/darshan.00000026
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 0
+	obdidx		 objid		 objid		 group
+	     0	     228230808	    0xd9a8698	   0x380000400
+
+/pscratch/spwalto/iorTest/darshan.00000027
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 12
+	obdidx		 objid		 objid		 group
+	    12	     112057377	    0x6addc21	   0x580000400
+
+/pscratch/spwalto/iorTest/darshan.00000028
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 18
+	obdidx		 objid		 objid		 group
+	    18	     112101983	    0x6ae8a5f	   0x740000400
+
+/pscratch/spwalto/iorTest/darshan.00000029
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	     232777726	    0xddfe7fe	   0x540000400
+
+/pscratch/spwalto/iorTest/darshan.00000030
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 2
+	obdidx		 objid		 objid		 group
+	     2	     237864858	    0xe2d879a	   0x2c0000400
+
+/pscratch/spwalto/iorTest/darshan.00000031
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 10
+	obdidx		 objid		 objid		 group
+	    10	     240228078	    0xe5196ee	   0x440000400
+
+/pscratch/spwalto/iorTest/darshan.00000032
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 27
+	obdidx		 objid		 objid		 group
+	    27	     112228752	    0x6b07990	   0x900000400
+
+/pscratch/spwalto/iorTest/darshan.00000033
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 7
+	obdidx		 objid		 objid		 group
+	     7	     232777725	    0xddfe7fd	   0x540000400
+
+/pscratch/spwalto/iorTest/darshan.00000034
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 27
+	obdidx		 objid		 objid		 group
+	    27	     112228753	    0x6b07991	   0x900000400
+
+/pscratch/spwalto/iorTest/darshan.00000035
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 27
+	obdidx		 objid		 objid		 group
+	    27	     112228754	    0x6b07992	   0x900000400
+
