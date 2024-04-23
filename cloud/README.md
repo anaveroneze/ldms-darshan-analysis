@@ -85,6 +85,7 @@ I also implemented psutil io information collection:
 - DiskReads: number of reads operations on the disk
 - DiskWrites: number of writes operations on the disk
 - NetBytesSent: number of bytes sent in the network
+- NetBytesRecv: number of bytes received in the network
 ```
 
 ## Benchmarks
