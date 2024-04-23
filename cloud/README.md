@@ -240,5 +240,10 @@ Looking at the I/O output:
 - The monitoring starts at 13952979968 bytes until 14553748480 bytes
 - (13952979968 - 14553748480) = 600,768,512 bytes during the HACCIO execution, near the 595MB reported in the log!
 
-## [TO-DO] Installing LDMS-Darshan and run an application
-## [TO-DO] Use AWS CloudWatch https://aws.amazon.com/cloudwatch/
+### TO-DOs
+- [ ] Run more repetitions
+- [ ] Collect data without running the benchmark to see the overhead origin
+
+
+<!-- ## [TO-DO] Installing LDMS-Darshan and run an application
+## [TO-DO] Use AWS CloudWatch https://aws.amazon.com/cloudwatch/ -->
