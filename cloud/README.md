@@ -81,7 +81,7 @@ What these information represents?
 
 ## Benchmarks
 
-    - 2 Parallel I/O benchmarks: HACC-IO and VPIC
+    - Parallel I/O benchmarks: HACC-IO
     - Might need to export OMP_NUM_THREADS as the number of threads per process. OMP_NUM_THREADS=2
 
 ### HACC-IO ✔
@@ -122,16 +122,16 @@ mpirun -np 2 ./hacc_io 5000000 outputfile
     - Plot the max bandwidth (Mb/S) per process (X) processes for write and read with sd
     - Plot the CDF of the experiments for write/read (X) processes
 
-### CORAL-2 - VPIC ✔
+<!-- ### CORAL-2 - VPIC ✔
 
     Particle physics simulation developed by Los Alamos National Lab, using 2D, 2D or 3D array that explore I/O access.
     
     - https://github.com/lanl/vpic
     - It creates a file, write 8 random float variables and closes the file
-    - Parallelized with MPI and threads
+    - Parallelized with MPI and threads -->
 
 
-```sh
+<!-- ```sh
 git clone https://github.com/lanl/vpic.git
 cd vpic
 mkdir build
@@ -146,7 +146,7 @@ mpirun -n N ./harris.Linux --tpp 8
 
     Results:
     - Bandwidth (MB/s)
-    - Execution time
+    - Execution time -->
 
 ## Running Experiments
 
@@ -222,13 +222,14 @@ Time,DiskReads,DiskWrites,NetBytesSent,NetBytesRecv
 1713209386.0254126,9239474176,14553748480,3750431,283610931
 ```
 
-In this example, HACCIO captured:
-- Write: 69.0156MB/s
-- Data written: 595,165,824 bytes
+Looking at HACCIO output:
+- 595,165,824 bytes written
+- bw: 69.0156MB/s
 - Maximum Time: 8.22415 seconds
 
-Looking at the disk write information captured by psutil:
-- The monitoring starts at 13952979968 bytes until 14553748480 bytes, which has a difference of 600,768,512 bytes during the HACCIO execution, near the 595MB reported in the log.
+Looking at the I/O output:
+- The monitoring starts at 13952979968 bytes until 14553748480 bytes
+- (13952979968 - 14553748480) = 600,768,512 bytes during the HACCIO execution, near the 595MB reported in the log!
 
-## [TO-DO] Installing LDMS-Darshan abd run an application
+## [TO-DO] Installing LDMS-Darshan and run an application
 ## [TO-DO] Use AWS CloudWatch https://aws.amazon.com/cloudwatch/
