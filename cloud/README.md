@@ -77,6 +77,14 @@ What these information represents?
 - ctx_switches: # of context switches - CPU changing from one process to another. It can impact the performance of the system.
 - interrupts: # of interrupts - sign sent by hardware indicating that an event needs immediate atention
 - soft_interrupts : # of soft interrupts since boot - sign sent by software (tipically the OS) indicating that an event needs immediate atention
+
+I also implemented psutil io information collection:
+
+```
+DiskReads: number of reads operations on the disk
+DiskWrites: number of writes operations on the disk
+NetBytesSent: number of bytes sent in the network
+NetBytesRecv: number of bytes sent in the network
 ```
 
 ## Benchmarks
